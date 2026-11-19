@@ -224,3 +224,174 @@ ts_pt,variant,timeframe,window_start,secs_left,action,reason,side,est_prob,model
 2026-11-19 10:36:01 PT,trend_volume,5m,1795113300,238.5,skip,choppy,,,0.3853,0.4000,,,0.00,0.00,74.4765,74.5320,"Choppy: price went back and forth (straightness 0.12, need 0.15)."
 2026-11-19 10:36:01 PT,trend_down,5m,1795113300,238.5,skip,weak_momentum,,,0.3853,0.4000,,,0.00,0.00,74.4765,74.5320,"The 60m move (+0.66%) too small to call a trend (z +0.7, need 0.8)."
 2026-11-19 10:36:01 PT,breakdown,5m,1795113300,238.5,skip,no_breakout,,,0.3853,0.4000,,,0.00,0.00,74.4765,74.5320,Price is inside its 30-min range ($73.63-$74.59); no breakout.
+2026-11-19 10:36:21 PT,control,5m,1795113300,218.5,skip,edge_small,Down,0.5010,0.4990,0.4600,0.5500,-0.0663,0.00,0.00,74.5315,74.5320,Down at 55c: my estimate 50% beats price+fee by only -6.6c (need 3c).
+2026-11-19 10:36:21 PT,model_lead,5m,1795113300,218.5,skip,lead_small,Down,0.5205,0.4990,0.4600,,,0.00,0.00,74.5315,74.5320,Lead gate: SOL is $+0.000 past the price to beat our way (Down); need at least $0.037 (0.05% of price).
+2026-11-19 10:36:21 PT,trend_volume,5m,1795113300,218.5,skip,choppy,,,0.4990,0.4600,,,0.00,0.00,74.5315,74.5320,"Choppy: price went back and forth (straightness 0.12, need 0.15)."
+2026-11-19 10:36:21 PT,trend_down,5m,1795113300,218.5,skip,weak_momentum,,,0.4990,0.4600,,,0.00,0.00,74.5315,74.5320,"The 60m move (+0.66%) too small to call a trend (z +0.7, need 0.8)."
+2026-11-19 10:36:21 PT,breakdown,5m,1795113300,218.5,skip,no_breakout,,,0.4990,0.4600,,,0.00,0.00,74.5315,74.5320,Price is inside its 30-min range ($73.63-$74.59); no breakout.
+2026-11-19 10:36:41 PT,control,5m,1795113300,198.5,skip,edge_small,Up,0.5304,0.5304,0.5350,0.5400,-0.0269,0.00,0.00,74.5450,74.5320,Up at 54c: my estimate 53% beats price+fee by only -2.7c (need 3c).
+2026-11-19 10:36:41 PT,model_lead,5m,1795113300,198.5,skip,lead_small,Up,0.5327,0.5304,0.5350,,,0.00,0.00,74.5450,74.5320,Lead gate: SOL is $+0.013 past the price to beat our way (Up); need at least $0.037 (0.05% of price).
+2026-11-19 10:36:41 PT,trend_volume,5m,1795113300,198.5,skip,weak_momentum,,,0.5304,0.5350,,,0.00,0.00,74.5450,74.5320,"The 60m move (+0.82%) too small to call a trend (z +0.9, need 1.0)."
+2026-11-19 10:36:41 PT,trend_down,5m,1795113300,198.5,skip,side_not_allowed,Up,0.5627,0.5304,0.5350,,,0.00,0.00,74.5450,74.5320,This variant only bets Down; the signal says Up.
+2026-11-19 10:36:41 PT,breakdown,5m,1795113300,198.5,skip,no_breakout,,,0.5304,0.5350,,,0.00,0.00,74.5450,74.5320,Price is inside its 30-min range ($73.63-$74.59); no breakout.
+2026-11-19 10:36:57 PT,down_ride,5m,1795113300,182.5,skip,timing,,,0.5443,0.6800,,,0.00,0.00,74.5500,74.5320,Only bets with 90-180s left; 182s left now.
+2026-11-19 10:37:01 PT,control,5m,1795113300,178.5,skip,edge_small,Up,0.5449,0.5449,0.6150,0.6200,-0.0916,0.00,0.00,74.5500,74.5320,Up at 62c: my estimate 54% beats price+fee by only -9.2c (need 3c).
+2026-11-19 10:37:01 PT,model_lead,5m,1795113300,178.5,skip,timing,,,0.5449,0.6150,,,0.00,0.00,74.5500,74.5320,Only bets with 180-240s left; 178s left now.
+2026-11-19 10:37:01 PT,trend_volume,5m,1795113300,178.5,skip,weak_momentum,,,0.5449,0.6150,,,0.00,0.00,74.5500,74.5320,"The 60m move (+0.82%) too small to call a trend (z +0.9, need 1.0)."
+2026-11-19 10:37:01 PT,trend_down,5m,1795113300,178.5,skip,side_not_allowed,Up,0.6100,0.5449,0.6150,,,0.00,0.00,74.5500,74.5320,This variant only bets Down; the signal says Up.
+2026-11-19 10:37:01 PT,breakdown,5m,1795113300,178.5,skip,no_breakout,,,0.5449,0.6150,,,0.00,0.00,74.5500,74.5320,Price is inside its 30-min range ($73.63-$74.59); no breakout.
+2026-11-19 10:37:17 PT,down_ride,5m,1795113300,162.5,skip,side_not_allowed,Up,0.5411,0.5673,0.5150,,,0.00,0.00,74.5575,74.5320,This variant only bets Down; the signal says Up.
+2026-11-19 10:37:19 PT,control,5m,1795113300,160.5,buy,ok,Up,0.5214,0.5214,0.4250,0.4400,0.0642,4.00,9.09,74.5400,74.5320,"Buying $4.00 of Up: I put Up at 52%, price+fee is 45.7c, edge 6.4c."
+2026-11-19 10:37:21 PT,trend_volume,5m,1795113300,158.5,skip,choppy,,,0.5216,0.4050,,,0.00,0.00,74.5400,74.5320,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-19 10:37:21 PT,trend_down,5m,1795113300,158.5,skip,weak_momentum,,,0.5216,0.4050,,,0.00,0.00,74.5400,74.5320,"The 60m move (+0.66%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:37:21 PT,breakdown,5m,1795113300,158.5,skip,no_breakout,,,0.5216,0.4050,,,0.00,0.00,74.5400,74.5320,Price is inside its 30-min range ($73.63-$74.59); no breakout.
+2026-11-19 10:37:37 PT,down_ride,5m,1795113300,142.5,skip,lead_small,Down,0.5545,0.5160,0.3750,,,0.00,0.00,74.5375,74.5320,Lead gate: SOL is $-0.006 past the price to beat our way (Down); need at least $0.037 (0.05% of price).
+2026-11-19 10:37:41 PT,trend_volume,5m,1795113300,138.5,skip,choppy,,,0.4869,0.5000,,,0.00,0.00,74.5275,74.5320,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-19 10:37:41 PT,trend_down,5m,1795113300,138.5,skip,weak_momentum,,,0.4869,0.5000,,,0.00,0.00,74.5275,74.5320,"The 60m move (+0.66%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:37:41 PT,breakdown,5m,1795113300,138.5,skip,no_breakout,,,0.4869,0.5000,,,0.00,0.00,74.5275,74.5320,Price is inside its 30-min range ($73.63-$74.59); no breakout.
+2026-11-19 10:37:57 PT,ride_favorite_80,5m,1795113300,122.5,skip,timing,,,0.4937,0.5150,,,0.00,0.00,74.5300,74.5320,Only bets with 60-120s left; 122s left now.
+2026-11-19 10:37:57 PT,down_ride,5m,1795113300,122.5,skip,side_not_allowed,Up,0.5044,0.4937,0.5150,,,0.00,0.00,74.5300,74.5320,This variant only bets Down; the signal says Up.
+2026-11-19 10:38:01 PT,trend_volume,5m,1795113300,118.5,skip,choppy,,,0.5181,0.4550,,,0.00,0.00,74.5375,74.5320,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-19 10:38:01 PT,trend_down,5m,1795113300,118.5,skip,weak_momentum,,,0.5181,0.4550,,,0.00,0.00,74.5375,74.5320,"The 60m move (+0.66%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:38:01 PT,breakdown,5m,1795113300,118.5,skip,no_breakout,,,0.5181,0.4550,,,0.00,0.00,74.5375,74.5320,Price is inside its 30-min range ($73.63-$74.59); no breakout.
+2026-11-19 10:38:17 PT,ride_favorite_80,5m,1795113300,102.5,skip,ask_band,Up,,0.6187,0.6250,0.6300,,0.00,0.00,74.5650,74.5320,"Up costs 63c, outside this variant's 0.8-0.95 price range."
+2026-11-19 10:38:17 PT,down_ride,5m,1795113300,102.5,skip,side_not_allowed,Up,0.6218,0.6187,0.6250,,,0.00,0.00,74.5650,74.5320,This variant only bets Down; the signal says Up.
+2026-11-19 10:38:21 PT,trend_volume,5m,1795113300,98.5,skip,choppy,,,0.6222,0.7050,,,0.00,0.00,74.5650,74.5320,"Choppy: price went back and forth (straightness 0.12, need 0.15)."
+2026-11-19 10:38:21 PT,trend_down,5m,1795113300,98.5,skip,weak_momentum,,,0.6222,0.7050,,,0.00,0.00,74.5650,74.5320,"The 60m move (+0.65%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:38:21 PT,breakdown,5m,1795113300,98.5,skip,no_breakout,,,0.6222,0.7050,,,0.00,0.00,74.5650,74.5320,Price is inside its 30-min range ($73.63-$74.59); no breakout.
+2026-11-19 10:38:23 PT,ride_favorite_80,5m,1795113300,96.5,buy,ok,Up,,0.6259,0.7900,0.8000,,5.00,6.16,74.5655,74.5320,Buying $4.93 of Up: market favorite Up at 80c with 96s left.
+2026-11-19 10:41:01 PT,control,5m,1795113600,238.4,skip,edge_small,Down,0.8151,0.1849,0.1250,0.8800,-0.0723,0.00,0.00,74.3525,74.5208,Down at 88c: my estimate 82% beats price+fee by only -7.2c (need 3c).
+2026-11-19 10:41:01 PT,model_lead,5m,1795113600,238.4,skip,ask_band,Down,0.8450,0.1849,0.1250,0.8800,-0.0423,0.00,0.00,74.3525,74.5208,"Down costs 88c, outside this variant's 0.2-0.8 price range."
+2026-11-19 10:41:01 PT,trend_volume,5m,1795113600,238.4,skip,choppy,,,0.1849,0.1250,,,0.00,0.00,74.3525,74.5208,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-19 10:41:01 PT,trend_down,5m,1795113600,238.4,skip,weak_momentum,,,0.1849,0.1250,,,0.00,0.00,74.3525,74.5208,"The 60m move (+0.65%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:41:01 PT,breakdown,5m,1795113600,238.4,skip,no_breakout,,,0.1849,0.1250,,,0.00,0.00,74.3525,74.5208,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:41:21 PT,control,5m,1795113600,218.4,skip,edge_small,Down,0.8143,0.1857,0.1050,0.9000,-0.0920,0.00,0.00,74.3615,74.5208,Down at 90c: my estimate 81% beats price+fee by only -9.2c (need 3c).
+2026-11-19 10:41:21 PT,model_lead,5m,1795113600,218.4,skip,ask_band,Down,0.8546,0.1857,0.1050,0.9000,-0.0517,0.00,0.00,74.3615,74.5208,"Down costs 90c, outside this variant's 0.2-0.8 price range."
+2026-11-19 10:41:21 PT,trend_volume,5m,1795113600,218.4,skip,choppy,,,0.1857,0.1050,,,0.00,0.00,74.3615,74.5208,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-19 10:41:21 PT,trend_down,5m,1795113600,218.4,skip,weak_momentum,,,0.1857,0.1050,,,0.00,0.00,74.3615,74.5208,"The 60m move (+0.65%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:41:21 PT,breakdown,5m,1795113600,218.4,skip,no_breakout,,,0.1857,0.1050,,,0.00,0.00,74.3615,74.5208,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:41:37 PT,control,5m,1795113600,202.4,buy,ok,Down,0.6404,0.3596,0.4750,0.5300,0.0929,5.00,9.13,74.4595,74.5208,"Buying $4.84 of Down: I put Down at 64%, price+fee is 54.7c, edge 9.3c."
+2026-11-19 10:41:41 PT,model_lead,5m,1795113600,198.4,skip,lead_small,Down,0.5201,0.4148,0.5450,,,0.00,0.00,74.4845,74.5208,Lead gate: SOL is $+0.036 past the price to beat our way (Down); need at least $0.037 (0.05% of price).
+2026-11-19 10:41:41 PT,trend_volume,5m,1795113600,198.4,skip,choppy,,,0.4148,0.5450,,,0.00,0.00,74.4845,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.15)."
+2026-11-19 10:41:41 PT,trend_down,5m,1795113600,198.4,skip,choppy,,,0.4148,0.5450,,,0.00,0.00,74.4845,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.12)."
+2026-11-19 10:41:41 PT,breakdown,5m,1795113600,198.4,skip,no_breakout,,,0.4148,0.5450,,,0.00,0.00,74.4845,74.5208,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:41:57 PT,down_ride,5m,1795113600,182.4,skip,timing,,,0.4558,0.4600,,,0.00,0.00,74.5030,74.5208,Only bets with 90-180s left; 182s left now.
+2026-11-19 10:42:01 PT,model_lead,5m,1795113600,178.4,skip,timing,,,0.4678,0.4150,,,0.00,0.00,74.5080,74.5208,Only bets with 180-240s left; 178s left now.
+2026-11-19 10:42:01 PT,trend_volume,5m,1795113600,178.4,skip,choppy,,,0.4678,0.4150,,,0.00,0.00,74.5080,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.15)."
+2026-11-19 10:42:01 PT,trend_down,5m,1795113600,178.4,skip,choppy,,,0.4678,0.4150,,,0.00,0.00,74.5080,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.12)."
+2026-11-19 10:42:01 PT,breakdown,5m,1795113600,178.4,skip,no_breakout,,,0.4678,0.4150,,,0.00,0.00,74.5080,74.5208,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:42:17 PT,down_ride,5m,1795113600,162.4,skip,edge_small,Down,0.6868,0.3614,0.2650,0.7400,-0.0667,0.00,0.00,74.4680,74.5208,Down at 74c: my estimate 69% beats price+fee by only -6.7c (need 3c).
+2026-11-19 10:42:21 PT,trend_volume,5m,1795113600,158.4,skip,choppy,,,0.3466,0.2400,,,0.00,0.00,74.4630,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.15)."
+2026-11-19 10:42:21 PT,trend_down,5m,1795113600,158.4,skip,choppy,,,0.3466,0.2400,,,0.00,0.00,74.4630,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.12)."
+2026-11-19 10:42:21 PT,breakdown,5m,1795113600,158.4,skip,no_breakout,,,0.3466,0.2400,,,0.00,0.00,74.4630,74.5208,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:42:37 PT,down_ride,5m,1795113600,142.4,skip,edge_small,Down,0.6475,0.3551,0.3500,0.6600,-0.0282,0.00,0.00,74.4700,74.5208,Down at 66c: my estimate 65% beats price+fee by only -2.8c (need 3c).
+2026-11-19 10:42:41 PT,trend_volume,5m,1795113600,138.4,skip,choppy,,,0.3762,0.3050,,,0.00,0.00,74.4785,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.15)."
+2026-11-19 10:42:41 PT,trend_down,5m,1795113600,138.4,skip,choppy,,,0.3762,0.3050,,,0.00,0.00,74.4785,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.12)."
+2026-11-19 10:42:41 PT,breakdown,5m,1795113600,138.4,skip,no_breakout,,,0.3762,0.3050,,,0.00,0.00,74.4785,74.5208,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:42:57 PT,ride_favorite_80,5m,1795113600,122.4,skip,timing,,,0.2828,0.1900,,,0.00,0.00,74.4500,74.5208,Only bets with 60-120s left; 122s left now.
+2026-11-19 10:42:57 PT,down_ride,5m,1795113600,122.4,skip,edge_small,Down,0.7636,0.2828,0.1900,0.8200,-0.0667,0.00,0.00,74.4500,74.5208,Down at 82c: my estimate 76% beats price+fee by only -6.7c (need 3c).
+2026-11-19 10:43:01 PT,trend_volume,5m,1795113600,118.4,skip,choppy,,,0.3176,0.2150,,,0.00,0.00,74.4635,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.15)."
+2026-11-19 10:43:01 PT,trend_down,5m,1795113600,118.4,skip,choppy,,,0.3176,0.2150,,,0.00,0.00,74.4635,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.12)."
+2026-11-19 10:43:01 PT,breakdown,5m,1795113600,118.4,skip,no_breakout,,,0.3176,0.2150,,,0.00,0.00,74.4635,74.5208,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:43:05 PT,ride_favorite_80,5m,1795113600,114.4,buy,ok,Down,,0.2883,0.1850,0.8200,,5.00,6.02,74.4550,74.5208,Buying $4.94 of Down: market favorite Down at 82c with 114s left.
+2026-11-19 10:43:17 PT,down_ride,5m,1795113600,102.4,skip,ask_band,Down,0.8060,0.2831,0.1050,0.9200,-0.1192,0.00,0.00,74.4585,74.5208,"Down costs 92c, outside this variant's 0.5-0.9 price range."
+2026-11-19 10:43:21 PT,trend_volume,5m,1795113600,98.4,skip,choppy,,,0.1942,0.0550,,,0.00,0.00,74.4300,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.15)."
+2026-11-19 10:43:21 PT,trend_down,5m,1795113600,98.4,skip,choppy,,,0.1942,0.0550,,,0.00,0.00,74.4300,74.5208,"Choppy: price went back and forth (straightness 0.11, need 0.12)."
+2026-11-19 10:43:21 PT,breakdown,5m,1795113600,98.4,skip,no_breakout,,,0.1942,0.0550,,,0.00,0.00,74.4300,74.5208,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:46:01 PT,control,5m,1795113900,238.3,skip,edge_small,Down,0.5140,0.4860,0.3850,0.6200,-0.1225,0.00,0.00,74.3500,74.3566,Down at 62c: my estimate 51% beats price+fee by only -12.2c (need 3c).
+2026-11-19 10:46:01 PT,model_lead,5m,1795113900,238.3,skip,lead_small,Down,0.5645,0.4860,0.3850,,,0.00,0.00,74.3500,74.3566,Lead gate: SOL is $+0.007 past the price to beat our way (Down); need at least $0.037 (0.05% of price).
+2026-11-19 10:46:01 PT,trend_volume,5m,1795113900,238.3,skip,choppy,,,0.4860,0.3850,,,0.00,0.00,74.3500,74.3566,"Choppy: price went back and forth (straightness 0.14, need 0.15)."
+2026-11-19 10:46:01 PT,trend_down,5m,1795113900,238.3,skip,momentum_conflict,,,0.4860,0.3850,,,0.00,0.00,74.3500,74.3566,The 60m trend says Up but the last 15m (-0.17%) disagree.
+2026-11-19 10:46:01 PT,breakdown,5m,1795113900,238.3,skip,no_breakout,,,0.4860,0.3850,,,0.00,0.00,74.3500,74.3566,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:46:21 PT,control,5m,1795113900,218.3,skip,edge_small,Down,0.5148,0.4852,0.4250,0.5800,-0.0823,0.00,0.00,74.3500,74.3566,Down at 58c: my estimate 51% beats price+fee by only -8.2c (need 3c).
+2026-11-19 10:46:21 PT,model_lead,5m,1795113900,218.3,skip,lead_small,Down,0.5449,0.4852,0.4250,,,0.00,0.00,74.3500,74.3566,Lead gate: SOL is $+0.007 past the price to beat our way (Down); need at least $0.037 (0.05% of price).
+2026-11-19 10:46:21 PT,trend_volume,5m,1795113900,218.3,skip,choppy,,,0.4852,0.4250,,,0.00,0.00,74.3500,74.3566,"Choppy: price went back and forth (straightness 0.14, need 0.15)."
+2026-11-19 10:46:21 PT,trend_down,5m,1795113900,218.3,skip,momentum_conflict,,,0.4852,0.4250,,,0.00,0.00,74.3500,74.3566,The 60m trend says Up but the last 15m (-0.17%) disagree.
+2026-11-19 10:46:21 PT,breakdown,5m,1795113900,218.3,skip,no_breakout,,,0.4852,0.4250,,,0.00,0.00,74.3500,74.3566,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:46:41 PT,control,5m,1795113900,198.3,skip,edge_small,Down,0.5569,0.4431,0.4150,0.5900,-0.0500,0.00,0.00,74.3325,74.3566,Down at 59c: my estimate 56% beats price+fee by only -5.0c (need 3c).
+2026-11-19 10:46:41 PT,model_lead,5m,1795113900,198.3,skip,lead_small,Down,0.5710,0.4431,0.4150,,,0.00,0.00,74.3325,74.3566,Lead gate: SOL is $+0.024 past the price to beat our way (Down); need at least $0.037 (0.05% of price).
+2026-11-19 10:46:41 PT,trend_volume,5m,1795113900,198.3,skip,choppy,,,0.4431,0.4150,,,0.00,0.00,74.3325,74.3566,"Choppy: price went back and forth (straightness 0.14, need 0.15)."
+2026-11-19 10:46:41 PT,trend_down,5m,1795113900,198.3,skip,momentum_conflict,,,0.4431,0.4150,,,0.00,0.00,74.3325,74.3566,The 60m trend says Up but the last 15m (-0.17%) disagree.
+2026-11-19 10:46:41 PT,breakdown,5m,1795113900,198.3,skip,no_breakout,,,0.4431,0.4150,,,0.00,0.00,74.3325,74.3566,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:46:57 PT,down_ride,5m,1795113900,182.3,skip,timing,,,0.3973,0.3050,,,0.00,0.00,74.3150,74.3566,Only bets with 90-180s left; 182s left now.
+2026-11-19 10:47:01 PT,control,5m,1795113900,178.3,skip,edge_small,Down,0.5979,0.4021,0.3950,0.6100,-0.0287,0.00,0.00,74.3175,74.3566,Down at 61c: my estimate 60% beats price+fee by only -2.9c (need 3c).
+2026-11-19 10:47:01 PT,model_lead,5m,1795113900,178.3,skip,timing,,,0.4021,0.3950,,,0.00,0.00,74.3175,74.3566,Only bets with 180-240s left; 178s left now.
+2026-11-19 10:47:01 PT,trend_volume,5m,1795113900,178.3,skip,choppy,,,0.4021,0.3950,,,0.00,0.00,74.3175,74.3566,"Choppy: price went back and forth (straightness 0.14, need 0.15)."
+2026-11-19 10:47:01 PT,trend_down,5m,1795113900,178.3,skip,momentum_conflict,,,0.4021,0.3950,,,0.00,0.00,74.3175,74.3566,The 60m trend says Up but the last 15m (-0.17%) disagree.
+2026-11-19 10:47:01 PT,breakdown,5m,1795113900,178.3,skip,no_breakout,,,0.4021,0.3950,,,0.00,0.00,74.3175,74.3566,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:47:17 PT,down_ride,5m,1795113900,162.3,skip,edge_small,Down,0.6667,0.3516,0.3150,0.6900,-0.0383,0.00,0.00,74.3000,74.3566,Down at 69c: my estimate 67% beats price+fee by only -3.8c (need 3c).
+2026-11-19 10:47:21 PT,control,5m,1795113900,158.3,skip,edge_small,Down,0.6507,0.3493,0.3050,0.7000,-0.0640,0.00,0.00,74.3000,74.3566,Down at 70c: my estimate 65% beats price+fee by only -6.4c (need 3c).
+2026-11-19 10:47:21 PT,trend_volume,5m,1795113900,158.3,skip,choppy,,,0.3493,0.3050,,,0.00,0.00,74.3000,74.3566,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-19 10:47:21 PT,trend_down,5m,1795113900,158.3,skip,weak_momentum,,,0.3493,0.3050,,,0.00,0.00,74.3000,74.3566,"The 60m move (+0.65%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:47:21 PT,breakdown,5m,1795113900,158.3,skip,no_breakout,,,0.3493,0.3050,,,0.00,0.00,74.3000,74.3566,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:47:37 PT,down_ride,5m,1795113900,142.3,skip,edge_small,Down,0.7980,0.2591,0.1450,0.8600,-0.0705,0.00,0.00,74.2685,74.3566,Down at 86c: my estimate 80% beats price+fee by only -7.0c (need 3c).
+2026-11-19 10:47:41 PT,control,5m,1795113900,138.3,skip,edge_small,Down,0.7884,0.2116,0.1250,0.8800,-0.0990,0.00,0.00,74.2495,74.3566,Down at 88c: my estimate 79% beats price+fee by only -9.9c (need 3c).
+2026-11-19 10:47:41 PT,trend_volume,5m,1795113900,138.3,skip,choppy,,,0.2116,0.1250,,,0.00,0.00,74.2495,74.3566,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-19 10:47:41 PT,trend_down,5m,1795113900,138.3,skip,weak_momentum,,,0.2116,0.1250,,,0.00,0.00,74.2495,74.3566,"The 60m move (+0.65%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:47:41 PT,breakdown,5m,1795113900,138.3,skip,no_breakout,,,0.2116,0.1250,,,0.00,0.00,74.2495,74.3566,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:47:57 PT,ride_favorite_80,5m,1795113900,122.3,skip,timing,,,0.2149,0.1150,,,0.00,0.00,74.2595,74.3566,Only bets with 60-120s left; 122s left now.
+2026-11-19 10:47:57 PT,down_ride,5m,1795113900,122.3,skip,edge_small,Down,0.8351,0.2149,0.1150,0.8900,-0.0618,0.00,0.00,74.2595,74.3566,Down at 89c: my estimate 84% beats price+fee by only -6.2c (need 3c).
+2026-11-19 10:48:01 PT,control,5m,1795113900,118.3,skip,edge_small,Down,0.8025,0.1975,0.1350,0.8700,-0.0754,0.00,0.00,74.2545,74.3566,Down at 87c: my estimate 80% beats price+fee by only -7.5c (need 3c).
+2026-11-19 10:48:01 PT,ride_favorite_80,5m,1795113900,118.3,buy,ok,Down,,0.1975,0.1350,0.8700,,5.00,5.69,74.2545,74.3566,Buying $4.95 of Down: market favorite Down at 87c with 118s left.
+2026-11-19 10:48:01 PT,trend_volume,5m,1795113900,118.3,skip,choppy,,,0.1975,0.1350,,,0.00,0.00,74.2545,74.3566,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-19 10:48:01 PT,trend_down,5m,1795113900,118.3,skip,weak_momentum,,,0.1975,0.1350,,,0.00,0.00,74.2545,74.3566,"The 60m move (+0.65%) too small to call a trend (z +0.8, need 0.8)."
+2026-11-19 10:48:01 PT,breakdown,5m,1795113900,118.3,skip,no_breakout,,,0.1975,0.1350,,,0.00,0.00,74.2545,74.3566,Price is inside its 30-min range ($73.63-$74.61); no breakout.
+2026-11-19 10:48:17 PT,down_ride,5m,1795113900,102.3,skip,ask_band,Down,0.8892,0.1616,0.0600,0.9500,-0.0641,0.00,0.00,74.2500,74.3566,"Down costs 95c, outside this variant's 0.5-0.9 price range."
+2026-11-19 10:48:21 PT,control,5m,1795113900,98.3,skip,edge_small,Down,0.8774,0.1226,0.0550,0.9500,-0.0759,0.00,0.00,74.2350,74.3566,Down at 95c: my estimate 88% beats price+fee by only -7.6c (need 3c).
+2026-11-19 10:48:21 PT,trend_volume,5m,1795113900,98.3,skip,choppy,,,0.1226,0.0550,,,0.00,0.00,74.2350,74.3566,"Choppy: price went back and forth (straightness 0.10, need 0.15)."
+2026-11-19 10:48:21 PT,trend_down,5m,1795113900,98.3,skip,choppy,,,0.1226,0.0550,,,0.00,0.00,74.2350,74.3566,"Choppy: price went back and forth (straightness 0.10, need 0.12)."
+2026-11-19 10:48:21 PT,breakdown,5m,1795113900,98.3,skip,no_breakout,,,0.1226,0.0550,,,0.00,0.00,74.2350,74.3566,Price is inside its 30-min range ($73.67-$74.61); no breakout.
+2026-11-19 10:48:41 PT,control,5m,1795113900,78.3,skip,ask_band,Down,0.9491,0.0509,0.0350,0.9700,-0.0229,0.00,0.00,74.2150,74.3566,"Down costs 97c, outside this variant's 0.05-0.95 price range."
+2026-11-19 10:49:01 PT,control,5m,1795113900,58.3,skip,no_ask,Down,0.9694,0.0306,0.0100,,,0.00,0.00,74.2375,74.3566,Nobody is selling Down right now.
+2026-11-19 10:49:21 PT,control,5m,1795113900,38.3,skip,no_ask,Down,0.9993,0.0007,0.0100,,,0.00,0.00,74.2200,74.3566,Nobody is selling Down right now.
+2026-11-19 10:51:01 PT,control,5m,1795114200,238.3,skip,edge_small,Down,0.7481,0.2519,0.1750,0.8300,-0.0918,0.00,0.00,74.0895,74.2107,Down at 83c: my estimate 75% beats price+fee by only -9.2c (need 3c).
+2026-11-19 10:51:01 PT,model_lead,5m,1795114200,238.3,skip,ask_band,Down,0.7866,0.2519,0.1750,0.8300,-0.0533,0.00,0.00,74.0895,74.2107,"Down costs 83c, outside this variant's 0.2-0.8 price range."
+2026-11-19 10:51:01 PT,trend_volume,5m,1795114200,238.3,skip,choppy,,,0.2519,0.1750,,,0.00,0.00,74.0895,74.2107,"Choppy: price went back and forth (straightness 0.08, need 0.15)."
+2026-11-19 10:51:01 PT,trend_down,5m,1795114200,238.3,skip,choppy,,,0.2519,0.1750,,,0.00,0.00,74.0895,74.2107,"Choppy: price went back and forth (straightness 0.08, need 0.12)."
+2026-11-19 10:51:01 PT,breakdown,5m,1795114200,238.3,skip,no_breakout,,,0.2519,0.1750,,,0.00,0.00,74.0895,74.2107,Price is inside its 30-min range ($73.74-$74.61); no breakout.
+2026-11-19 10:51:21 PT,control,5m,1795114200,218.2,skip,edge_small,Down,0.7207,0.2793,0.2450,0.7600,-0.0521,0.00,0.00,74.1100,74.2107,Down at 76c: my estimate 72% beats price+fee by only -5.2c (need 3c).
+2026-11-19 10:51:21 PT,model_lead,5m,1795114200,218.2,skip,edge_small,Down,0.7378,0.2793,0.2450,0.7600,-0.0349,0.00,0.00,74.1100,74.2107,Down at 76c: my estimate 74% beats price+fee by only -3.5c (need 4c).
+2026-11-19 10:51:21 PT,trend_volume,5m,1795114200,218.2,skip,choppy,,,0.2793,0.2450,,,0.00,0.00,74.1100,74.2107,"Choppy: price went back and forth (straightness 0.08, need 0.15)."
+2026-11-19 10:51:21 PT,trend_down,5m,1795114200,218.2,skip,choppy,,,0.2793,0.2450,,,0.00,0.00,74.1100,74.2107,"Choppy: price went back and forth (straightness 0.08, need 0.12)."
+2026-11-19 10:51:21 PT,breakdown,5m,1795114200,218.2,skip,no_breakout,,,0.2793,0.2450,,,0.00,0.00,74.1100,74.2107,Price is inside its 30-min range ($73.74-$74.61); no breakout.
+2026-11-19 10:51:41 PT,control,5m,1795114200,198.2,skip,edge_small,Down,0.6648,0.3352,0.2700,0.7400,-0.0887,0.00,0.00,74.1415,74.2107,Down at 74c: my estimate 66% beats price+fee by only -8.9c (need 3c).
+2026-11-19 10:51:41 PT,model_lead,5m,1795114200,198.2,skip,edge_small,Down,0.6974,0.3352,0.2700,0.7400,-0.0561,0.00,0.00,74.1415,74.2107,Down at 74c: my estimate 70% beats price+fee by only -5.6c (need 4c).
+2026-11-19 10:51:41 PT,trend_volume,5m,1795114200,198.2,skip,choppy,,,0.3352,0.2700,,,0.00,0.00,74.1415,74.2107,"Choppy: price went back and forth (straightness 0.08, need 0.15)."
+2026-11-19 10:51:41 PT,trend_down,5m,1795114200,198.2,skip,choppy,,,0.3352,0.2700,,,0.00,0.00,74.1415,74.2107,"Choppy: price went back and forth (straightness 0.08, need 0.12)."
+2026-11-19 10:51:41 PT,breakdown,5m,1795114200,198.2,skip,no_breakout,,,0.3352,0.2700,,,0.00,0.00,74.1415,74.2107,Price is inside its 30-min range ($73.74-$74.61); no breakout.
+2026-11-19 10:51:57 PT,down_ride,5m,1795114200,182.2,skip,timing,,,0.3236,0.0750,,,0.00,0.00,74.1400,74.2107,Only bets with 90-180s left; 182s left now.
+2026-11-19 10:52:01 PT,control,5m,1795114200,178.2,skip,edge_small,Down,0.9065,0.0935,0.0750,0.9300,-0.0280,0.00,0.00,74.0100,74.2107,Down at 93c: my estimate 91% beats price+fee by only -2.8c (need 3c).
+2026-11-19 10:52:01 PT,model_lead,5m,1795114200,178.2,skip,timing,,,0.0935,0.0750,,,0.00,0.00,74.0100,74.2107,Only bets with 180-240s left; 178s left now.
+2026-11-19 10:52:01 PT,trend_volume,5m,1795114200,178.2,skip,choppy,,,0.0935,0.0750,,,0.00,0.00,74.0100,74.2107,"Choppy: price went back and forth (straightness 0.08, need 0.15)."
+2026-11-19 10:52:01 PT,trend_down,5m,1795114200,178.2,skip,choppy,,,0.0935,0.0750,,,0.00,0.00,74.0100,74.2107,"Choppy: price went back and forth (straightness 0.08, need 0.12)."
+2026-11-19 10:52:01 PT,breakdown,5m,1795114200,178.2,skip,no_breakout,,,0.0935,0.0750,,,0.00,0.00,74.0100,74.2107,Price is inside its 30-min range ($73.74-$74.61); no breakout.
+2026-11-19 10:52:17 PT,down_ride,5m,1795114200,162.2,skip,ask_band,Down,0.8881,0.1389,0.0850,0.9200,-0.0371,0.00,0.00,74.0550,74.2107,"Down costs 92c, outside this variant's 0.5-0.9 price range."
+2026-11-19 10:52:21 PT,control,5m,1795114200,158.2,skip,edge_small,Down,0.8649,0.1351,0.0950,0.9100,-0.0508,0.00,0.00,74.0550,74.2107,Down at 91c: my estimate 86% beats price+fee by only -5.1c (need 3c).
+2026-11-19 10:52:21 PT,trend_volume,5m,1795114200,158.2,skip,choppy,,,0.1351,0.0950,,,0.00,0.00,74.0550,74.2107,"Choppy: price went back and forth (straightness 0.05, need 0.15)."
+2026-11-19 10:52:21 PT,trend_down,5m,1795114200,158.2,skip,choppy,,,0.1351,0.0950,,,0.00,0.00,74.0550,74.2107,"Choppy: price went back and forth (straightness 0.05, need 0.12)."
+2026-11-19 10:52:21 PT,breakdown,5m,1795114200,158.2,skip,no_breakout,,,0.1351,0.0950,,,0.00,0.00,74.0550,74.2107,Price is inside its 30-min range ($73.87-$74.61); no breakout.
+2026-11-19 10:52:37 PT,down_ride,5m,1795114200,142.2,skip,edge_small,Down,0.8320,0.1561,0.1800,0.8300,-0.0079,0.00,0.00,74.0775,74.2107,Down at 83c: my estimate 83% beats price+fee by only -0.8c (need 3c).
+2026-11-19 10:52:41 PT,control,5m,1795114200,138.2,skip,edge_small,Down,0.8196,0.1804,0.1850,0.8200,-0.0107,0.00,0.00,74.0925,74.2107,Down at 82c: my estimate 82% beats price+fee by only -1.1c (need 3c).
+2026-11-19 10:52:41 PT,trend_volume,5m,1795114200,138.2,skip,choppy,,,0.1804,0.1850,,,0.00,0.00,74.0925,74.2107,"Choppy: price went back and forth (straightness 0.05, need 0.15)."
+2026-11-19 10:52:41 PT,trend_down,5m,1795114200,138.2,skip,choppy,,,0.1804,0.1850,,,0.00,0.00,74.0925,74.2107,"Choppy: price went back and forth (straightness 0.05, need 0.12)."
+2026-11-19 10:52:41 PT,breakdown,5m,1795114200,138.2,skip,no_breakout,,,0.1804,0.1850,,,0.00,0.00,74.0925,74.2107,Price is inside its 30-min range ($73.87-$74.61); no breakout.
+2026-11-19 10:52:57 PT,ride_favorite_80,5m,1795114200,122.2,skip,timing,,,0.2293,0.1700,,,0.00,0.00,74.1225,74.2107,Only bets with 60-120s left; 122s left now.
+2026-11-19 10:52:57 PT,down_ride,5m,1795114200,122.2,skip,edge_small,Down,0.8004,0.2293,0.1700,0.8500,-0.0586,0.00,0.00,74.1225,74.2107,Down at 85c: my estimate 80% beats price+fee by only -5.9c (need 3c).
+2026-11-19 10:53:01 PT,control,5m,1795114200,118.2,skip,edge_small,Down,0.7425,0.2575,0.2100,0.8000,-0.0687,0.00,0.00,74.1350,74.2107,Down at 80c: my estimate 74% beats price+fee by only -6.9c (need 3c).
+2026-11-19 10:53:01 PT,ride_favorite_80,5m,1795114200,118.2,buy,ok,Down,,0.2575,0.2100,0.8000,,5.00,6.16,74.1350,74.2107,Buying $4.93 of Down: market favorite Down at 80c with 118s left.
+2026-11-19 10:53:01 PT,trend_volume,5m,1795114200,118.2,skip,choppy,,,0.2575,0.2100,,,0.00,0.00,74.1350,74.2107,"Choppy: price went back and forth (straightness 0.05, need 0.15)."
+2026-11-19 10:53:01 PT,trend_down,5m,1795114200,118.2,skip,choppy,,,0.2575,0.2100,,,0.00,0.00,74.1350,74.2107,"Choppy: price went back and forth (straightness 0.05, need 0.12)."
+2026-11-19 10:53:01 PT,breakdown,5m,1795114200,118.2,skip,no_breakout,,,0.2575,0.2100,,,0.00,0.00,74.1350,74.2107,Price is inside its 30-min range ($73.87-$74.61); no breakout.
+2026-11-19 10:53:17 PT,down_ride,5m,1795114200,102.2,skip,edge_small,Down,0.8569,0.1762,0.1100,0.9000,-0.0494,0.00,0.00,74.1135,74.2107,Down at 90c: my estimate 86% beats price+fee by only -4.9c (need 3c).
+2026-11-19 10:53:21 PT,control,5m,1795114200,98.2,skip,edge_small,Down,0.8051,0.1949,0.0750,0.9300,-0.1295,0.00,0.00,74.1235,74.2107,Down at 93c: my estimate 81% beats price+fee by only -12.9c (need 3c).
+2026-11-19 10:53:21 PT,trend_volume,5m,1795114200,98.2,skip,choppy,,,0.1949,0.0750,,,0.00,0.00,74.1235,74.2107,"Choppy: price went back and forth (straightness 0.07, need 0.15)."
+2026-11-19 10:53:21 PT,trend_down,5m,1795114200,98.2,skip,choppy,,,0.1949,0.0750,,,0.00,0.00,74.1235,74.2107,"Choppy: price went back and forth (straightness 0.07, need 0.12)."
+2026-11-19 10:53:21 PT,breakdown,5m,1795114200,98.2,skip,failed_breakout,,,0.1949,0.0750,,,0.00,0.00,74.1235,74.2107,Broke below $74.03 but price bounced back to $74.12.
+2026-11-19 10:53:41 PT,control,5m,1795114200,78.2,skip,ask_band,Down,0.8992,0.1008,0.0350,0.9700,-0.0728,0.00,0.00,74.1035,74.2107,"Down costs 97c, outside this variant's 0.05-0.95 price range."
+2026-11-19 10:54:01 PT,control,5m,1795114200,58.2,skip,edge_small,Down,0.9230,0.0770,0.1000,0.9100,0.0073,0.00,0.00,74.1225,74.2107,Down at 91c: my estimate 92% beats price+fee by only 0.7c (need 3c).
+2026-11-19 10:54:21 PT,control,5m,1795114200,38.2,skip,edge_small,Down,0.7791,0.2209,0.0550,0.9500,-0.1742,0.00,0.00,74.1875,74.2107,Down at 95c: my estimate 78% beats price+fee by only -17.4c (need 3c).
+2026-11-19 10:56:01 PT,control,5m,1795114500,238.2,skip,edge_small,Down,0.7921,0.2079,0.1500,0.8500,-0.0669,0.00,0.00,74.0115,74.1553,Down at 85c: my estimate 79% beats price+fee by only -6.7c (need 3c).
+2026-11-19 10:56:01 PT,model_lead,5m,1795114500,238.2,skip,ask_band,Down,0.8210,0.2079,0.1500,0.8500,-0.0379,0.00,0.00,74.0115,74.1553,"Down costs 85c, outside this variant's 0.2-0.8 price range."
+2026-11-19 10:56:01 PT,trend_volume,5m,1795114500,238.2,skip,choppy,,,0.2079,0.1500,,,0.00,0.00,74.0115,74.1553,"Choppy: price went back and forth (straightness 0.04, need 0.15)."
+2026-11-19 10:56:01 PT,trend_down,5m,1795114500,238.2,skip,choppy,,,0.2079,0.1500,,,0.00,0.00,74.0115,74.1553,"Choppy: price went back and forth (straightness 0.04, need 0.12)."
+2026-11-19 10:56:01 PT,breakdown,5m,1795114500,238.2,skip,no_breakout,,,0.2079,0.1500,,,0.00,0.00,74.0115,74.1553,Price is inside its 30-min range ($74.00-$74.61); no breakout.
