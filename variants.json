@@ -138,16 +138,15 @@
     "round_up_to_min_shares": true,
     "max_round_up_usd": 4
   },
-  "hourly_trend_down": {
+  "down_ride": {
     "enabled": true,
-    "desc": "HOURLY TREND, DOWN ONLY (1h market): bets Down on the hourly SOL market when the last 4 hours (5-min candles) trend down with lower highs/lows and volume backing it, SOL is already 0.10% below the hour's price-to-beat, 15-40 min left, asks 30-80c, cap $5 incl. fee ($4 above 70c)",
+    "desc": "DOWN RIDE (5m): bets Down only when SOL is ALREADY at least 0.05% (~3.7c) below the price-to-beat with 90-180s left (2-3.5 min into the window), where research found 'already down at 2-3 min' finished down ~73-80% of the time (Coinbase 1m, 14 days). Model+market blend, 3c edge after the ask and fee, asks 50-90c, flat-ish $2 +$1 per 2c extra edge, cap $5 incl. fee. Does NOT bet just because the last window was down.",
+    "timeframe": "5m",
+    "mode": "model",
     "sides": [
       "Down"
     ],
-    "mode": "trend",
     "blend_market": 0.5,
-    "trend_bonus": 0.03,
-    "min_mom15_z": 0.0,
     "min_edge": 0.03,
     "edge_per_dollar": 0.02,
     "base_stake": 2,
@@ -155,26 +154,24 @@
     "cap_incl_fee": true,
     "high_ask": 0.7,
     "high_ask_max_stake": 4,
+    "min_ask": 0.5,
+    "max_ask": 0.9,
+    "min_secs_left": 90,
+    "max_secs_left": 180,
+    "min_lead_pct": 0.05,
     "round_up_to_min_shares": true,
-    "max_round_up_usd": 4,
-    "timeframe": "1h",
-    "min_efficiency": 0.12,
-    "max_ann_vol": 2.0,
-    "min_mom_z": 1.0,
-    "min_vol_ratio": 1.1,
-    "min_ask": 0.3,
-    "max_ask": 0.8,
-    "min_secs_left": 900,
-    "max_secs_left": 2400,
-    "min_lead_pct": 0.1
+    "max_round_up_usd": 4
   },
-  "hourly_trend": {
+  "hourly_ride_down": {
     "enabled": true,
-    "desc": "HOURLY TREND, BOTH WAYS (1h market): same filters as hourly_trend_down but may bet Up or Down with the 4-hour trend. Shows whether the down-only bias helps",
-    "mode": "trend",
+    "desc": "HOURLY RIDE DOWN (1h market): bets Down mid-hour only if SOL is ALREADY at least 0.10% below the hour's price-to-beat with 30-45 min left (15-30 min in), and the broader 4-hour trend is net down (used only as a filter). Model+market blend, 3c edge after ask and fee, asks 40-85c, $2 +$1 per 2c extra edge, cap $5 incl. fee. Hourly spreads are 3-6c, so it fills at the ask.",
+    "timeframe": "1h",
+    "mode": "model",
+    "sides": [
+      "Down"
+    ],
+    "require_trend_sign": "down",
     "blend_market": 0.5,
-    "trend_bonus": 0.03,
-    "min_mom15_z": 0.0,
     "min_edge": 0.03,
     "edge_per_dollar": 0.02,
     "base_stake": 2,
@@ -182,17 +179,12 @@
     "cap_incl_fee": true,
     "high_ask": 0.7,
     "high_ask_max_stake": 4,
+    "min_ask": 0.4,
+    "max_ask": 0.85,
+    "min_secs_left": 1800,
+    "max_secs_left": 2700,
+    "min_lead_pct": 0.1,
     "round_up_to_min_shares": true,
-    "max_round_up_usd": 4,
-    "timeframe": "1h",
-    "min_efficiency": 0.12,
-    "max_ann_vol": 2.0,
-    "min_mom_z": 1.0,
-    "min_vol_ratio": 1.1,
-    "min_ask": 0.3,
-    "max_ask": 0.8,
-    "min_secs_left": 900,
-    "max_secs_left": 2400,
-    "min_lead_pct": 0.1
+    "max_round_up_usd": 4
   }
 }

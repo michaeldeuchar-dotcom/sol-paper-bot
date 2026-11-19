@@ -236,6 +236,13 @@ def decide(name: str, v: dict, *, p_model: float, books: dict, secs_left: float,
     allowed = v.get("sides")
     if allowed and side not in allowed:
         return D("skip", "side_not_allowed", f"This variant only bets {'/'.join(allowed)}; the signal says {side}.", side=side, est_prob=est, **base)
+    rts = v.get("require_trend_sign")   # "down": only when the broader trend read is net down (used as a filter, not a trigger)
+    if rts:
+        if not trend or not trend.get("ok"):
+            return D("skip", "trend_na", "No trend reading for the broader-trend filter.", side=side, est_prob=est, **base)
+        r = float(trend["ret60_pct"])
+        if (rts == "down" and r >= 0) or (rts == "up" and r <= 0):
+            return D("skip", "trend_filter", f"Broader trend filter: the {trend.get('span_label')} move is {r:+.2f}%, not {rts}.", side=side, est_prob=est, **base)
     mlp = float(v.get("min_lead_pct", 0) or 0)   # minimum lead, in percent of price (0.05 = 0.05% = about 3.7c when SOL is $74)
     if mlp > 0 and spot and ptb:
         gap = (spot - ptb) if side == "Up" else (ptb - spot)   # how far SOL is past the price to beat, in our direction
