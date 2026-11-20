@@ -295,6 +295,137 @@ def meta_decide(state, name, v, variants, *, p_up, books, secs_left, trend, spot
     return D("skip", "leader_idle", f"Leader {leader} ({scores[leader][0]*100:+.1f}% over 3h) isn't betting this round" + (": " + "; ".join(notes) if notes else "") + ".")
 
 
+# ---------------------------------------------------------------- auto_pick variant (follows whichever 5m variant is hottest)
+AUTO_SWITCH_CSV = config.DATA_DIR / "auto_pick_switches.csv"
+_auto_cache: dict = {}
+
+
+def _settled_stats(name: str, since_ts):
+    """(net_pnl, n_bets, dollars_bet) over bets SETTLED at/after since_ts (None = since start)."""
+    pnl = cost = 0.0
+    k = 0
+    for r in store.read_trades(name):
+        if r.get("status") != "resolved" or not r.get("pnl_usd"):
+            continue
+        if since_ts is not None:
+            try:
+                t = datetime.strptime(r.get("ts_resolve_utc") or r["ts_fill_utc"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).timestamp()
+            except (ValueError, KeyError):
+                continue
+            if t < since_ts:
+                continue
+        pnl += float(r["pnl_usd"]); cost += float(r.get("total_cost_usd") or 0); k += 1
+    return pnl, k, cost
+
+
+def auto_scores(variants: dict, me: str, tf: str, now: float, hours: float, min_bets: int):
+    """Rank same-timeframe variants (never itself) by net fake P&L on settled bets. Returns (scope, scores) where scores is
+    {variant: (net_pnl, n_bets, dollars_bet)} for EVERY candidate; 'scope' is '6h' normally, or 'since_start' when nobody qualifies in the window."""
+    cands = [n for n, v in variants.items() if n != me and v.get("timeframe", "5m") == tf and v.get("mode") != "auto_pick"]
+    def qual(sc):
+        return {n: s for n, s in sc.items() if s[1] >= min_bets and s[0] > 0}
+    win = {n: _settled_stats(n, now - hours * 3600) for n in cands}
+    if qual(win):
+        return f"{hours:g}h", win
+    return "since_start", {n: _settled_stats(n, None) for n in cands}
+
+
+def auto_update_leader(state: dict, scores: dict, scope: str, ws: int, min_bets: int, now: float) -> dict:
+    """One check per round. First leader, or a replacement when the old leader stops qualifying, is taken at once; a switch
+    between two qualifying variants needs the new one to be best at 2 straight checks (no flapping on one lucky bet)."""
+    a = state.setdefault("auto_pick", {"leader": None, "cand": None, "cand_n": 0, "last_check_ws": 0, "history": []})
+    if a.get("last_check_ws") == ws:
+        return a
+    a["last_check_ws"] = ws
+    pos = {n: s for n, s in scores.items() if s[1] >= min_bets and s[0] > 0}
+    ranked = sorted(pos, key=lambda n: -pos[n][0])
+    table = ", ".join(f"{n} {s[0]:+.2f}/{s[1]}" for n, s in sorted(scores.items(), key=lambda t: -t[1][0]))
+    a["scope"], a["scores"] = scope, {n: [round(s[0], 2), s[1]] for n, s in scores.items()}
+    old = a.get("leader")
+    new, why = old, ""
+    if not ranked:
+        new, why = None, "nobody has 5+ settled bets and positive P&L"
+        a.update(cand=None, cand_n=0)
+    elif old not in pos:
+        new, why = ranked[0], ("first pick" if old is None else f"{old} no longer qualifies")
+        a.update(cand=None, cand_n=0)
+    elif ranked[0] == old:
+        a.update(cand=None, cand_n=0)
+    else:
+        best = ranked[0]
+        a["cand_n"] = int(a.get("cand_n", 0)) + 1 if a.get("cand") == best else 1
+        a["cand"] = best
+        if a["cand_n"] >= 2:
+            new, why = best, "best at 2 straight checks"
+            a.update(cand=None, cand_n=0)
+    log.info("AUTO_PICK CHECK scope=%s leader=%s | net P&L/bets: %s", scope, new, table)
+    if new != old:
+        ru = [n for n in ranked if n != new][:1]
+        msg = (f"AUTO_PICK SWITCH {old} -> {new} ({why}); scope={scope}; "
+               + (f"{new} {pos[new][0]:+.2f} on {pos[new][1]} bets" if new else "sitting out")
+               + (f"; runner-up {ru[0]} {pos[ru[0]][0]:+.2f} on {pos[ru[0]][1]} bets" if ru else "") + f"; all: {table}")
+        log.info(msg)
+        a["history"] = (a.get("history", []) + [{"ts_pt": store.iso_pt(now), "from": old, "to": new, "scope": scope, "why": why, "scores": a["scores"]}])[-50:]
+        try:
+            AUTO_SWITCH_CSV.parent.mkdir(parents=True, exist_ok=True)
+            fresh = not AUTO_SWITCH_CSV.exists()
+            with AUTO_SWITCH_CSV.open("a", newline="") as f:
+                import csv as _csv
+                w = _csv.writer(f)
+                if fresh:
+                    w.writerow(["ts_pt", "from", "to", "scope", "why", "scores_net_pnl_bets"])
+                w.writerow([store.iso_pt(now), old or "", new or "", scope, why, table])
+        except Exception:  # noqa: BLE001
+            log.exception("could not write auto_pick switch csv")
+        a["leader"] = new
+    return a
+
+
+def auto_decide(state, name, v, variants, *, p_up, books, secs_left, trend, spot, ptb, ws, now):
+    D = lambda action, reason, english, **kw: strategy.Decision(name, action, reason, english, model_p_up=p_up, **kw)  # noqa: E731
+    tf = v.get("timeframe", "5m")
+    min_bets = int(v.get("min_bets", 5))
+    c = _auto_cache.get(name)
+    if c and c[0] == ws:  # scores only change when bets settle; compute once per round, not every 2s
+        scope, scores = c[1], c[2]
+    else:
+        scope, scores = auto_scores(variants, name, tf, now, float(v.get("score_hours", 6)), min_bets)
+        _auto_cache[name] = (ws, scope, scores)
+    a = auto_update_leader(state, scores, scope, ws, min_bets, now)
+    pos = {n: s for n, s in scores.items() if s[1] >= min_bets and s[0] > 0}
+    leader = a.get("leader")
+    if not pos or not leader or leader not in pos:
+        return D("skip", "nobody_qualifies", f"No {tf} variant has {min_bets}+ settled bets and positive P&L ({scope}); sitting out.")
+    order = [leader] + sorted((n for n in pos if n != leader), key=lambda n: -pos[n][0])   # highest-ranked qualifier that wants to bet wins; one side per window
+    notes = []
+    for rank, src in enumerate(order, 1):
+        pnl, nb, _cost = pos[src]
+        sv = variants.get(src)
+        if sv is None:
+            continue
+        dl = strategy.decide(src, sv, p_model=p_up, books=books, secs_left=secs_left, trend=trend, spot=spot, ptb=ptb)   # ptb passed so lead gates really apply
+        if dl.action != "buy":
+            notes.append(f"#{rank} {src} not betting ({dl.reason})"); continue
+        v2 = dict(v, mode="favorite", base_stake=float(v.get("base_stake", 3)))
+        st, sh, note = strategy.size_bet(v2, 0.0, dl.ask)
+        if sh + 1e-9 < config.MIN_ORDER_SHARES:
+            notes.append(f"#{rank} {src}: ${st:.2f} only buys {sh:.2f} shares (min 5)"); continue
+        book = books.get(dl.side)
+        if book is None or book.best_ask is None or book.best_ask_size + 1e-9 < sh:
+            notes.append(f"#{rank} {src}: book too thin"); continue
+        ask = float(book.best_ask); fps = strategy.fee_per_share(ask)
+        notional, fee = sh * ask, sh * fps
+        cap = min(float(v.get("max_loss_per_bet", 5)), config.STAKE_HARD_MAX_USD)
+        if notional + fee > cap + 1e-9:
+            notes.append(f"#{rank} {src}: cost ${notional+fee:.2f} over ${cap:.0f} cap"); continue
+        eng = (f"Following #{rank} {src} ({scope} net ${pnl:+.2f} on {nb} settled bets; leader is {leader}): it would buy {dl.side} -- {dl.english} "
+               f"auto_pick size ${notional:.2f}+${fee:.2f} fee (flat $3 target incl. fee)." + (f" ({note})" if note else ""))
+        return strategy.Decision(name, "buy", "ok", eng, side=dl.side, est_prob=dl.est_prob, model_p_up=p_up, market_p_up=dl.market_p_up,
+                                 ask=ask, ask_size=book.best_ask_size, fee_ps=fps, edge=dl.edge, stake=st, shares=sh, notional=notional,
+                                 fee=fee, total_cost=notional + fee, extra={"copied": src, "note": note})
+    return D("skip", "leader_idle", f"Leader {leader} ({scope} {pos[leader][0]:+.2f}) and the other qualifiers aren't betting this round" + (": " + "; ".join(notes) if notes else "") + ".")
+
+
 # ---------------------------------------------------------------- resolution
 _last_resolve = [0.0]
 
@@ -457,6 +588,8 @@ def cycle_tf(state: dict, tf: str, variants: dict, spot: float, now: float) -> N
                     cd = cooldown_blocks(state, name, v, ws, now)
                     if cd:
                         d = strategy.Decision(name, "skip", "cooldown", cd + f" (would have copied {d.extra.get('copied')} {d.side})", side=d.side, model_p_up=p_up)
+            elif v.get("mode") == "auto_pick":
+                d = auto_decide(state, name, v, variants, p_up=p_up, books=books, secs_left=secs_left, trend=trend, spot=spot, ptb=ptb, ws=ws, now=now)
             elif v.get("mode") in SCALE_MODES and _scale_open(name):
                 d = strategy.decide_scale_add(name, v, spos[name], books=books, secs_left=secs_left, spot=spot, ptb=ptb, now=now)
                 d.model_p_up = p_up
@@ -500,6 +633,9 @@ def heartbeat(state: dict, cycles: int, force_log: bool, last_log: list) -> None
     now = time.time()
     hb = {"ts": now, "ts_pt": store.iso_pt(now), "pid": os.getpid(), "cycles": cycles, "open": len(state.get("open", [])),
           "last_spot": _samples[-1][1] if _samples else None, "stats": dict(_stats)}
+    ap_ = state.get("auto_pick")
+    if ap_:
+        hb["auto_pick"] = {"leader": ap_.get("leader"), "scope": ap_.get("scope"), "last_check_ws": ap_.get("last_check_ws"), "scores": ap_.get("scores")}
     tmp = config.HEARTBEAT_PATH.with_suffix(".tmp")
     tmp.write_text(json.dumps(hb))
     os.replace(tmp, config.HEARTBEAT_PATH)

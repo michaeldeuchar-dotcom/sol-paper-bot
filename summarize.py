@@ -74,6 +74,30 @@ def describe(label, s):
     return "\n".join(out)
 
 
+def pick_line(run):
+    """What auto_pick is following right now (from the bot's saved state)."""
+    try:
+        import json
+        st = json.load(open(os.path.join(ROOT, "data", run, "state.json"))).get("auto_pick")
+        if not st:
+            return "  Current pick: not decided yet."
+        sc = st.get("scores") or {}
+        pos = sorted(((n, v) for n, v in sc.items() if v[1] >= 5 and v[0] > 0), key=lambda t: -t[1][0])
+        lead = st.get("leader")
+        txt = f"  Current pick: {lead or 'nobody (sitting out)'}" if lead else "  Current pick: nobody qualifies, sitting out"
+        if lead and lead in sc:
+            txt += f" ({st.get('scope')} net {money(sc[lead][0])} on {sc[lead][1]} bets)"
+        ru = [t for t in pos if t[0] != lead][:1]
+        if ru:
+            txt += f"; runner-up {ru[0][0]} ({money(ru[0][1][0])} on {ru[0][1][1]} bets)"
+        hist = st.get("history") or []
+        if hist:
+            txt += f". Last switch {hist[-1]['ts_pt']}: {hist[-1]['from']} -> {hist[-1]['to']}; {len(hist)} switch(es) logged"
+        return txt + "."
+    except Exception:
+        return "  Current pick: unknown (no state file)."
+
+
 def load(args):
     if args.file:
         files = {os.path.basename(args.file): args.file}
@@ -134,6 +158,8 @@ def main():
         today = [r for r in rows if (fill_time(r) or now) >= today0]
         s_all, s_today = stats(rows), stats(today)
         print(f"{name}:")
+        if name == "auto_pick":
+            print(pick_line(a.run))
         print(describe("Today", s_today))
         print(describe("Since start" if not since else "In this period", s_all))
         print()
@@ -145,8 +171,9 @@ def main():
             wr = f"{s['wins'] / s['settled']:.0%}" if s["settled"] else "-"
             roi = f"{s['pnl'] / s['staked']:+.0%}" if s["staked"] else "-"
             print(f"  {name:<19}{s['n']:>5}{s['wins']:>5}{s['losses']:>5}{s['open']:>5}{wr:>6}{s['staked']:>9.2f}{money(s['pnl']):>10}{roi:>8}")
-        total = sum(s["pnl"] for _, s in table)
-        print(f"\n  All variants together: {money(total)} (each variant is a separate fake account).")
+        total = sum(s["pnl"] for n, s in table if n != "auto_pick")
+        print(f"\n  All variants together: {money(total)} (each variant is a separate fake account"
+              + ("; auto_pick left out because it only copies the others' bets" if any(n == "auto_pick" for n, _ in table) else "") + ").")
 
 
 if __name__ == "__main__":
