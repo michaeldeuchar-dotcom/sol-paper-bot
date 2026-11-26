@@ -576,7 +576,7 @@
     "desc": "SUM ARB (5m, fake money): every poll, if best ask Up + best ask Down + both taker fees is at least 2c under $1/share and both best asks can fill, buy the same number of shares of each side (total under $10) for a locked profit at settlement. Logs every combined-cost-under-$1 print even when the book is too thin to fill. Likely rare. Pauses if this variant is down $20 on the PT day. Not used by auto_pick or bankroll_20."
   },
   "price_lag_15m": {
-    "enabled": true,
+    "enabled": false,
     "mode": "price_lag",
     "timeframe": "15m",
     "exclude_from_rank": true,
@@ -597,7 +597,7 @@
     "daily_loss_limit": 20,
     "min_edge_for_size": 0,
     "circuit_breaker": "watch",
-    "desc": "PRICE LAG (15m, fake money): compare live public USD exchange prices (Coinbase, Kraken, Bitstamp, plus Gemini when it agrees) to the window's Chainlink TWAP60 strike \u2014 official Polymarket priceToBeat / previous window's finalPrice when published, otherwise the bot's usual proxy \u2014 and bet only when the Polymarket best ask is cheaper than the model probability by at least 5c after the taker fee, AND spot has just jumped at least $0.025 in the last 8 seconds (the book hasn't caught up yet). Any time in the 15-minute window, including the first three minutes. About $5 including the fee, 5-share minimum, $10 cap. Pauses if this variant is down $20 on the PT day. Not used by auto_pick or bankroll_20."
+    "desc": "DISABLED Nov 26 12:55 PM PT (no new bets; open bets still settle; history kept): 30 settled, -$23.51 fake (-16% of money bet), 37% win rate. PRICE LAG (15m, fake money): compare live public USD exchange prices (Coinbase, Kraken, Bitstamp, plus Gemini when it agrees) to the window's Chainlink TWAP60 strike \u2014 official Polymarket priceToBeat / previous window's finalPrice when published, otherwise the bot's usual proxy \u2014 and bet only when the Polymarket best ask is cheaper than the model probability by at least 5c after the taker fee, AND spot has just jumped at least $0.025 in the last 8 seconds (the book hasn't caught up yet). Any time in the 15-minute window, including the first three minutes. About $5 including the fee, 5-share minimum, $10 cap. Pauses if this variant is down $20 on the PT day. Not used by auto_pick or bankroll_20."
   },
   "sum_arb_15m": {
     "enabled": true,
