@@ -375,3 +375,11 @@ Routine tune-up. One variant disabled (no new bets; open bets still settle; hist
 Run-to-date week-2 numbers at 8:50 AM PT (settled pairs): ab_hedge_1h is the last A/B hedge still on, and it is losing in all four fleets — BTC 107 -$0.45, SOL 108 -$22.07, ETH 109 -$12.84, XRP 105 -$1.05; 429 settled, -$36.41 combined (about -2% of money bet, i.e. it doesn't beat fees). The 5m/15m and v2 hedges were already cut for the same reason.
 
 auto_pick / bankroll_20 unchanged (ab_hedge was never in their ranking). $10 per-bet cap unchanged. Paper mode only; data/week1 untouched.
+
+# 2026-11-26 (12:55 PM PT) — cut price_lag_15m on SOL (fake money)
+
+Routine tune-up. One variant disabled (no new bets; open bets still settle; history kept in data/week2). Nothing else changed.
+
+Run-to-date week-2: price_lag_15m 30 settled, 11 won / 19 lost, -$23.51 on $149.96 bet (-16%). It also loses on BTC (45 settled, -$31.93, cut at the same time) but wins on ETH (+$30.54 on 74) and XRP (+$1.86 on 49), so it stays on there.
+
+auto_pick / bankroll_20 unchanged (price_lag was never in their ranking). $10 per-bet cap unchanged. Paper mode only; data/week1 untouched.
