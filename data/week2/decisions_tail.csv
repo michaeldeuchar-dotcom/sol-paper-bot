@@ -1,508 +1,4 @@
 ts_pt,variant,timeframe,window_start,secs_left,action,reason,side,est_prob,model_p_up,market_p_up,ask,edge,stake,shares,spot,price_to_beat,english
-2026-11-27 09:50:48 PT,sum_arb_1h,1h,1795798800,551.2,skip,no_arb,,,0.0115,,0.0150,,0.00,0.00,71.4450,72.0090,Up 1.5c + Down 99.9c + fees = 101.51c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:50:48 PT,sum_arb_5m,5m,1795801800,251.2,skip,no_arb,,,0.5779,,0.6100,,0.00,0.00,71.4450,71.4134,Up 61.0c + Down 41.0c + fees = 105.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:50:58 PT,down_ride_15m,15m,1795801500,541.2,skip,timing,,,0.6340,0.6150,,,0.00,0.00,71.4650,71.3808,Only bets with 270-540s left; 541s left now.
-2026-11-27 09:51:00 PT,max_profit,15m,1795801500,539.2,skip,no_signal,,,0.6343,,,,0.00,0.00,71.4650,71.3808,No source strategy has a clear entry in this 15m window (539s left). Cash $13.05.
-2026-11-27 09:51:00 PT,control,5m,1795801800,239.2,skip,hour_filter,,,0.6292,,,,0.00,0.00,71.4650,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:51:00 PT,model_lead,5m,1795801800,239.2,skip,edge_small,Up,0.6171,0.6292,0.6050,0.6100,-0.0095,0.00,0.00,71.4650,71.4134,Up at 61c: my estimate 62% beats price+fee by only -1.0c (need 4c).
-2026-11-27 09:51:00 PT,trend_volume,5m,1795801800,239.2,skip,edge_small,Down,0.4129,0.6292,0.6050,0.4000,-0.0039,0.00,0.00,71.4650,71.4134,Down at 40c: my estimate 41% beats price+fee by only -0.4c (need 3c).
-2026-11-27 09:51:00 PT,trend_down,5m,1795801800,239.2,skip,edge_small,Down,0.4129,0.6292,0.6050,0.4000,-0.0039,0.00,0.00,71.4650,71.4134,Down at 40c: my estimate 41% beats price+fee by only -0.4c (need 3c).
-2026-11-27 09:51:00 PT,breakdown,5m,1795801800,239.2,skip,no_breakout,,,0.6292,0.6050,,,0.00,0.00,71.4650,71.4134,Price is inside its 30-min range ($71.27-$72.09); no breakout.
-2026-11-27 09:51:00 PT,auto_pick,5m,1795801800,239.2,skip,hour_filter,,,0.6292,,,,0.00,0.00,71.4650,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:51:00 PT,bankroll_20,5m,1795801800,239.2,skip,hour_filter,,,0.6292,,,,0.00,0.00,71.4650,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:51:06 PT,trend_volume,5m,1795801800,233.2,buy,ok,Down,0.3579,0.6493,0.6950,0.3100,0.0329,1.55,5.00,71.4725,71.4134,"Buying $1.55 of Down: I put Down at 36%, price+fee is 32.5c, edge 3.3c; trend Down: 60m -1.03% (z -1.2), 15m -0.53%, lower highs/lows, volume 1.17x on trend candles, straightness 0.19. (rounded $1.00 up to $1.55 for the 5-share minimum)"
-2026-11-27 09:51:06 PT,trend_down,5m,1795801800,233.2,buy,ok,Down,0.3579,0.6493,0.6950,0.3100,0.0329,1.55,5.00,71.4725,71.4134,"Buying $1.55 of Down: I put Down at 36%, price+fee is 32.5c, edge 3.3c; trend Down: 60m -1.03% (z -1.2), 15m -0.53%, lower highs/lows, volume 1.17x on trend candles, straightness 0.19. (rounded $1.00 up to $1.55 for the 5-share minimum)"
-2026-11-27 09:51:08 PT,sum_arb_15m,15m,1795801500,531.2,skip,no_arb,,,0.6544,,0.7100,,0.00,0.00,71.4775,71.3808,Up 71.0c + Down 30.0c + fees = 103.91c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:08 PT,sum_arb_1h,1h,1795798800,531.2,skip,no_arb,,,0.0145,,0.0150,,0.00,0.00,71.4775,72.0090,Up 1.5c + Down 99.9c + fees = 101.51c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:08 PT,sum_arb_5m,5m,1795801800,231.2,skip,no_arb,,,0.6620,,0.7000,,0.00,0.00,71.4775,71.4134,Up 70.0c + Down 32.0c + fees = 104.99c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:18 PT,down_ride_15m,15m,1795801500,521.2,skip,side_not_allowed,Up,0.6275,0.6051,0.6500,,,0.00,0.00,71.4450,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:51:20 PT,max_profit,15m,1795801500,519.2,skip,no_signal,,,0.6053,,,,0.00,0.00,71.4450,71.3808,No source strategy has a clear entry in this 15m window (519s left). Cash $13.05.
-2026-11-27 09:51:20 PT,control,5m,1795801800,219.2,skip,hour_filter,,,0.5842,,,,0.00,0.00,71.4450,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:51:20 PT,model_lead,5m,1795801800,219.2,skip,lead_small,Up,0.6246,0.5842,0.6650,,,0.00,0.00,71.4450,71.4134,Lead gate: SOL is $+0.032 past the price to beat our way (Up); need at least $0.036 (0.05% of price).
-2026-11-27 09:51:20 PT,breakdown,5m,1795801800,219.2,skip,no_breakout,,,0.5842,0.6650,,,0.00,0.00,71.4450,71.4134,Price is inside its 30-min range ($71.27-$72.09); no breakout.
-2026-11-27 09:51:20 PT,auto_pick,5m,1795801800,219.2,skip,hour_filter,,,0.5842,,,,0.00,0.00,71.4450,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:51:20 PT,bankroll_20,5m,1795801800,219.2,skip,hour_filter,,,0.5842,,,,0.00,0.00,71.4450,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:51:28 PT,sum_arb_15m,15m,1795801500,511.2,skip,no_arb,,,0.6727,,0.7500,,0.00,0.00,71.4875,71.3808,Up 75.0c + Down 26.0c + fees = 103.66c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:28 PT,sum_arb_1h,1h,1795798800,511.2,skip,no_arb,,,0.0144,,0.0160,,0.00,0.00,71.4875,72.0090,Up 1.6c + Down 99.9c + fees = 101.62c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:28 PT,sum_arb_5m,5m,1795801800,211.2,skip,no_arb,,,0.6947,,0.7600,,0.00,0.00,71.4875,71.4134,Up 76.0c + Down 25.0c + fees = 103.59c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:38 PT,down_ride_15m,15m,1795801500,501.2,skip,side_not_allowed,Up,0.6901,0.6652,0.7150,,,0.00,0.00,71.4815,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:51:40 PT,max_profit,15m,1795801500,499.2,skip,no_signal,,,0.6655,,,,0.00,0.00,71.4815,71.3808,No source strategy has a clear entry in this 15m window (499s left). Cash $13.05.
-2026-11-27 09:51:40 PT,control,5m,1795801800,199.2,skip,hour_filter,,,0.6861,,,,0.00,0.00,71.4815,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:51:40 PT,model_lead,5m,1795801800,199.2,skip,edge_small,Up,0.7005,0.6861,0.7150,0.7200,-0.0336,0.00,0.00,71.4815,71.4134,Up at 72c: my estimate 70% beats price+fee by only -3.4c (need 4c).
-2026-11-27 09:51:40 PT,breakdown,5m,1795801800,199.2,skip,no_breakout,,,0.6861,0.7150,,,0.00,0.00,71.4815,71.4134,Price is inside its 30-min range ($71.27-$72.09); no breakout.
-2026-11-27 09:51:40 PT,auto_pick,5m,1795801800,199.2,skip,hour_filter,,,0.6861,,,,0.00,0.00,71.4815,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:51:40 PT,bankroll_20,5m,1795801800,199.2,skip,hour_filter,,,0.6861,,,,0.00,0.00,71.4815,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:51:48 PT,sum_arb_15m,15m,1795801500,491.2,skip,no_arb,,,0.6567,,0.7400,,0.00,0.00,71.4750,71.3808,Up 74.0c + Down 28.0c + fees = 104.76c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:48 PT,sum_arb_1h,1h,1795798800,491.2,skip,no_arb,,,0.0110,,0.0160,,0.00,0.00,71.4750,72.0090,Up 1.6c + Down 99.9c + fees = 101.62c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:48 PT,sum_arb_5m,5m,1795801800,191.2,skip,no_arb,,,0.6735,,0.7300,,0.00,0.00,71.4750,71.4134,Up 73.0c + Down 28.0c + fees = 103.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:51:58 PT,down_ride_15m,15m,1795801500,481.2,skip,side_not_allowed,Up,0.6768,0.6686,0.6850,,,0.00,0.00,71.4815,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:52:00 PT,max_profit,15m,1795801500,479.2,skip,no_signal,,,0.6768,,,,0.00,0.00,71.4865,71.3808,No source strategy has a clear entry in this 15m window (479s left). Cash $13.05.
-2026-11-27 09:52:00 PT,control,5m,1795801800,179.2,skip,hour_filter,,,0.7105,,,,0.00,0.00,71.4865,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:52:00 PT,model_lead,5m,1795801800,179.2,skip,timing,,,0.7105,0.7350,,,0.00,0.00,71.4865,71.4134,Only bets with 180-240s left; 179s left now.
-2026-11-27 09:52:00 PT,breakdown,5m,1795801800,179.2,skip,no_breakout,,,0.7105,0.7350,,,0.00,0.00,71.4865,71.4134,Price is inside its 30-min range ($71.27-$72.09); no breakout.
-2026-11-27 09:52:00 PT,auto_pick,5m,1795801800,179.2,skip,hour_filter,,,0.7105,,,,0.00,0.00,71.4865,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:52:00 PT,bankroll_20,5m,1795801800,179.2,skip,hour_filter,,,0.7105,,,,0.00,0.00,71.4865,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:52:08 PT,sum_arb_15m,15m,1795801500,471.2,skip,no_arb,,,0.6600,,0.7400,,0.00,0.00,71.4750,71.3808,Up 74.0c + Down 28.0c + fees = 104.76c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:08 PT,sum_arb_1h,1h,1795798800,471.2,skip,no_arb,,,0.0096,,0.0090,,0.00,0.00,71.4750,72.0090,Up 0.9c + Down 99.9c + fees = 100.87c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:08 PT,sum_arb_5m,5m,1795801800,171.2,skip,no_arb,,,0.6847,,0.7500,,0.00,0.00,71.4750,71.4134,Up 75.0c + Down 26.0c + fees = 103.66c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:18 PT,down_ride_15m,15m,1795801500,461.2,skip,side_not_allowed,Up,0.7359,0.6818,0.7900,,,0.00,0.00,71.4875,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:52:20 PT,max_profit,15m,1795801500,459.2,skip,no_signal,,,0.6901,,,,0.00,0.00,71.4925,71.3808,No source strategy has a clear entry in this 15m window (459s left). Cash $13.05.
-2026-11-27 09:52:20 PT,control,5m,1795801800,159.2,skip,hour_filter,,,0.7409,,,,0.00,0.00,71.4925,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:52:20 PT,breakdown,5m,1795801800,159.2,skip,no_breakout,,,0.7409,0.8350,,,0.00,0.00,71.4925,71.4134,Price is inside its 30-min range ($71.27-$72.09); no breakout.
-2026-11-27 09:52:20 PT,auto_pick,5m,1795801800,159.2,skip,hour_filter,,,0.7409,,,,0.00,0.00,71.4925,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:52:20 PT,bankroll_20,5m,1795801800,159.2,skip,hour_filter,,,0.7409,,,,0.00,0.00,71.4925,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:52:28 PT,sum_arb_15m,15m,1795801500,451.2,skip,no_arb,,,0.7149,,0.8500,,0.00,0.00,71.5075,71.3808,Up 85.0c + Down 18.0c + fees = 104.93c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:28 PT,sum_arb_1h,1h,1795798800,451.2,skip,no_arb,,,0.0123,,0.0170,,0.00,0.00,71.5075,72.0090,Up 1.7c + Down 99.9c + fees = 101.72c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:28 PT,sum_arb_5m,5m,1795801800,151.2,skip,no_arb,,,0.7864,,0.9000,,0.00,0.00,71.5075,71.4134,Up 90.0c + Down 12.0c + fees = 103.37c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:38 PT,down_ride_15m,15m,1795801500,441.2,skip,side_not_allowed,Up,0.7899,0.7249,0.8550,,,0.00,0.00,71.5125,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:52:40 PT,max_profit,15m,1795801500,439.2,skip,no_signal,,,0.7254,,,,0.00,0.00,71.5125,71.3808,No source strategy has a clear entry in this 15m window (439s left). Cash $13.05.
-2026-11-27 09:52:40 PT,control,5m,1795801800,139.2,skip,hour_filter,,,0.8108,,,,0.00,0.00,71.5125,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:52:40 PT,breakdown,5m,1795801800,139.2,skip,no_breakout,,,0.8108,0.9350,,,0.00,0.00,71.5125,71.4134,Price is inside its 30-min range ($71.27-$72.09); no breakout.
-2026-11-27 09:52:40 PT,auto_pick,5m,1795801800,139.2,skip,hour_filter,,,0.8108,,,,0.00,0.00,71.5125,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:52:40 PT,bankroll_20,5m,1795801800,139.2,skip,hour_filter,,,0.8108,,,,0.00,0.00,71.5125,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:52:48 PT,sum_arb_15m,15m,1795801500,431.2,skip,no_arb,,,0.7421,,0.8600,,0.00,0.00,71.5225,71.3808,Up 86.0c + Down 17.0c + fees = 104.83c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:48 PT,sum_arb_1h,1h,1795798800,431.2,skip,no_arb,,,0.0128,,0.0170,,0.00,0.00,71.5225,72.0090,Up 1.7c + Down 99.9c + fees = 101.72c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:48 PT,sum_arb_5m,5m,1795801800,131.2,skip,no_arb,,,0.8434,,0.9500,,0.00,0.00,71.5225,71.4134,Up 95.0c + Down 7.0c + fees = 102.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:52:58 PT,down_ride_15m,15m,1795801500,421.2,skip,side_not_allowed,Up,0.8097,0.7594,0.8600,,,0.00,0.00,71.5325,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:53:00 PT,max_profit,15m,1795801500,419.2,skip,no_signal,,,0.7600,,,,0.00,0.00,71.5325,71.3808,No source strategy has a clear entry in this 15m window (419s left). Cash $13.05.
-2026-11-27 09:53:00 PT,control,5m,1795801800,119.2,skip,hour_filter,,,0.8800,,,,0.00,0.00,71.5325,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:53:00 PT,breakdown,5m,1795801800,119.2,skip,no_breakout,,,0.8800,0.9750,,,0.00,0.00,71.5325,71.4134,Price is inside its 30-min range ($71.27-$72.09); no breakout.
-2026-11-27 09:53:00 PT,auto_pick,5m,1795801800,119.2,skip,hour_filter,,,0.8800,,,,0.00,0.00,71.5325,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:53:00 PT,bankroll_20,5m,1795801800,119.2,skip,hour_filter,,,0.8800,,,,0.00,0.00,71.5325,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:53:08 PT,sum_arb_15m,15m,1795801500,411.2,skip,no_arb,,,0.8055,,0.8400,,0.00,0.00,71.5640,71.3808,Up 84.0c + Down 18.0c + fees = 103.97c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:53:08 PT,sum_arb_1h,1h,1795798800,411.2,skip,no_arb,,,0.0181,,0.0190,,0.00,0.00,71.5640,72.0090,Up 1.9c + Down 99.9c + fees = 101.94c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:53:08 PT,sum_arb_5m,5m,1795801800,111.2,skip,no_arb,,,0.9405,,0.9500,,0.00,0.00,71.5640,71.4134,Up 95.0c + Down 6.0c + fees = 101.73c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:53:18 PT,down_ride_15m,15m,1795801500,401.2,skip,side_not_allowed,Up,0.8113,0.7725,0.8500,,,0.00,0.00,71.5375,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:53:20 PT,max_profit,15m,1795801500,399.2,skip,no_signal,,,0.7731,,,,0.00,0.00,71.5375,71.3808,No source strategy has a clear entry in this 15m window (399s left). Cash $13.05.
-2026-11-27 09:53:20 PT,control,5m,1795801800,99.2,skip,hour_filter,,,0.9188,,,,0.00,0.00,71.5375,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:53:20 PT,breakdown,5m,1795801800,99.2,skip,no_breakout,,,0.9188,0.9850,,,0.00,0.00,71.5375,71.4134,Price is inside its 30-min range ($71.27-$72.09); no breakout.
-2026-11-27 09:53:20 PT,auto_pick,5m,1795801800,99.2,skip,hour_filter,,,0.9188,,,,0.00,0.00,71.5375,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:53:20 PT,bankroll_20,5m,1795801800,99.2,skip,hour_filter,,,0.9188,,,,0.00,0.00,71.5375,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:53:28 PT,sum_arb_15m,15m,1795801500,391.2,skip,no_arb,,,0.8001,,0.9000,,0.00,0.00,71.5550,71.3808,Up 90.0c + Down 13.0c + fees = 104.42c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:53:28 PT,sum_arb_1h,1h,1795798800,391.2,skip,no_arb,,,0.0141,,0.0180,,0.00,0.00,71.5550,72.0090,Up 1.8c + Down 99.9c + fees = 101.83c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:53:28 PT,sum_arb_5m,5m,1795801800,91.2,skip,no_arb,,,0.9555,,0.9900,,0.00,0.00,71.5550,71.4134,Up 99.0c + Down 3.0c + fees = 102.27c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:53:38 PT,down_ride_15m,15m,1795801500,381.2,skip,side_not_allowed,Up,0.8526,0.8101,0.8950,,,0.00,0.00,71.5600,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:53:40 PT,max_profit,15m,1795801500,379.2,skip,no_signal,,,0.8108,,,,0.00,0.00,71.5600,71.3808,No source strategy has a clear entry in this 15m window (379s left). Cash $13.05.
-2026-11-27 09:53:40 PT,control,5m,1795801800,79.2,skip,hour_filter,,,0.9759,,,,0.00,0.00,71.5600,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:53:40 PT,auto_pick,5m,1795801800,79.2,skip,hour_filter,,,0.9759,,,,0.00,0.00,71.5600,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:53:40 PT,bankroll_20,5m,1795801800,79.2,skip,hour_filter,,,0.9759,,,,0.00,0.00,71.5600,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:53:48 PT,sum_arb_15m,15m,1795801500,371.2,skip,no_arb,,,0.8329,,0.9100,,0.00,0.00,71.5750,71.3808,Up 91.0c + Down 10.0c + fees = 102.20c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:53:48 PT,sum_arb_1h,1h,1795798800,371.2,skip,no_arb,,,0.0154,,0.0180,,0.00,0.00,71.5750,72.0090,Up 1.8c + Down 99.9c + fees = 101.83c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:53:48 PT,sum_arb_5m,5m,1795801800,71.2,skip,no_book,,,0.9917,,,,0.00,0.00,71.5750,71.4134,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:53:58 PT,down_ride_15m,15m,1795801500,361.2,skip,side_not_allowed,Up,0.8888,0.8427,0.9350,,,0.00,0.00,71.5800,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:54:00 PT,max_profit,15m,1795801500,359.2,skip,no_signal,,,0.8434,,,,0.00,0.00,71.5800,71.3808,No source strategy has a clear entry in this 15m window (359s left). Cash $13.05.
-2026-11-27 09:54:00 PT,control,5m,1795801800,59.2,skip,hour_filter,,,0.9986,,,,0.00,0.00,71.5800,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:54:00 PT,auto_pick,5m,1795801800,59.2,skip,hour_filter,,,0.9986,,,,0.00,0.00,71.5800,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:54:00 PT,bankroll_20,5m,1795801800,59.2,skip,hour_filter,,,0.9986,,,,0.00,0.00,71.5800,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:54:08 PT,sum_arb_15m,15m,1795801500,351.2,skip,no_arb,,,0.9091,,0.9800,,0.00,0.00,71.6415,71.3808,Up 98.0c + Down 3.0c + fees = 101.34c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:54:08 PT,sum_arb_1h,1h,1795798800,351.2,skip,no_arb,,,0.0298,,0.0490,,0.00,0.00,71.6415,72.0090,Up 4.9c + Down 98.0c + fees = 103.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:54:08 PT,sum_arb_5m,5m,1795801800,51.2,skip,no_book,,,1.0000,,,,0.00,0.00,71.6415,71.4134,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:54:18 PT,down_ride_15m,15m,1795801500,341.2,skip,side_not_allowed,Up,0.9441,0.9232,0.9650,,,0.00,0.00,71.6550,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:54:20 PT,max_profit,15m,1795801500,339.2,skip,no_signal,,,0.9201,,,,0.00,0.00,71.6500,71.3808,No source strategy has a clear entry in this 15m window (339s left). Cash $13.05.
-2026-11-27 09:54:20 PT,control,5m,1795801800,39.2,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.6500,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:54:20 PT,auto_pick,5m,1795801800,39.2,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.6500,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:54:20 PT,bankroll_20,5m,1795801800,39.2,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.6500,71.4134,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:54:28 PT,sum_arb_15m,15m,1795801500,331.2,skip,no_arb,,,0.9402,,0.9800,,0.00,0.00,71.6750,71.3808,Up 98.0c + Down 3.0c + fees = 101.34c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:54:28 PT,sum_arb_1h,1h,1795798800,331.2,skip,no_arb,,,0.0386,,0.0380,,0.00,0.00,71.6750,72.0090,Up 3.8c + Down 97.0c + fees = 101.26c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:54:28 PT,sum_arb_5m,5m,1795801800,31.2,skip,no_book,,,1.0000,,,,0.00,0.00,71.6750,71.4134,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:54:38 PT,down_ride_15m,15m,1795801500,321.2,skip,side_not_allowed,Up,0.9556,0.9463,0.9650,,,0.00,0.00,71.6800,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:54:40 PT,max_profit,15m,1795801500,319.2,skip,no_signal,,,0.9411,,,,0.00,0.00,71.6705,71.3808,No source strategy has a clear entry in this 15m window (319s left). Cash $13.05.
-2026-11-27 09:54:48 PT,sum_arb_15m,15m,1795801500,311.2,skip,no_arb,,,0.9428,,0.9800,,0.00,0.00,71.6700,71.3808,Up 98.0c + Down 3.0c + fees = 101.34c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:54:48 PT,sum_arb_1h,1h,1795798800,311.2,skip,no_arb,,,0.0321,,0.0290,,0.00,0.00,71.6700,72.0090,Up 2.9c + Down 98.0c + fees = 101.23c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:54:48 PT,sum_arb_5m,5m,1795801800,11.2,skip,no_book,,,1.0000,,,,0.00,0.00,71.6700,71.4134,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:54:58 PT,down_ride_15m,15m,1795801500,301.2,skip,side_not_allowed,Up,0.9537,0.9374,0.9700,,,0.00,0.00,71.6565,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:55:00 PT,max_profit,15m,1795801500,299.2,skip,no_signal,,,0.9329,,,,0.00,0.00,71.6490,71.3808,No source strategy has a clear entry in this 15m window (299s left). Cash $13.05.
-2026-11-27 09:55:08 PT,sum_arb_15m,15m,1795801500,291.2,skip,no_arb,,,0.9376,,0.9600,,0.00,0.00,71.6515,71.3808,Up 96.0c + Down 5.0c + fees = 101.60c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:55:08 PT,sum_arb_1h,1h,1795798800,291.2,skip,no_arb,,,0.0213,,0.0200,,0.00,0.00,71.6515,72.0090,Up 2.0c + Down 99.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:55:08 PT,sum_arb_5m,5m,1795802100,291.2,skip,no_arb,,,0.4813,,0.3700,,0.00,0.00,71.6515,71.6598,Up 37.0c + Down 65.0c + fees = 105.22c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:55:18 PT,down_ride_15m,15m,1795801500,281.2,skip,side_not_allowed,Up,0.9189,0.9027,0.9350,,,0.00,0.00,71.6050,71.3808,This variant only bets Down; the signal says Up.
-2026-11-27 09:55:20 PT,max_profit,15m,1795801500,279.2,skip,no_signal,,,0.9036,,,,0.00,0.00,71.6050,71.3808,No source strategy has a clear entry in this 15m window (279s left). Cash $13.05.
-2026-11-27 09:55:28 PT,sum_arb_15m,15m,1795801500,271.2,skip,no_arb,,,0.8844,,0.9400,,0.00,0.00,71.5835,71.3808,Up 94.0c + Down 7.0c + fees = 101.85c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:55:28 PT,sum_arb_1h,1h,1795798800,271.2,skip,no_arb,,,0.0060,,0.0070,,0.00,0.00,71.5835,72.0090,Up 0.7c + Down 99.9c + fees = 100.66c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:55:28 PT,sum_arb_5m,5m,1795802100,271.2,skip,no_arb,,,0.3261,,0.3000,,0.00,0.00,71.5835,71.6598,Up 30.0c + Down 71.0c + fees = 103.91c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:55:40 PT,max_profit,15m,1795801500,259.2,skip,no_signal,,,0.8847,,,,0.00,0.00,71.5785,71.3808,No source strategy has a clear entry in this 15m window (259s left). Cash $13.05.
-2026-11-27 09:55:48 PT,sum_arb_15m,15m,1795801500,251.2,skip,no_arb,,,0.8962,,0.9800,,0.00,0.00,71.5850,71.3808,Up 98.0c + Down 4.0c + fees = 102.41c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:55:48 PT,sum_arb_1h,1h,1795798800,251.2,skip,no_arb,,,0.0044,,0.0040,,0.00,0.00,71.5850,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:55:48 PT,sum_arb_5m,5m,1795802100,251.2,skip,no_arb,,,0.3222,,0.2900,,0.00,0.00,71.5850,71.6598,Up 29.0c + Down 74.0c + fees = 105.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:56:00 PT,max_profit,15m,1795801500,239.2,skip,no_signal,,,0.9085,,,,0.00,0.00,71.5905,71.3808,No source strategy has a clear entry in this 15m window (239s left). Cash $13.05.
-2026-11-27 09:56:00 PT,control,5m,1795802100,239.2,skip,hour_filter,,,0.3300,,,,0.00,0.00,71.5905,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:56:00 PT,model_lead,5m,1795802100,239.2,skip,edge_small,Down,0.6900,0.3300,0.2900,0.7200,-0.0441,0.00,0.00,71.5905,71.6598,Down at 72c: my estimate 69% beats price+fee by only -4.4c (need 4c).
-2026-11-27 09:56:00 PT,trend_volume,5m,1795802100,239.2,skip,momentum_conflict,,,0.3300,0.2900,,,0.00,0.00,71.5905,71.6598,The 60m trend says Down but the last 15m (+0.18%) disagree.
-2026-11-27 09:56:00 PT,trend_down,5m,1795802100,239.2,skip,momentum_conflict,,,0.3300,0.2900,,,0.00,0.00,71.5905,71.6598,The 60m trend says Down but the last 15m (+0.18%) disagree.
-2026-11-27 09:56:00 PT,breakdown,5m,1795802100,239.2,skip,no_breakout,,,0.3300,0.2900,,,0.00,0.00,71.5905,71.6598,Price is inside its 30-min range ($71.27-$72.03); no breakout.
-2026-11-27 09:56:00 PT,auto_pick,5m,1795802100,239.2,skip,hour_filter,,,0.3300,,,,0.00,0.00,71.5905,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:56:00 PT,bankroll_20,5m,1795802100,239.2,skip,hour_filter,,,0.3300,,,,0.00,0.00,71.5905,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:56:08 PT,sum_arb_15m,15m,1795801500,231.2,skip,no_arb,,,0.9272,,0.9900,,0.00,0.00,71.6055,71.3808,Up 99.0c + Down 3.0c + fees = 102.27c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:56:08 PT,sum_arb_1h,1h,1795798800,231.2,skip,no_arb,,,0.0045,,0.0030,,0.00,0.00,71.6055,72.0090,Up 0.3c + Down 99.9c + fees = 100.23c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:56:08 PT,sum_arb_5m,5m,1795802100,231.2,skip,no_arb,,,0.3626,,0.3700,,0.00,0.00,71.6055,71.6598,Up 37.0c + Down 63.0c + fees = 103.26c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:56:20 PT,max_profit,15m,1795801500,219.1,skip,no_signal,,,0.9612,,,,0.00,0.00,71.6450,71.3808,No source strategy has a clear entry in this 15m window (219s left). Cash $13.05.
-2026-11-27 09:56:20 PT,control,5m,1795802100,219.1,skip,hour_filter,,,0.4607,,,,0.00,0.00,71.6450,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:56:20 PT,model_lead,5m,1795802100,219.1,skip,lead_small,Down,0.5471,0.4607,0.4450,,,0.00,0.00,71.6450,71.6598,Lead gate: SOL is $+0.015 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 09:56:20 PT,trend_volume,5m,1795802100,219.1,skip,momentum_conflict,,,0.4607,0.4450,,,0.00,0.00,71.6450,71.6598,The 60m trend says Down but the last 15m (+0.18%) disagree.
-2026-11-27 09:56:20 PT,trend_down,5m,1795802100,219.1,skip,momentum_conflict,,,0.4607,0.4450,,,0.00,0.00,71.6450,71.6598,The 60m trend says Down but the last 15m (+0.18%) disagree.
-2026-11-27 09:56:20 PT,breakdown,5m,1795802100,219.1,skip,no_breakout,,,0.4607,0.4450,,,0.00,0.00,71.6450,71.6598,Price is inside its 30-min range ($71.27-$72.03); no breakout.
-2026-11-27 09:56:20 PT,auto_pick,5m,1795802100,219.1,skip,hour_filter,,,0.4607,,,,0.00,0.00,71.6450,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:56:20 PT,bankroll_20,5m,1795802100,219.1,skip,hour_filter,,,0.4607,,,,0.00,0.00,71.6450,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:56:28 PT,sum_arb_15m,15m,1795801500,211.1,skip,no_book,,,0.9643,,,,0.00,0.00,71.6450,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:56:28 PT,sum_arb_1h,1h,1795798800,211.1,skip,no_arb,,,0.0065,,0.0030,,0.00,0.00,71.6450,72.0090,Up 0.3c + Down 99.9c + fees = 100.23c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:56:28 PT,sum_arb_5m,5m,1795802100,211.1,skip,no_arb,,,0.4598,,0.4800,,0.00,0.00,71.6450,71.6598,Up 48.0c + Down 54.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:56:40 PT,max_profit,15m,1795801500,199.1,skip,no_signal,,,0.9705,,,,0.00,0.00,71.6480,71.3808,No source strategy has a clear entry in this 15m window (199s left). Cash $13.05.
-2026-11-27 09:56:40 PT,control,5m,1795802100,199.1,skip,hour_filter,,,0.4655,,,,0.00,0.00,71.6480,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:56:40 PT,model_lead,5m,1795802100,199.1,skip,lead_small,Down,0.5798,0.4655,0.3750,,,0.00,0.00,71.6480,71.6598,Lead gate: SOL is $+0.012 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 09:56:40 PT,trend_volume,5m,1795802100,199.1,skip,choppy,,,0.4655,0.3750,,,0.00,0.00,71.6480,71.6598,"Choppy: price went back and forth (straightness 0.15, need 0.15)."
-2026-11-27 09:56:40 PT,trend_down,5m,1795802100,199.1,skip,momentum_conflict,,,0.4655,0.3750,,,0.00,0.00,71.6480,71.6598,The 60m trend says Down but the last 15m (+0.32%) disagree.
-2026-11-27 09:56:40 PT,breakdown,5m,1795802100,199.1,skip,no_breakout,,,0.4655,0.3750,,,0.00,0.00,71.6480,71.6598,Price is inside its 30-min range ($71.27-$72.02); no breakout.
-2026-11-27 09:56:40 PT,auto_pick,5m,1795802100,199.1,skip,hour_filter,,,0.4655,,,,0.00,0.00,71.6480,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:56:40 PT,bankroll_20,5m,1795802100,199.1,skip,hour_filter,,,0.4655,,,,0.00,0.00,71.6480,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:56:48 PT,sum_arb_15m,15m,1795801500,191.1,skip,no_book,,,0.9761,,,,0.00,0.00,71.6430,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:56:48 PT,sum_arb_1h,1h,1795798800,191.1,skip,no_arb,,,0.0029,,0.0030,,0.00,0.00,71.6430,72.0090,Up 0.3c + Down 99.9c + fees = 100.23c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:56:48 PT,sum_arb_5m,5m,1795802100,191.1,skip,no_arb,,,0.4496,,0.5500,,0.00,0.00,71.6430,71.6598,Up 55.0c + Down 47.0c + fees = 105.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:57:00 PT,max_profit,15m,1795801500,179.1,skip,no_signal,,,0.9902,,,,0.00,0.00,71.6780,71.3808,No source strategy has a clear entry in this 15m window (179s left). Cash $13.05.
-2026-11-27 09:57:00 PT,control,5m,1795802100,179.1,skip,hour_filter,,,0.5569,,,,0.00,0.00,71.6780,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:57:00 PT,model_lead,5m,1795802100,179.1,skip,timing,,,0.5569,0.5450,,,0.00,0.00,71.6780,71.6598,Only bets with 180-240s left; 179s left now.
-2026-11-27 09:57:00 PT,trend_volume,5m,1795802100,179.1,skip,choppy,,,0.5569,0.5450,,,0.00,0.00,71.6780,71.6598,"Choppy: price went back and forth (straightness 0.15, need 0.15)."
-2026-11-27 09:57:00 PT,trend_down,5m,1795802100,179.1,skip,momentum_conflict,,,0.5569,0.5450,,,0.00,0.00,71.6780,71.6598,The 60m trend says Down but the last 15m (+0.32%) disagree.
-2026-11-27 09:57:00 PT,breakdown,5m,1795802100,179.1,skip,no_breakout,,,0.5569,0.5450,,,0.00,0.00,71.6780,71.6598,Price is inside its 30-min range ($71.27-$72.02); no breakout.
-2026-11-27 09:57:00 PT,auto_pick,5m,1795802100,179.1,skip,hour_filter,,,0.5569,,,,0.00,0.00,71.6780,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:57:00 PT,bankroll_20,5m,1795802100,179.1,skip,hour_filter,,,0.5569,,,,0.00,0.00,71.6780,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:57:08 PT,sum_arb_15m,15m,1795801500,171.1,skip,no_book,,,0.9943,,,,0.00,0.00,71.6940,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:57:08 PT,sum_arb_1h,1h,1795798800,171.1,skip,no_arb,,,0.0055,,0.0030,,0.00,0.00,71.6940,72.0090,Up 0.3c + Down 99.9c + fees = 100.23c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:57:08 PT,sum_arb_5m,5m,1795802100,171.1,skip,no_arb,,,0.6088,,0.6600,,0.00,0.00,71.6940,71.6598,Up 66.0c + Down 36.0c + fees = 105.18c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:57:20 PT,max_profit,15m,1795801500,159.1,skip,no_signal,,,0.9965,,,,0.00,0.00,71.7000,71.3808,No source strategy has a clear entry in this 15m window (159s left). Cash $13.05.
-2026-11-27 09:57:20 PT,control,5m,1795802100,159.1,skip,hour_filter,,,0.6330,,,,0.00,0.00,71.7000,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:57:20 PT,trend_volume,5m,1795802100,159.1,skip,choppy,,,0.6330,0.6000,,,0.00,0.00,71.7000,71.6598,"Choppy: price went back and forth (straightness 0.15, need 0.15)."
-2026-11-27 09:57:20 PT,trend_down,5m,1795802100,159.1,skip,momentum_conflict,,,0.6330,0.6000,,,0.00,0.00,71.7000,71.6598,The 60m trend says Down but the last 15m (+0.32%) disagree.
-2026-11-27 09:57:20 PT,breakdown,5m,1795802100,159.1,skip,no_breakout,,,0.6330,0.6000,,,0.00,0.00,71.7000,71.6598,Price is inside its 30-min range ($71.27-$72.02); no breakout.
-2026-11-27 09:57:20 PT,auto_pick,5m,1795802100,159.1,skip,hour_filter,,,0.6330,,,,0.00,0.00,71.7000,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:57:20 PT,bankroll_20,5m,1795802100,159.1,skip,hour_filter,,,0.6330,,,,0.00,0.00,71.7000,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:57:28 PT,sum_arb_15m,15m,1795801500,151.1,skip,no_book,,,0.9977,,,,0.00,0.00,71.7050,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:57:28 PT,sum_arb_1h,1h,1795798800,151.1,skip,no_arb,,,0.0040,,0.0040,,0.00,0.00,71.7050,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:57:28 PT,sum_arb_5m,5m,1795802100,151.1,skip,no_arb,,,0.6534,,0.6800,,0.00,0.00,71.7050,71.6598,Up 68.0c + Down 34.0c + fees = 105.09c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:57:40 PT,max_profit,15m,1795801500,139.1,skip,no_signal,,,0.9992,,,,0.00,0.00,71.7230,71.3808,No source strategy has a clear entry in this 15m window (139s left). Cash $13.05.
-2026-11-27 09:57:40 PT,control,5m,1795802100,139.1,skip,hour_filter,,,0.7196,,,,0.00,0.00,71.7230,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:57:40 PT,trend_volume,5m,1795802100,139.1,skip,choppy,,,0.7196,0.8350,,,0.00,0.00,71.7230,71.6598,"Choppy: price went back and forth (straightness 0.10, need 0.15)."
-2026-11-27 09:57:40 PT,trend_down,5m,1795802100,139.1,skip,choppy,,,0.7196,0.8350,,,0.00,0.00,71.7230,71.6598,"Choppy: price went back and forth (straightness 0.10, need 0.12)."
-2026-11-27 09:57:40 PT,breakdown,5m,1795802100,139.1,skip,no_breakout,,,0.7196,0.8350,,,0.00,0.00,71.7230,71.6598,Price is inside its 30-min range ($71.27-$71.99); no breakout.
-2026-11-27 09:57:40 PT,auto_pick,5m,1795802100,139.1,skip,hour_filter,,,0.7196,,,,0.00,0.00,71.7230,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:57:40 PT,bankroll_20,5m,1795802100,139.1,skip,hour_filter,,,0.7196,,,,0.00,0.00,71.7230,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:57:48 PT,sum_arb_15m,15m,1795801500,131.1,skip,no_book,,,0.9997,,,,0.00,0.00,71.7380,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:57:48 PT,sum_arb_1h,1h,1795798800,131.1,skip,no_arb,,,0.0048,,0.0040,,0.00,0.00,71.7380,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:57:48 PT,sum_arb_5m,5m,1795802100,131.1,skip,no_arb,,,0.7729,,0.8300,,0.00,0.00,71.7380,71.6598,Up 83.0c + Down 19.0c + fees = 104.06c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:58:00 PT,max_profit,15m,1795801500,119.1,skip,no_signal,,,0.9999,,,,0.00,0.00,71.7525,71.3808,No source strategy has a clear entry in this 15m window (119s left). Cash $13.05.
-2026-11-27 09:58:00 PT,control,5m,1795802100,119.1,skip,hour_filter,,,0.8280,,,,0.00,0.00,71.7525,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:58:00 PT,trend_volume,5m,1795802100,119.1,skip,choppy,,,0.8280,0.9450,,,0.00,0.00,71.7525,71.6598,"Choppy: price went back and forth (straightness 0.10, need 0.15)."
-2026-11-27 09:58:00 PT,trend_down,5m,1795802100,119.1,skip,choppy,,,0.8280,0.9450,,,0.00,0.00,71.7525,71.6598,"Choppy: price went back and forth (straightness 0.10, need 0.12)."
-2026-11-27 09:58:00 PT,breakdown,5m,1795802100,119.1,skip,no_breakout,,,0.8280,0.9450,,,0.00,0.00,71.7525,71.6598,Price is inside its 30-min range ($71.27-$71.99); no breakout.
-2026-11-27 09:58:00 PT,auto_pick,5m,1795802100,119.1,skip,hour_filter,,,0.8280,,,,0.00,0.00,71.7525,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:58:00 PT,bankroll_20,5m,1795802100,119.1,skip,hour_filter,,,0.8280,,,,0.00,0.00,71.7525,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:58:08 PT,sum_arb_15m,15m,1795801500,111.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.7625,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:58:08 PT,sum_arb_1h,1h,1795798800,111.1,skip,no_arb,,,0.0041,,0.0040,,0.00,0.00,71.7625,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:58:08 PT,sum_arb_5m,5m,1795802100,111.1,skip,no_arb,,,0.8644,,0.9400,,0.00,0.00,71.7625,71.6598,Up 94.0c + Down 8.0c + fees = 102.91c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:58:20 PT,max_profit,15m,1795801500,99.1,skip,no_signal,,,1.0000,,,,0.00,0.00,71.7650,71.3808,No source strategy has a clear entry in this 15m window (99s left). Cash $13.05.
-2026-11-27 09:58:20 PT,control,5m,1795802100,99.1,skip,hour_filter,,,0.8896,,,,0.00,0.00,71.7650,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:58:20 PT,trend_volume,5m,1795802100,99.1,skip,choppy,,,0.8896,0.9450,,,0.00,0.00,71.7650,71.6598,"Choppy: price went back and forth (straightness 0.10, need 0.15)."
-2026-11-27 09:58:20 PT,trend_down,5m,1795802100,99.1,skip,choppy,,,0.8896,0.9450,,,0.00,0.00,71.7650,71.6598,"Choppy: price went back and forth (straightness 0.10, need 0.12)."
-2026-11-27 09:58:20 PT,breakdown,5m,1795802100,99.1,skip,no_breakout,,,0.8896,0.9450,,,0.00,0.00,71.7650,71.6598,Price is inside its 30-min range ($71.27-$71.99); no breakout.
-2026-11-27 09:58:20 PT,auto_pick,5m,1795802100,99.1,skip,hour_filter,,,0.8896,,,,0.00,0.00,71.7650,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:58:20 PT,bankroll_20,5m,1795802100,99.1,skip,hour_filter,,,0.8896,,,,0.00,0.00,71.7650,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:58:28 PT,sum_arb_15m,15m,1795801500,91.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.7600,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:58:28 PT,sum_arb_1h,1h,1795798800,91.1,skip,no_arb,,,0.0010,,0.0040,,0.00,0.00,71.7600,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:58:28 PT,sum_arb_5m,5m,1795802100,91.1,skip,no_arb,,,0.8932,,0.9700,,0.00,0.00,71.7600,71.6598,Up 97.0c + Down 4.0c + fees = 101.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:58:40 PT,max_profit,15m,1795801500,79.1,skip,no_signal,,,1.0000,,,,0.00,0.00,71.7830,71.3808,No source strategy has a clear entry in this 15m window (79s left). Cash $13.05.
-2026-11-27 09:58:40 PT,control,5m,1795802100,79.1,skip,hour_filter,,,0.9555,,,,0.00,0.00,71.7830,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:58:40 PT,auto_pick,5m,1795802100,79.1,skip,hour_filter,,,0.9555,,,,0.00,0.00,71.7830,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:58:40 PT,bankroll_20,5m,1795802100,79.1,skip,hour_filter,,,0.9555,,,,0.00,0.00,71.7830,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:58:48 PT,sum_arb_15m,15m,1795801500,71.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.8075,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:58:48 PT,sum_arb_1h,1h,1795798800,71.1,skip,no_arb,,,0.0011,,0.0040,,0.00,0.00,71.8075,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:58:48 PT,sum_arb_5m,5m,1795802100,71.1,skip,no_book,,,0.9875,,,,0.00,0.00,71.8075,71.6598,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:59:00 PT,max_profit,15m,1795801500,59.1,skip,no_signal,,,1.0000,,,,0.00,0.00,71.8550,71.3808,No source strategy has a clear entry in this 15m window (59s left). Cash $13.05.
-2026-11-27 09:59:00 PT,control,5m,1795802100,59.1,skip,hour_filter,,,0.9998,,,,0.00,0.00,71.8550,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:59:00 PT,auto_pick,5m,1795802100,59.1,skip,hour_filter,,,0.9998,,,,0.00,0.00,71.8550,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:59:00 PT,bankroll_20,5m,1795802100,59.1,skip,hour_filter,,,0.9998,,,,0.00,0.00,71.8550,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:59:08 PT,sum_arb_15m,15m,1795801500,51.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.8850,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:59:08 PT,sum_arb_1h,1h,1795798800,51.1,skip,no_arb,,,0.0037,,0.0040,,0.00,0.00,71.8850,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:59:08 PT,sum_arb_5m,5m,1795802100,51.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.8850,71.6598,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:59:20 PT,max_profit,15m,1795801500,39.1,skip,no_signal,,,1.0000,,,,0.00,0.00,71.9185,71.3808,No source strategy has a clear entry in this 15m window (39s left). Cash $13.05.
-2026-11-27 09:59:20 PT,control,5m,1795802100,39.1,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9185,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 21 past trades in the 9:00 PT hour net $-1.40.
-2026-11-27 09:59:20 PT,auto_pick,5m,1795802100,39.1,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9185,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 20 past trades in the 9:00 PT hour net $-1.87.
-2026-11-27 09:59:20 PT,bankroll_20,5m,1795802100,39.1,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9185,71.6598,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 9:00 PT hour net $-5.36.
-2026-11-27 09:59:28 PT,sum_arb_15m,15m,1795801500,31.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.9240,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:59:28 PT,sum_arb_1h,1h,1795798800,31.1,skip,no_arb,,,0.0020,,0.0040,,0.00,0.00,71.9240,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:59:28 PT,sum_arb_5m,5m,1795802100,31.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.9240,71.6598,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:59:40 PT,max_profit,15m,1795801500,19.1,skip,no_signal,,,1.0000,,,,0.00,0.00,71.8880,71.3808,No source strategy has a clear entry in this 15m window (19s left). Cash $13.05.
-2026-11-27 09:59:48 PT,sum_arb_15m,15m,1795801500,11.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.9325,71.3808,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 09:59:48 PT,sum_arb_1h,1h,1795798800,11.1,skip,no_arb,,,0.0003,,0.0040,,0.00,0.00,71.9325,72.0090,Up 0.4c + Down 99.9c + fees = 100.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 09:59:48 PT,sum_arb_5m,5m,1795802100,11.1,skip,no_book,,,1.0000,,,,0.00,0.00,71.9325,71.6598,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:00:08 PT,sum_arb_15m,15m,1795802400,891.1,skip,no_arb,,,0.4583,,0.3700,,0.00,0.00,71.8820,71.9146,Up 37.0c + Down 65.0c + fees = 105.22c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:00:08 PT,sum_arb_1h,1h,1795802400,3591.1,skip,no_arb,,,0.4795,,0.5000,,0.00,0.00,71.8820,71.9146,Up 50.0c + Down 57.0c + fees = 110.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:00:08 PT,sum_arb_5m,5m,1795802400,291.1,skip,no_arb,,,0.4244,,0.2700,,0.00,0.00,71.8820,71.9146,Up 27.0c + Down 74.0c + fees = 103.73c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:00:28 PT,sum_arb_15m,15m,1795802400,871.1,skip,no_arb,,,0.5134,,0.5100,,0.00,0.00,71.9250,71.9146,Up 51.0c + Down 51.0c + fees = 105.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:00:28 PT,sum_arb_1h,1h,1795802400,3571.1,skip,no_arb,,,0.5065,,0.5400,,0.00,0.00,71.9250,71.9146,Up 54.0c + Down 47.0c + fees = 104.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:00:28 PT,sum_arb_5m,5m,1795802400,271.1,skip,no_arb,,,0.5251,,0.5200,,0.00,0.00,71.9250,71.9146,Up 52.0c + Down 50.0c + fees = 105.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:00:48 PT,sum_arb_15m,15m,1795802400,851.1,skip,no_arb,,,0.4972,,0.4900,,0.00,0.00,71.9125,71.9146,Up 49.0c + Down 53.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:00:48 PT,sum_arb_1h,1h,1795802400,3551.1,skip,no_arb,,,0.4987,,0.5100,,0.00,0.00,71.9125,71.9146,Up 51.0c + Down 51.0c + fees = 105.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:00:48 PT,sum_arb_5m,5m,1795802400,251.1,skip,no_arb,,,0.4946,,0.4900,,0.00,0.00,71.9125,71.9146,Up 49.0c + Down 52.0c + fees = 104.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:00 PT,control,5m,1795802400,239.1,skip,hour_filter,,,0.5073,,,,0.00,0.00,71.9175,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:01:00 PT,model_lead,5m,1795802400,239.1,skip,lead_small,Down,0.5163,0.5073,0.4600,,,0.00,0.00,71.9175,71.9146,Lead gate: SOL is $-0.003 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 10:01:00 PT,trend_volume,5m,1795802400,239.1,skip,choppy,,,0.5073,0.4600,,,0.00,0.00,71.9175,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.15)."
-2026-11-27 10:01:00 PT,trend_down,5m,1795802400,239.1,skip,choppy,,,0.5073,0.4600,,,0.00,0.00,71.9175,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.12)."
-2026-11-27 10:01:00 PT,breakdown,5m,1795802400,239.1,skip,failed_breakout,,,0.5073,0.4600,,,0.00,0.00,71.9175,71.9146,Broke above $71.98 but price fell back to $71.92.
-2026-11-27 10:01:00 PT,max_profit,5m,1795802400,239.1,skip,no_signal,,,0.5073,,,,0.00,0.00,71.9175,71.9146,No source strategy has a clear entry in this 5m window (239s left). Cash $13.05.
-2026-11-27 10:01:00 PT,auto_pick,5m,1795802400,239.1,skip,hour_filter,,,0.5073,,,,0.00,0.00,71.9175,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:01:00 PT,bankroll_20,5m,1795802400,239.1,skip,hour_filter,,,0.5073,,,,0.00,0.00,71.9175,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:01:08 PT,sum_arb_15m,15m,1795802400,831.1,skip,no_arb,,,0.5233,,0.5100,,0.00,0.00,71.9325,71.9146,Up 51.0c + Down 51.0c + fees = 105.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:08 PT,sum_arb_1h,1h,1795802400,3531.1,skip,no_arb,,,0.5112,,0.5400,,0.00,0.00,71.9325,71.9146,Up 54.0c + Down 50.0c + fees = 107.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:08 PT,sum_arb_5m,5m,1795802400,231.1,skip,no_arb,,,0.5468,,0.5300,,0.00,0.00,71.9325,71.9146,Up 53.0c + Down 49.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:20 PT,control,5m,1795802400,219.1,skip,hour_filter,,,0.5750,,,,0.00,0.00,71.9425,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:01:20 PT,model_lead,5m,1795802400,219.1,skip,lead_small,Up,0.5750,0.5750,0.5750,,,0.00,0.00,71.9425,71.9146,Lead gate: SOL is $+0.028 past the price to beat our way (Up); need at least $0.036 (0.05% of price).
-2026-11-27 10:01:20 PT,trend_volume,5m,1795802400,219.1,skip,choppy,,,0.5750,0.5750,,,0.00,0.00,71.9425,71.9146,"Choppy: price went back and forth (straightness 0.00, need 0.15)."
-2026-11-27 10:01:20 PT,trend_down,5m,1795802400,219.1,skip,choppy,,,0.5750,0.5750,,,0.00,0.00,71.9425,71.9146,"Choppy: price went back and forth (straightness 0.00, need 0.12)."
-2026-11-27 10:01:20 PT,breakdown,5m,1795802400,219.1,skip,side_not_allowed,Up,0.6050,0.5750,0.5750,,,0.00,0.00,71.9425,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:01:20 PT,max_profit,5m,1795802400,219.1,skip,no_signal,,,0.5750,,,,0.00,0.00,71.9425,71.9146,No source strategy has a clear entry in this 5m window (219s left). Cash $13.05.
-2026-11-27 10:01:20 PT,auto_pick,5m,1795802400,219.1,skip,hour_filter,,,0.5750,,,,0.00,0.00,71.9425,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:01:20 PT,bankroll_20,5m,1795802400,219.1,skip,hour_filter,,,0.5750,,,,0.00,0.00,71.9425,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:01:28 PT,sum_arb_15m,15m,1795802400,811.1,skip,no_arb,,,0.5774,,0.6300,,0.00,0.00,71.9735,71.9146,Up 63.0c + Down 39.0c + fees = 105.30c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:28 PT,sum_arb_1h,1h,1795802400,3511.1,skip,no_arb,,,0.5368,,0.6100,,0.00,0.00,71.9735,71.9146,Up 61.0c + Down 43.0c + fees = 107.38c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:28 PT,sum_arb_5m,5m,1795802400,211.1,skip,no_arb,,,0.6584,,0.7300,,0.00,0.00,71.9735,71.9146,Up 73.0c + Down 28.0c + fees = 103.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:40 PT,control,5m,1795802400,199.1,skip,hour_filter,,,0.7382,,,,0.00,0.00,72.0035,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:01:40 PT,model_lead,5m,1795802400,199.1,skip,edge_small,Up,0.7466,0.7382,0.7550,0.7600,-0.0262,0.00,0.00,72.0035,71.9146,Up at 76c: my estimate 75% beats price+fee by only -2.6c (need 4c).
-2026-11-27 10:01:40 PT,trend_volume,5m,1795802400,199.1,skip,choppy,,,0.7382,0.7550,,,0.00,0.00,72.0035,71.9146,"Choppy: price went back and forth (straightness 0.00, need 0.15)."
-2026-11-27 10:01:40 PT,trend_down,5m,1795802400,199.1,skip,choppy,,,0.7382,0.7550,,,0.00,0.00,72.0035,71.9146,"Choppy: price went back and forth (straightness 0.00, need 0.12)."
-2026-11-27 10:01:40 PT,breakdown,5m,1795802400,199.1,skip,side_not_allowed,Up,0.7766,0.7382,0.7550,,,0.00,0.00,72.0035,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:01:40 PT,max_profit,5m,1795802400,199.1,skip,no_signal,,,0.7382,,,,0.00,0.00,72.0035,71.9146,No source strategy has a clear entry in this 5m window (199s left). Cash $13.05.
-2026-11-27 10:01:40 PT,auto_pick,5m,1795802400,199.1,skip,hour_filter,,,0.7382,,,,0.00,0.00,72.0035,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:01:40 PT,bankroll_20,5m,1795802400,199.1,skip,hour_filter,,,0.7382,,,,0.00,0.00,72.0035,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:01:48 PT,sum_arb_15m,15m,1795802400,791.1,skip,no_arb,,,0.5586,,0.5800,,0.00,0.00,71.9585,71.9146,Up 58.0c + Down 45.0c + fees = 106.44c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:48 PT,sum_arb_1h,1h,1795802400,3491.1,skip,no_arb,,,0.5275,,0.5700,,0.00,0.00,71.9585,71.9146,Up 57.0c + Down 46.0c + fees = 106.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:01:48 PT,sum_arb_5m,5m,1795802400,191.1,skip,no_arb,,,0.6266,,0.6800,,0.00,0.00,71.9585,71.9146,Up 68.0c + Down 35.0c + fees = 106.12c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:00 PT,control,5m,1795802400,179.1,skip,hour_filter,,,0.7333,,,,0.00,0.00,71.9960,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:02:00 PT,model_lead,5m,1795802400,179.1,skip,timing,,,0.7333,0.7450,,,0.00,0.00,71.9960,71.9146,Only bets with 180-240s left; 179s left now.
-2026-11-27 10:02:00 PT,trend_volume,5m,1795802400,179.1,skip,choppy,,,0.7333,0.7450,,,0.00,0.00,71.9960,71.9146,"Choppy: price went back and forth (straightness 0.00, need 0.15)."
-2026-11-27 10:02:00 PT,trend_down,5m,1795802400,179.1,skip,choppy,,,0.7333,0.7450,,,0.00,0.00,71.9960,71.9146,"Choppy: price went back and forth (straightness 0.00, need 0.12)."
-2026-11-27 10:02:00 PT,breakdown,5m,1795802400,179.1,skip,side_not_allowed,Up,0.7691,0.7333,0.7450,,,0.00,0.00,71.9960,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:02:00 PT,max_profit,5m,1795802400,179.1,skip,no_signal,,,0.7333,,,,0.00,0.00,71.9960,71.9146,No source strategy has a clear entry in this 5m window (179s left). Cash $13.05.
-2026-11-27 10:02:00 PT,auto_pick,5m,1795802400,179.1,skip,hour_filter,,,0.7333,,,,0.00,0.00,71.9960,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:02:00 PT,bankroll_20,5m,1795802400,179.1,skip,hour_filter,,,0.7333,,,,0.00,0.00,71.9960,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:02:08 PT,sum_arb_15m,15m,1795802400,771.1,skip,no_arb,,,0.5894,,0.5600,,0.00,0.00,71.9810,71.9146,Up 56.0c + Down 45.0c + fees = 104.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:08 PT,sum_arb_1h,1h,1795802400,3471.1,skip,no_arb,,,0.5417,,0.5600,,0.00,0.00,71.9810,71.9146,Up 56.0c + Down 48.0c + fees = 107.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:08 PT,sum_arb_5m,5m,1795802400,171.1,skip,no_arb,,,0.6994,,0.6200,,0.00,0.00,71.9810,71.9146,Up 62.0c + Down 40.0c + fees = 105.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:20 PT,control,5m,1795802400,159.1,skip,hour_filter,,,0.6640,,,,0.00,0.00,71.9660,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:02:20 PT,trend_volume,5m,1795802400,159.1,skip,choppy,,,0.6640,0.5900,,,0.00,0.00,71.9660,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.15)."
-2026-11-27 10:02:20 PT,trend_down,5m,1795802400,159.1,skip,choppy,,,0.6640,0.5900,,,0.00,0.00,71.9660,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.12)."
-2026-11-27 10:02:20 PT,breakdown,5m,1795802400,159.1,skip,no_breakout,,,0.6640,0.5900,,,0.00,0.00,71.9660,71.9146,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:02:20 PT,max_profit,5m,1795802400,159.1,skip,no_signal,,,0.6640,,,,0.00,0.00,71.9660,71.9146,No source strategy has a clear entry in this 5m window (159s left). Cash $13.05.
-2026-11-27 10:02:20 PT,auto_pick,5m,1795802400,159.1,skip,hour_filter,,,0.6640,,,,0.00,0.00,71.9660,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:02:20 PT,bankroll_20,5m,1795802400,159.1,skip,hour_filter,,,0.6640,,,,0.00,0.00,71.9660,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:02:28 PT,sum_arb_15m,15m,1795802400,751.1,skip,no_arb,,,0.5177,,0.5000,,0.00,0.00,71.9275,71.9146,Up 50.0c + Down 51.0c + fees = 104.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:28 PT,sum_arb_1h,1h,1795802400,3451.1,skip,no_arb,,,0.5081,,0.5100,,0.00,0.00,71.9275,71.9146,Up 51.0c + Down 54.0c + fees = 108.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:28 PT,sum_arb_5m,5m,1795802400,151.1,skip,no_arb,,,0.5436,,0.4900,,0.00,0.00,71.9275,71.9146,Up 49.0c + Down 53.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:40 PT,control,5m,1795802400,139.0,skip,hour_filter,,,0.4122,,,,0.00,0.00,71.8900,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:02:40 PT,trend_volume,5m,1795802400,139.0,skip,choppy,,,0.4122,0.3950,,,0.00,0.00,71.8900,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.15)."
-2026-11-27 10:02:40 PT,trend_down,5m,1795802400,139.0,skip,choppy,,,0.4122,0.3950,,,0.00,0.00,71.8900,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.12)."
-2026-11-27 10:02:40 PT,breakdown,5m,1795802400,139.0,skip,no_breakout,,,0.4122,0.3950,,,0.00,0.00,71.8900,71.9146,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:02:40 PT,max_profit,5m,1795802400,139.0,skip,no_signal,,,0.4122,,,,0.00,0.00,71.8900,71.9146,No source strategy has a clear entry in this 5m window (139s left). Cash $13.05.
-2026-11-27 10:02:40 PT,auto_pick,5m,1795802400,139.0,skip,hour_filter,,,0.4122,,,,0.00,0.00,71.8900,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:02:40 PT,bankroll_20,5m,1795802400,139.0,skip,hour_filter,,,0.4122,,,,0.00,0.00,71.8900,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:02:48 PT,sum_arb_15m,15m,1795802400,731.0,skip,no_arb,,,0.4728,,0.5000,,0.00,0.00,71.8950,71.9146,Up 50.0c + Down 55.0c + fees = 108.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:48 PT,sum_arb_1h,1h,1795802400,3431.0,skip,no_arb,,,0.4877,,0.5000,,0.00,0.00,71.8950,71.9146,Up 50.0c + Down 54.0c + fees = 107.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:02:48 PT,sum_arb_5m,5m,1795802400,131.0,skip,no_arb,,,0.4277,,0.4300,,0.00,0.00,71.8950,71.9146,Up 43.0c + Down 62.0c + fees = 108.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:00 PT,max_profit,15m,1795802400,719.0,skip,no_signal,,,0.4261,,,,0.00,0.00,71.8615,71.9146,No source strategy has a clear entry in this 15m window (719s left). Cash $13.05.
-2026-11-27 10:03:00 PT,control,5m,1795802400,119.0,skip,hour_filter,,,0.2994,,,,0.00,0.00,71.8615,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:03:00 PT,trend_volume,5m,1795802400,119.0,skip,choppy,,,0.2994,0.2250,,,0.00,0.00,71.8615,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.15)."
-2026-11-27 10:03:00 PT,trend_down,5m,1795802400,119.0,skip,choppy,,,0.2994,0.2250,,,0.00,0.00,71.8615,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.12)."
-2026-11-27 10:03:00 PT,breakdown,5m,1795802400,119.0,skip,no_breakout,,,0.2994,0.2250,,,0.00,0.00,71.8615,71.9146,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:03:00 PT,auto_pick,5m,1795802400,119.0,skip,hour_filter,,,0.2994,,,,0.00,0.00,71.8615,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:03:00 PT,bankroll_20,5m,1795802400,119.0,skip,hour_filter,,,0.2994,,,,0.00,0.00,71.8615,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:03:08 PT,sum_arb_15m,15m,1795802400,711.0,skip,no_arb,,,0.4119,,0.3500,,0.00,0.00,71.8515,71.9146,Up 35.0c + Down 68.0c + fees = 106.12c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:08 PT,sum_arb_1h,1h,1795802400,3411.0,skip,no_arb,,,0.4603,,0.4200,,0.00,0.00,71.8515,71.9146,Up 42.0c + Down 61.0c + fees = 106.37c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:08 PT,sum_arb_5m,5m,1795802400,111.0,skip,no_arb,,,0.2557,,0.0900,,0.00,0.00,71.8515,71.9146,Up 9.0c + Down 92.0c + fees = 102.09c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:20 PT,max_profit,15m,1795802400,699.0,skip,no_signal,,,0.3600,,,,0.00,0.00,71.8140,71.9146,No source strategy has a clear entry in this 15m window (699s left). Cash $13.05.
-2026-11-27 10:03:20 PT,control,5m,1795802400,99.0,skip,hour_filter,,,0.1275,,,,0.00,0.00,71.8140,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:03:20 PT,trend_volume,5m,1795802400,99.0,skip,choppy,,,0.1275,0.0650,,,0.00,0.00,71.8140,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.15)."
-2026-11-27 10:03:20 PT,trend_down,5m,1795802400,99.0,skip,choppy,,,0.1275,0.0650,,,0.00,0.00,71.8140,71.9146,"Choppy: price went back and forth (straightness 0.01, need 0.12)."
-2026-11-27 10:03:20 PT,breakdown,5m,1795802400,99.0,skip,no_breakout,,,0.1275,0.0650,,,0.00,0.00,71.8140,71.9146,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:03:20 PT,auto_pick,5m,1795802400,99.0,skip,hour_filter,,,0.1275,,,,0.00,0.00,71.8140,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:03:20 PT,bankroll_20,5m,1795802400,99.0,skip,hour_filter,,,0.1275,,,,0.00,0.00,71.8140,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:03:28 PT,sum_arb_15m,15m,1795802400,691.0,skip,no_arb,,,0.3539,,0.3400,,0.00,0.00,71.8100,71.9146,Up 34.0c + Down 68.0c + fees = 105.09c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:28 PT,sum_arb_1h,1h,1795802400,3391.0,skip,no_arb,,,0.4341,,0.4100,,0.00,0.00,71.8100,71.9146,Up 41.0c + Down 61.0c + fees = 105.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:28 PT,sum_arb_5m,5m,1795802400,91.0,skip,no_arb,,,0.1034,,0.0700,,0.00,0.00,71.8100,71.9146,Up 7.0c + Down 94.0c + fees = 101.85c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:40 PT,max_profit,15m,1795802400,679.0,skip,no_signal,,,0.3526,,,,0.00,0.00,71.8100,71.9146,No source strategy has a clear entry in this 15m window (679s left). Cash $13.05.
-2026-11-27 10:03:40 PT,control,5m,1795802400,79.0,skip,hour_filter,,,0.0781,,,,0.00,0.00,71.8100,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:03:40 PT,auto_pick,5m,1795802400,79.0,skip,hour_filter,,,0.0781,,,,0.00,0.00,71.8100,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:03:40 PT,bankroll_20,5m,1795802400,79.0,skip,hour_filter,,,0.0781,,,,0.00,0.00,71.8100,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:03:48 PT,sum_arb_15m,15m,1795802400,671.0,skip,no_arb,,,0.3477,,0.3100,,0.00,0.00,71.8070,71.9146,Up 31.0c + Down 71.0c + fees = 104.94c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:48 PT,sum_arb_1h,1h,1795802400,3371.0,skip,no_arb,,,0.4320,,0.3900,,0.00,0.00,71.8070,71.9146,Up 39.0c + Down 62.0c + fees = 104.31c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:03:48 PT,sum_arb_5m,5m,1795802400,71.0,skip,no_arb,,,0.0543,,0.0200,,0.00,0.00,71.8070,71.9146,Up 2.0c + Down 99.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:04:00 PT,max_profit,15m,1795802400,659.0,skip,no_signal,,,0.3388,,,,0.00,0.00,71.8015,71.9146,No source strategy has a clear entry in this 15m window (659s left). Cash $13.05.
-2026-11-27 10:04:00 PT,control,5m,1795802400,59.0,skip,hour_filter,,,0.0207,,,,0.00,0.00,71.8015,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:04:00 PT,auto_pick,5m,1795802400,59.0,skip,hour_filter,,,0.0207,,,,0.00,0.00,71.8015,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:04:00 PT,bankroll_20,5m,1795802400,59.0,skip,hour_filter,,,0.0207,,,,0.00,0.00,71.8015,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:04:08 PT,sum_arb_15m,15m,1795802400,651.0,skip,no_arb,,,0.3406,,0.3100,,0.00,0.00,71.8035,71.9146,Up 31.0c + Down 71.0c + fees = 104.94c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:04:08 PT,sum_arb_1h,1h,1795802400,3351.0,skip,no_arb,,,0.4296,,0.4000,,0.00,0.00,71.8035,71.9146,Up 40.0c + Down 62.0c + fees = 105.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:04:08 PT,sum_arb_5m,5m,1795802400,51.0,skip,no_book,,,0.0102,,,,0.00,0.00,71.8035,71.9146,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:04:20 PT,max_profit,15m,1795802400,639.0,skip,no_signal,,,0.3255,,,,0.00,0.00,71.7935,71.9146,No source strategy has a clear entry in this 15m window (639s left). Cash $13.05.
-2026-11-27 10:04:20 PT,control,5m,1795802400,39.0,skip,hour_filter,,,0.0010,,,,0.00,0.00,71.7935,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:04:20 PT,auto_pick,5m,1795802400,39.0,skip,hour_filter,,,0.0010,,,,0.00,0.00,71.7935,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:04:20 PT,bankroll_20,5m,1795802400,39.0,skip,hour_filter,,,0.0010,,,,0.00,0.00,71.7935,71.9146,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:04:28 PT,sum_arb_15m,15m,1795802400,631.0,skip,no_arb,,,0.3197,,0.2800,,0.00,0.00,71.7900,71.9146,Up 28.0c + Down 74.0c + fees = 104.76c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:04:28 PT,sum_arb_1h,1h,1795802400,3331.0,skip,no_arb,,,0.4209,,0.3900,,0.00,0.00,71.7900,71.9146,Up 39.0c + Down 64.0c + fees = 106.28c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:04:28 PT,sum_arb_5m,5m,1795802400,31.0,skip,no_book,,,0.0002,,,,0.00,0.00,71.7900,71.9146,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:04:40 PT,max_profit,15m,1795802400,619.0,skip,no_signal,,,0.3146,,,,0.00,0.00,71.7875,71.9146,No source strategy has a clear entry in this 15m window (619s left). Cash $13.05.
-2026-11-27 10:04:48 PT,sum_arb_15m,15m,1795802400,611.0,skip,no_arb,,,0.3130,,0.3100,,0.00,0.00,71.7875,71.9146,Up 31.0c + Down 72.0c + fees = 105.91c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:04:48 PT,sum_arb_1h,1h,1795802400,3311.0,skip,no_arb,,,0.4189,,0.4000,,0.00,0.00,71.7875,71.9146,Up 40.0c + Down 61.0c + fees = 104.35c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:04:48 PT,sum_arb_5m,5m,1795802400,11.0,skip,no_book,,,0.0000,,,,0.00,0.00,71.7875,71.9146,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:05:00 PT,max_profit,15m,1795802400,599.0,skip,no_signal,,,0.3506,,,,0.00,0.00,71.8155,71.9146,No source strategy has a clear entry in this 15m window (599s left). Cash $13.05.
-2026-11-27 10:05:08 PT,sum_arb_15m,15m,1795802400,591.0,skip,no_arb,,,0.3561,,0.3400,,0.00,0.00,71.8200,71.9146,Up 34.0c + Down 70.0c + fees = 107.04c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:08 PT,sum_arb_1h,1h,1795802400,3291.0,skip,no_arb,,,0.4393,,0.4100,,0.00,0.00,71.8200,71.9146,Up 41.0c + Down 60.0c + fees = 104.37c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:08 PT,sum_arb_5m,5m,1795802700,291.0,skip,no_arb,,,0.5590,,0.5800,,0.00,0.00,71.8200,71.7941,Up 58.0c + Down 44.0c + fees = 105.43c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:20 PT,max_profit,15m,1795802400,579.0,skip,no_signal,,,0.3627,,,,0.00,0.00,71.8255,71.9146,No source strategy has a clear entry in this 15m window (579s left). Cash $13.05.
-2026-11-27 10:05:28 PT,sum_arb_15m,15m,1795802400,571.0,skip,no_arb,,,0.3843,,0.3600,,0.00,0.00,71.8405,71.9146,Up 36.0c + Down 67.0c + fees = 106.16c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:28 PT,sum_arb_1h,1h,1795802400,3271.0,skip,no_arb,,,0.4523,,0.4300,,0.00,0.00,71.8405,71.9146,Up 43.0c + Down 59.0c + fees = 105.41c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:28 PT,sum_arb_5m,5m,1795802700,271.0,skip,no_arb,,,0.6091,,0.6400,,0.00,0.00,71.8405,71.7941,Up 64.0c + Down 38.0c + fees = 105.26c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:40 PT,max_profit,15m,1795802400,559.0,skip,no_signal,,,0.3845,,,,0.00,0.00,71.8415,71.9146,No source strategy has a clear entry in this 15m window (559s left). Cash $13.05.
-2026-11-27 10:05:48 PT,sum_arb_15m,15m,1795802400,551.0,skip,no_arb,,,0.4276,,0.4500,,0.00,0.00,71.8695,71.9146,Up 45.0c + Down 59.0c + fees = 107.43c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:48 PT,sum_arb_1h,1h,1795802400,3251.0,skip,no_arb,,,0.4708,,0.4800,,0.00,0.00,71.8695,71.9146,Up 48.0c + Down 54.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:48 PT,sum_arb_5m,5m,1795802700,251.0,skip,no_arb,,,0.6808,,0.7800,,0.00,0.00,71.8695,71.7941,Up 78.0c + Down 23.0c + fees = 103.44c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:05:57 PT,down_ride_15m,15m,1795802400,543.0,skip,timing,,,0.4431,0.4300,,,0.00,0.00,71.8795,71.9146,Only bets with 270-540s left; 543s left now.
-2026-11-27 10:06:01 PT,max_profit,15m,1795802400,539.0,skip,no_signal,,,0.4348,,,,0.00,0.00,71.8745,71.9146,No source strategy has a clear entry in this 15m window (539s left). Cash $13.05.
-2026-11-27 10:06:01 PT,control,5m,1795802700,239.0,skip,hour_filter,,,0.6969,,,,0.00,0.00,71.8745,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:06:01 PT,model_lead,5m,1795802700,239.0,skip,edge_small,Up,0.7384,0.6969,0.7800,0.7900,-0.0632,0.00,0.00,71.8745,71.7941,Up at 79c: my estimate 74% beats price+fee by only -6.3c (need 4c).
-2026-11-27 10:06:01 PT,trend_volume,5m,1795802700,239.0,skip,choppy,,,0.6969,0.7800,,,0.00,0.00,71.8745,71.7941,"Choppy: price went back and forth (straightness 0.06, need 0.15)."
-2026-11-27 10:06:01 PT,trend_down,5m,1795802700,239.0,skip,choppy,,,0.6969,0.7800,,,0.00,0.00,71.8745,71.7941,"Choppy: price went back and forth (straightness 0.06, need 0.12)."
-2026-11-27 10:06:01 PT,breakdown,5m,1795802700,239.0,skip,no_breakout,,,0.6969,0.7800,,,0.00,0.00,71.8745,71.7941,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:06:01 PT,auto_pick,5m,1795802700,239.0,skip,hour_filter,,,0.6969,,,,0.00,0.00,71.8745,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:06:01 PT,bankroll_20,5m,1795802700,239.0,skip,hour_filter,,,0.6969,,,,0.00,0.00,71.8745,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:06:09 PT,sum_arb_15m,15m,1795802400,531.0,skip,no_arb,,,0.4767,,0.5100,,0.00,0.00,71.9005,71.9146,Up 51.0c + Down 54.0c + fees = 108.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:09 PT,sum_arb_1h,1h,1795802400,3231.0,skip,no_arb,,,0.4908,,0.5400,,0.00,0.00,71.9005,71.9146,Up 54.0c + Down 53.0c + fees = 110.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:09 PT,sum_arb_5m,5m,1795802700,231.0,skip,no_arb,,,0.7567,,0.8600,,0.00,0.00,71.9005,71.7941,Up 86.0c + Down 16.0c + fees = 103.78c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:17 PT,down_ride_15m,15m,1795802400,523.0,skip,lead_small,Down,0.5059,0.4881,0.5000,,,0.00,0.00,71.9075,71.9146,Lead gate: SOL is $+0.007 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 10:06:21 PT,max_profit,15m,1795802400,519.0,skip,no_signal,,,0.4881,,,,0.00,0.00,71.9075,71.9146,No source strategy has a clear entry in this 15m window (519s left). Cash $13.05.
-2026-11-27 10:06:21 PT,control,5m,1795802700,219.0,skip,hour_filter,,,0.7778,,,,0.00,0.00,71.9075,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:06:21 PT,model_lead,5m,1795802700,219.0,skip,ask_band,Up,0.7889,0.7778,0.8000,0.8100,-0.0319,0.00,0.00,71.9075,71.7941,"Up costs 81c, outside this variant's 0.2-0.8 price range."
-2026-11-27 10:06:21 PT,trend_volume,5m,1795802700,219.0,skip,choppy,,,0.7778,0.8000,,,0.00,0.00,71.9075,71.7941,"Choppy: price went back and forth (straightness 0.06, need 0.15)."
-2026-11-27 10:06:21 PT,trend_down,5m,1795802700,219.0,skip,choppy,,,0.7778,0.8000,,,0.00,0.00,71.9075,71.7941,"Choppy: price went back and forth (straightness 0.06, need 0.12)."
-2026-11-27 10:06:21 PT,breakdown,5m,1795802700,219.0,skip,no_breakout,,,0.7778,0.8000,,,0.00,0.00,71.9075,71.7941,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:06:21 PT,auto_pick,5m,1795802700,219.0,skip,hour_filter,,,0.7778,,,,0.00,0.00,71.9075,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:06:21 PT,bankroll_20,5m,1795802700,219.0,skip,hour_filter,,,0.7778,,,,0.00,0.00,71.9075,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:06:29 PT,sum_arb_15m,15m,1795802400,511.0,skip,no_arb,,,0.4595,,0.4200,,0.00,0.00,71.8905,71.9146,Up 42.0c + Down 62.0c + fees = 107.35c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:29 PT,sum_arb_1h,1h,1795802400,3211.0,skip,no_arb,,,0.4843,,0.4800,,0.00,0.00,71.8905,71.9146,Up 48.0c + Down 55.0c + fees = 106.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:29 PT,sum_arb_5m,5m,1795802700,211.0,skip,no_arb,,,0.7469,,0.7800,,0.00,0.00,71.8905,71.7941,Up 78.0c + Down 23.0c + fees = 103.44c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:37 PT,down_ride_15m,15m,1795802400,503.0,skip,lead_small,Down,0.5704,0.4592,0.4000,,,0.00,0.00,71.8905,71.9146,Lead gate: SOL is $+0.024 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 10:06:41 PT,max_profit,15m,1795802400,499.0,skip,no_signal,,,0.4371,,,,0.00,0.00,71.8775,71.9146,No source strategy has a clear entry in this 15m window (499s left). Cash $13.05.
-2026-11-27 10:06:41 PT,control,5m,1795802700,199.0,skip,hour_filter,,,0.7243,,,,0.00,0.00,71.8775,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:06:41 PT,model_lead,5m,1795802700,199.0,skip,edge_small,Up,0.6972,0.7243,0.6700,0.6800,0.0019,0.00,0.00,71.8775,71.7941,Up at 68c: my estimate 70% beats price+fee by only 0.2c (need 4c).
-2026-11-27 10:06:41 PT,trend_volume,5m,1795802700,199.0,skip,choppy,,,0.7243,0.6700,,,0.00,0.00,71.8775,71.7941,"Choppy: price went back and forth (straightness 0.06, need 0.15)."
-2026-11-27 10:06:41 PT,trend_down,5m,1795802700,199.0,skip,choppy,,,0.7243,0.6700,,,0.00,0.00,71.8775,71.7941,"Choppy: price went back and forth (straightness 0.06, need 0.12)."
-2026-11-27 10:06:41 PT,breakdown,5m,1795802700,199.0,skip,no_breakout,,,0.7243,0.6700,,,0.00,0.00,71.8775,71.7941,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:06:41 PT,auto_pick,5m,1795802700,199.0,skip,hour_filter,,,0.7243,,,,0.00,0.00,71.8775,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:06:41 PT,bankroll_20,5m,1795802700,199.0,skip,hour_filter,,,0.7243,,,,0.00,0.00,71.8775,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:06:49 PT,sum_arb_15m,15m,1795802400,491.0,skip,no_arb,,,0.4297,,0.4500,,0.00,0.00,71.8730,71.9146,Up 45.0c + Down 59.0c + fees = 107.43c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:49 PT,sum_arb_1h,1h,1795802400,3191.0,skip,no_arb,,,0.4731,,0.4800,,0.00,0.00,71.8730,71.9146,Up 48.0c + Down 54.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:49 PT,sum_arb_5m,5m,1795802700,191.0,skip,no_arb,,,0.7163,,0.8400,,0.00,0.00,71.8730,71.7941,Up 84.0c + Down 19.0c + fees = 105.02c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:06:57 PT,down_ride_15m,15m,1795802400,483.0,skip,lead_small,Down,0.5490,0.4570,0.4450,,,0.00,0.00,71.8895,71.9146,Lead gate: SOL is $+0.025 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 10:07:01 PT,max_profit,15m,1795802400,479.0,skip,no_signal,,,0.4483,,,,0.00,0.00,71.8845,71.9146,No source strategy has a clear entry in this 15m window (479s left). Cash $13.05.
-2026-11-27 10:07:01 PT,control,5m,1795802700,179.0,skip,hour_filter,,,0.7522,,,,0.00,0.00,71.8845,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:07:01 PT,model_lead,5m,1795802700,179.0,skip,timing,,,0.7522,0.8600,,,0.00,0.00,71.8845,71.7941,Only bets with 180-240s left; 179s left now.
-2026-11-27 10:07:01 PT,trend_volume,5m,1795802700,179.0,skip,choppy,,,0.7522,0.8600,,,0.00,0.00,71.8845,71.7941,"Choppy: price went back and forth (straightness 0.06, need 0.15)."
-2026-11-27 10:07:01 PT,trend_down,5m,1795802700,179.0,skip,choppy,,,0.7522,0.8600,,,0.00,0.00,71.8845,71.7941,"Choppy: price went back and forth (straightness 0.06, need 0.12)."
-2026-11-27 10:07:01 PT,breakdown,5m,1795802700,179.0,skip,no_breakout,,,0.7522,0.8600,,,0.00,0.00,71.8845,71.7941,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:07:01 PT,auto_pick,5m,1795802700,179.0,skip,hour_filter,,,0.7522,,,,0.00,0.00,71.8845,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:07:01 PT,bankroll_20,5m,1795802700,179.0,skip,hour_filter,,,0.7522,,,,0.00,0.00,71.8845,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:07:09 PT,sum_arb_15m,15m,1795802400,471.0,skip,no_arb,,,0.4703,,0.4600,,0.00,0.00,71.8975,71.9146,Up 46.0c + Down 57.0c + fees = 106.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:09 PT,sum_arb_1h,1h,1795802400,3171.0,skip,no_arb,,,0.4889,,0.4900,,0.00,0.00,71.8975,71.9146,Up 49.0c + Down 55.0c + fees = 107.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:09 PT,sum_arb_5m,5m,1795802700,171.0,skip,no_arb,,,0.7886,,0.8700,,0.00,0.00,71.8975,71.7941,Up 87.0c + Down 15.0c + fees = 103.68c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:17 PT,down_ride_15m,15m,1795802400,463.0,skip,lead_small,Down,0.5422,0.4656,0.4500,,,0.00,0.00,71.8950,71.9146,Lead gate: SOL is $+0.020 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 10:07:21 PT,max_profit,15m,1795802400,459.0,skip,no_signal,,,0.4742,,,,0.00,0.00,71.9000,71.9146,No source strategy has a clear entry in this 15m window (459s left). Cash $13.05.
-2026-11-27 10:07:21 PT,control,5m,1795802700,159.0,skip,hour_filter,,,0.8049,,,,0.00,0.00,71.9000,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:07:21 PT,trend_volume,5m,1795802700,159.0,skip,choppy,,,0.8049,0.8950,,,0.00,0.00,71.9000,71.7941,"Choppy: price went back and forth (straightness 0.07, need 0.15)."
-2026-11-27 10:07:21 PT,trend_down,5m,1795802700,159.0,skip,choppy,,,0.8049,0.8950,,,0.00,0.00,71.9000,71.7941,"Choppy: price went back and forth (straightness 0.07, need 0.12)."
-2026-11-27 10:07:21 PT,breakdown,5m,1795802700,159.0,skip,no_breakout,,,0.8049,0.8950,,,0.00,0.00,71.9000,71.7941,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:07:21 PT,auto_pick,5m,1795802700,159.0,skip,hour_filter,,,0.8049,,,,0.00,0.00,71.9000,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:07:21 PT,bankroll_20,5m,1795802700,159.0,skip,hour_filter,,,0.8049,,,,0.00,0.00,71.9000,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:07:29 PT,sum_arb_15m,15m,1795802400,451.0,skip,no_arb,,,0.4980,,0.4900,,0.00,0.00,71.9135,71.9146,Up 49.0c + Down 54.0c + fees = 106.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:29 PT,sum_arb_1h,1h,1795802400,3151.0,skip,no_arb,,,0.4993,,0.5100,,0.00,0.00,71.9135,71.9146,Up 51.0c + Down 52.0c + fees = 106.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:29 PT,sum_arb_5m,5m,1795802700,151.0,skip,no_arb,,,0.8416,,0.9000,,0.00,0.00,71.9135,71.7941,Up 90.0c + Down 11.0c + fees = 102.32c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:37 PT,down_ride_15m,15m,1795802400,443.0,skip,lead_small,Down,0.5010,0.4979,0.5000,,,0.00,0.00,71.9135,71.9146,Lead gate: SOL is $+0.001 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 10:07:41 PT,max_profit,15m,1795802400,439.0,skip,no_signal,,,0.4889,,,,0.00,0.00,71.9085,71.9146,No source strategy has a clear entry in this 15m window (439s left). Cash $13.05.
-2026-11-27 10:07:41 PT,control,5m,1795802700,139.0,skip,hour_filter,,,0.8443,,,,0.00,0.00,71.9085,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:07:41 PT,trend_volume,5m,1795802700,139.0,skip,choppy,,,0.8443,0.9100,,,0.00,0.00,71.9085,71.7941,"Choppy: price went back and forth (straightness 0.07, need 0.15)."
-2026-11-27 10:07:41 PT,trend_down,5m,1795802700,139.0,skip,choppy,,,0.8443,0.9100,,,0.00,0.00,71.9085,71.7941,"Choppy: price went back and forth (straightness 0.07, need 0.12)."
-2026-11-27 10:07:41 PT,breakdown,5m,1795802700,139.0,skip,no_breakout,,,0.8443,0.9100,,,0.00,0.00,71.9085,71.7941,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:07:41 PT,auto_pick,5m,1795802700,139.0,skip,hour_filter,,,0.8443,,,,0.00,0.00,71.9085,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:07:41 PT,bankroll_20,5m,1795802700,139.0,skip,hour_filter,,,0.8443,,,,0.00,0.00,71.9085,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:07:49 PT,sum_arb_15m,15m,1795802400,431.0,skip,no_arb,,,0.4970,,0.5400,,0.00,0.00,71.9130,71.9146,Up 54.0c + Down 48.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:49 PT,sum_arb_1h,1h,1795802400,3131.0,skip,no_arb,,,0.4989,,0.5300,,0.00,0.00,71.9130,71.9146,Up 53.0c + Down 50.0c + fees = 106.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:49 PT,sum_arb_5m,5m,1795802700,131.0,skip,no_arb,,,0.8630,,0.9700,,0.00,0.00,71.9130,71.7941,Up 97.0c + Down 4.0c + fees = 101.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:07:57 PT,down_ride_15m,15m,1795802400,423.0,skip,side_not_allowed,Up,0.5412,0.5374,0.5450,,,0.00,0.00,71.9350,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:08:01 PT,max_profit,15m,1795802400,419.0,skip,no_signal,,,0.5467,,,,0.00,0.00,71.9400,71.9146,No source strategy has a clear entry in this 15m window (419s left). Cash $13.05.
-2026-11-27 10:08:01 PT,control,5m,1795802700,119.0,skip,hour_filter,,,0.9240,,,,0.00,0.00,71.9400,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:08:01 PT,trend_volume,5m,1795802700,119.0,skip,choppy,,,0.9240,0.9700,,,0.00,0.00,71.9400,71.7941,"Choppy: price went back and forth (straightness 0.07, need 0.15)."
-2026-11-27 10:08:01 PT,trend_down,5m,1795802700,119.0,skip,choppy,,,0.9240,0.9700,,,0.00,0.00,71.9400,71.7941,"Choppy: price went back and forth (straightness 0.07, need 0.12)."
-2026-11-27 10:08:01 PT,breakdown,5m,1795802700,119.0,skip,no_breakout,,,0.9240,0.9700,,,0.00,0.00,71.9400,71.7941,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:08:01 PT,auto_pick,5m,1795802700,119.0,skip,hour_filter,,,0.9240,,,,0.00,0.00,71.9400,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:08:01 PT,bankroll_20,5m,1795802700,119.0,skip,hour_filter,,,0.9240,,,,0.00,0.00,71.9400,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:08:09 PT,sum_arb_15m,15m,1795802400,411.0,skip,no_arb,,,0.5286,,0.5700,,0.00,0.00,71.9300,71.9146,Up 57.0c + Down 46.0c + fees = 106.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:08:09 PT,sum_arb_1h,1h,1795802400,3111.0,skip,no_arb,,,0.5100,,0.5400,,0.00,0.00,71.9300,71.9146,Up 54.0c + Down 49.0c + fees = 106.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:08:09 PT,sum_arb_5m,5m,1795802700,111.0,skip,no_arb,,,0.9195,,0.9900,,0.00,0.00,71.9300,71.7941,Up 99.0c + Down 3.0c + fees = 102.27c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:08:17 PT,down_ride_15m,15m,1795802400,403.0,skip,side_not_allowed,Up,0.5818,0.5636,0.6000,,,0.00,0.00,71.9485,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:08:21 PT,max_profit,15m,1795802400,399.0,skip,no_signal,,,0.5639,,,,0.00,0.00,71.9485,71.9146,No source strategy has a clear entry in this 15m window (399s left). Cash $13.05.
-2026-11-27 10:08:21 PT,control,5m,1795802700,99.0,skip,hour_filter,,,0.9583,,,,0.00,0.00,71.9485,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:08:21 PT,trend_volume,5m,1795802700,99.0,skip,choppy,,,0.9583,0.9900,,,0.00,0.00,71.9485,71.7941,"Choppy: price went back and forth (straightness 0.01, need 0.15)."
-2026-11-27 10:08:21 PT,trend_down,5m,1795802700,99.0,skip,choppy,,,0.9583,0.9900,,,0.00,0.00,71.9485,71.7941,"Choppy: price went back and forth (straightness 0.01, need 0.12)."
-2026-11-27 10:08:21 PT,breakdown,5m,1795802700,99.0,skip,no_breakout,,,0.9583,0.9900,,,0.00,0.00,71.9485,71.7941,Price is inside its 30-min range ($71.27-$72.06); no breakout.
-2026-11-27 10:08:21 PT,auto_pick,5m,1795802700,99.0,skip,hour_filter,,,0.9583,,,,0.00,0.00,71.9485,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:08:21 PT,bankroll_20,5m,1795802700,99.0,skip,hour_filter,,,0.9583,,,,0.00,0.00,71.9485,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:08:29 PT,sum_arb_15m,15m,1795802400,391.0,skip,no_arb,,,0.5342,,0.5900,,0.00,0.00,71.9325,71.9146,Up 59.0c + Down 43.0c + fees = 105.41c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:08:29 PT,sum_arb_1h,1h,1795802400,3091.0,skip,no_arb,,,0.5117,,0.5400,,0.00,0.00,71.9325,71.9146,Up 54.0c + Down 49.0c + fees = 106.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:08:29 PT,sum_arb_5m,5m,1795802700,91.0,skip,no_book,,,0.9512,,,,0.00,0.00,71.9325,71.7941,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:08:37 PT,down_ride_15m,15m,1795802400,383.0,skip,side_not_allowed,Up,0.5551,0.5452,0.5650,,,0.00,0.00,71.9380,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:08:41 PT,max_profit,15m,1795802400,379.0,skip,no_signal,,,0.5493,,,,0.00,0.00,71.9400,71.9146,No source strategy has a clear entry in this 15m window (379s left). Cash $13.05.
-2026-11-27 10:08:41 PT,control,5m,1795802700,79.0,skip,hour_filter,,,0.9751,,,,0.00,0.00,71.9400,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:08:41 PT,auto_pick,5m,1795802700,79.0,skip,hour_filter,,,0.9751,,,,0.00,0.00,71.9400,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:08:41 PT,bankroll_20,5m,1795802700,79.0,skip,hour_filter,,,0.9751,,,,0.00,0.00,71.9400,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:08:49 PT,sum_arb_15m,15m,1795802400,371.0,skip,no_arb,,,0.5968,,0.6100,,0.00,0.00,71.9640,71.9146,Up 61.0c + Down 40.0c + fees = 104.35c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:08:49 PT,sum_arb_1h,1h,1795802400,3071.0,skip,no_arb,,,0.5326,,0.5700,,0.00,0.00,71.9640,71.9146,Up 57.0c + Down 46.0c + fees = 106.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:08:49 PT,sum_arb_5m,5m,1795802700,71.0,skip,no_book,,,0.9942,,,,0.00,0.00,71.9640,71.7941,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:08:57 PT,down_ride_15m,15m,1795802400,363.0,skip,side_not_allowed,Up,0.6165,0.5980,0.6350,,,0.00,0.00,71.9640,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:09:01 PT,max_profit,15m,1795802400,358.9,skip,no_signal,,,0.5986,,,,0.00,0.00,71.9640,71.9146,No source strategy has a clear entry in this 15m window (359s left). Cash $13.05.
-2026-11-27 10:09:01 PT,control,5m,1795802700,58.9,skip,hour_filter,,,0.9989,,,,0.00,0.00,71.9640,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:09:01 PT,auto_pick,5m,1795802700,58.9,skip,hour_filter,,,0.9989,,,,0.00,0.00,71.9640,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:09:01 PT,bankroll_20,5m,1795802700,58.9,skip,hour_filter,,,0.9989,,,,0.00,0.00,71.9640,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:09:09 PT,sum_arb_15m,15m,1795802400,350.9,skip,no_arb,,,0.5799,,0.5600,,0.00,0.00,71.9540,71.9146,Up 56.0c + Down 45.0c + fees = 104.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:09:09 PT,sum_arb_1h,1h,1795802400,3050.9,skip,no_arb,,,0.5261,,0.5400,,0.00,0.00,71.9540,71.9146,Up 54.0c + Down 48.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:09:09 PT,sum_arb_5m,5m,1795802700,50.9,skip,no_book,,,0.9996,,,,0.00,0.00,71.9540,71.7941,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:09:17 PT,down_ride_15m,15m,1795802400,342.9,skip,side_not_allowed,Up,0.5454,0.5809,0.5100,,,0.00,0.00,71.9540,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:09:21 PT,max_profit,15m,1795802400,338.9,skip,no_signal,,,0.5609,,,,0.00,0.00,71.9440,71.9146,No source strategy has a clear entry in this 15m window (339s left). Cash $13.05.
-2026-11-27 10:09:21 PT,control,5m,1795802700,38.9,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9440,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:09:21 PT,auto_pick,5m,1795802700,38.9,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9440,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
-2026-11-27 10:09:21 PT,bankroll_20,5m,1795802700,38.9,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9440,71.7941,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
-2026-11-27 10:09:29 PT,sum_arb_15m,15m,1795802400,330.9,skip,no_arb,,,0.5408,,0.4800,,0.00,0.00,71.9340,71.9146,Up 48.0c + Down 53.0c + fees = 104.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:09:29 PT,sum_arb_1h,1h,1795802400,3030.9,skip,no_arb,,,0.5129,,0.4900,,0.00,0.00,71.9340,71.9146,Up 49.0c + Down 53.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:09:29 PT,sum_arb_5m,5m,1795802700,30.9,skip,no_book,,,1.0000,,,,0.00,0.00,71.9340,71.7941,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:09:37 PT,down_ride_15m,15m,1795802400,322.9,skip,lead_small,Down,0.5469,0.5061,0.4000,,,0.00,0.00,71.9175,71.9146,Lead gate: SOL is $-0.003 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 10:09:41 PT,max_profit,15m,1795802400,318.9,skip,no_signal,,,0.4846,,,,0.00,0.00,71.9075,71.9146,No source strategy has a clear entry in this 15m window (319s left). Cash $13.05.
-2026-11-27 10:09:49 PT,sum_arb_15m,15m,1795802400,310.9,skip,no_arb,,,0.4625,,0.3900,,0.00,0.00,71.8975,71.9146,Up 39.0c + Down 62.0c + fees = 104.31c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:09:49 PT,sum_arb_1h,1h,1795802400,3010.9,skip,no_arb,,,0.4885,,0.4700,,0.00,0.00,71.8975,71.9146,Up 47.0c + Down 55.0c + fees = 105.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:09:49 PT,sum_arb_5m,5m,1795802700,10.9,skip,no_book,,,1.0000,,,,0.00,0.00,71.8975,71.7941,Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-27 10:09:57 PT,down_ride_15m,15m,1795802400,302.9,skip,lead_small,Down,0.5593,0.4565,0.4250,,,0.00,0.00,71.8950,71.9146,Lead gate: SOL is $+0.020 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
-2026-11-27 10:10:01 PT,max_profit,15m,1795802400,298.9,skip,no_signal,,,0.4528,,,,0.00,0.00,71.8935,71.9146,No source strategy has a clear entry in this 15m window (299s left). Cash $13.05.
-2026-11-27 10:10:09 PT,sum_arb_15m,15m,1795802400,290.9,skip,no_arb,,,0.4951,,0.6000,,0.00,0.00,71.9125,71.9146,Up 60.0c + Down 42.0c + fees = 105.39c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:10:09 PT,sum_arb_1h,1h,1795802400,2990.9,skip,no_arb,,,0.4986,,0.5500,,0.00,0.00,71.9125,71.9146,Up 55.0c + Down 48.0c + fees = 106.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:10:09 PT,sum_arb_5m,5m,1795803000,290.9,skip,no_arb,,,0.4648,,0.6200,,0.00,0.00,71.9125,71.9280,Up 62.0c + Down 40.0c + fees = 105.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:10:17 PT,down_ride_15m,15m,1795802400,282.9,skip,side_not_allowed,Up,0.6150,0.5899,0.6400,,,0.00,0.00,71.9540,71.9146,This variant only bets Down; the signal says Up.
-2026-11-27 10:10:21 PT,max_profit,15m,1795802400,278.9,skip,no_signal,,,0.5907,,,,0.00,0.00,71.9540,71.9146,No source strategy has a clear entry in this 15m window (279s left). Cash $13.05.
-2026-11-27 10:10:29 PT,sum_arb_15m,15m,1795802400,270.9,skip,no_arb,,,0.5562,,0.5700,,0.00,0.00,71.9385,71.9146,Up 57.0c + Down 44.0c + fees = 104.44c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:10:29 PT,sum_arb_1h,1h,1795802400,2970.9,skip,no_arb,,,0.5160,,0.5200,,0.00,0.00,71.9385,71.9146,Up 52.0c + Down 50.0c + fees = 105.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:10:29 PT,sum_arb_5m,5m,1795803000,270.9,skip,no_arb,,,0.5247,,0.5600,,0.00,0.00,71.9385,71.9280,Up 56.0c + Down 46.0c + fees = 105.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:10:41 PT,max_profit,15m,1795802400,258.9,skip,no_signal,,,0.5336,,,,0.00,0.00,71.9285,71.9146,No source strategy has a clear entry in this 15m window (259s left). Cash $13.05.
-2026-11-27 10:10:49 PT,sum_arb_15m,15m,1795802400,250.9,skip,no_arb,,,0.3925,,0.3700,,0.00,0.00,71.8705,71.9146,Up 37.0c + Down 68.0c + fees = 108.15c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:10:49 PT,sum_arb_1h,1h,1795802400,2950.9,skip,no_arb,,,0.4703,,0.4600,,0.00,0.00,71.8705,71.9146,Up 46.0c + Down 56.0c + fees = 105.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:10:49 PT,sum_arb_5m,5m,1795803000,250.9,skip,no_arb,,,0.3611,,0.3600,,0.00,0.00,71.8705,71.9280,Up 36.0c + Down 65.0c + fees = 104.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-27 10:11:01 PT,max_profit,15m,1795802400,238.9,skip,no_signal,,,0.4178,,,,0.00,0.00,71.8820,71.9146,No source strategy has a clear entry in this 15m window (239s left). Cash $13.05.
-2026-11-27 10:11:01 PT,control,5m,1795803000,238.9,skip,hour_filter,,,0.3849,,,,0.00,0.00,71.8820,71.9280,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
-2026-11-27 10:11:01 PT,model_lead,5m,1795803000,238.9,skip,edge_small,Down,0.6450,0.3849,0.3250,0.6800,-0.0502,0.00,0.00,71.8820,71.9280,Down at 68c: my estimate 65% beats price+fee by only -5.0c (need 4c).
-2026-11-27 10:11:01 PT,trend_volume,5m,1795803000,238.9,skip,choppy,,,0.3849,0.3250,,,0.00,0.00,71.8820,71.9280,"Choppy: price went back and forth (straightness 0.01, need 0.15)."
-2026-11-27 10:11:01 PT,trend_down,5m,1795803000,238.9,skip,choppy,,,0.3849,0.3250,,,0.00,0.00,71.8820,71.9280,"Choppy: price went back and forth (straightness 0.01, need 0.12)."
 2026-11-27 10:11:01 PT,breakdown,5m,1795803000,238.9,skip,no_breakout,,,0.3849,0.3250,,,0.00,0.00,71.8820,71.9280,Price is inside its 30-min range ($71.27-$72.06); no breakout.
 2026-11-27 10:11:01 PT,auto_pick,5m,1795803000,238.9,skip,hour_filter,,,0.3849,,,,0.00,0.00,71.8820,71.9280,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
 2026-11-27 10:11:01 PT,bankroll_20,5m,1795803000,238.9,skip,hour_filter,,,0.3849,,,,0.00,0.00,71.8820,71.9280,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
@@ -1498,3 +994,507 @@ ts_pt,variant,timeframe,window_start,secs_left,action,reason,side,est_prob,model
 2026-11-27 10:48:41 PT,control,5m,1795805100,78.1,skip,hour_filter,,,0.4471,,,,0.00,0.00,71.7505,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
 2026-11-27 10:48:41 PT,auto_pick,5m,1795805100,78.1,skip,hour_filter,,,0.4471,,,,0.00,0.00,71.7505,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
 2026-11-27 10:48:41 PT,bankroll_20,5m,1795805100,78.1,skip,hour_filter,,,0.4471,,,,0.00,0.00,71.7505,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:48:49 PT,sum_arb_15m,15m,1795805100,670.1,skip,no_arb,,,0.4853,,0.4500,,0.00,0.00,71.7505,71.7586,Up 45.0c + Down 56.0c + fees = 104.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:48:49 PT,sum_arb_1h,1h,1795802400,670.1,skip,no_arb,,,0.2287,,0.0900,,0.00,0.00,71.7505,71.9146,Up 9.0c + Down 92.0c + fees = 102.09c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:48:49 PT,sum_arb_5m,5m,1795805100,70.1,skip,no_arb,,,0.4421,,0.2900,,0.00,0.00,71.7505,71.7586,Up 29.0c + Down 75.0c + fees = 106.75c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:01 PT,max_profit,15m,1795805100,658.1,skip,no_signal,,,0.4570,,,,0.00,0.00,71.7350,71.7586,No source strategy has a clear entry in this 15m window (658s left). Cash $13.05.
+2026-11-27 10:49:01 PT,control,5m,1795805100,58.1,skip,hour_filter,,,0.3074,,,,0.00,0.00,71.7350,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:49:01 PT,auto_pick,5m,1795805100,58.1,skip,hour_filter,,,0.3074,,,,0.00,0.00,71.7350,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:49:01 PT,bankroll_20,5m,1795805100,58.1,skip,hour_filter,,,0.3074,,,,0.00,0.00,71.7350,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:49:09 PT,sum_arb_15m,15m,1795805100,650.1,skip,no_arb,,,0.4704,,0.4700,,0.00,0.00,71.7425,71.7586,Up 47.0c + Down 54.0c + fees = 104.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:09 PT,sum_arb_1h,1h,1795802400,650.1,skip,no_arb,,,0.2142,,0.0900,,0.00,0.00,71.7425,71.9146,Up 9.0c + Down 92.0c + fees = 102.09c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:09 PT,sum_arb_5m,5m,1795805100,50.1,skip,no_arb,,,0.3416,,0.2200,,0.00,0.00,71.7425,71.7586,Up 22.0c + Down 79.0c + fees = 103.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:21 PT,max_profit,15m,1795805100,638.1,skip,no_signal,,,0.4757,,,,0.00,0.00,71.7455,71.7586,No source strategy has a clear entry in this 15m window (638s left). Cash $13.05.
+2026-11-27 10:49:21 PT,control,5m,1795805100,38.1,skip,hour_filter,,,0.3337,,,,0.00,0.00,71.7455,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:49:21 PT,auto_pick,5m,1795805100,38.1,skip,hour_filter,,,0.3337,,,,0.00,0.00,71.7455,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:49:21 PT,bankroll_20,5m,1795805100,38.1,skip,hour_filter,,,0.3337,,,,0.00,0.00,71.7455,71.7586,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:49:29 PT,sum_arb_15m,15m,1795805100,630.1,skip,no_arb,,,0.4755,,0.5300,,0.00,0.00,71.7455,71.7586,Up 53.0c + Down 48.0c + fees = 104.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:29 PT,sum_arb_1h,1h,1795802400,630.1,skip,no_arb,,,0.2145,,0.1300,,0.00,0.00,71.7455,71.9146,Up 13.0c + Down 89.0c + fees = 103.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:29 PT,sum_arb_5m,5m,1795805100,30.1,skip,no_arb,,,0.3192,,0.3200,,0.00,0.00,71.7455,71.7586,Up 32.0c + Down 71.0c + fees = 105.96c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:41 PT,max_profit,15m,1795805100,618.1,skip,no_signal,,,0.4950,,,,0.00,0.00,71.7560,71.7586,No source strategy has a clear entry in this 15m window (618s left). Cash $13.05.
+2026-11-27 10:49:49 PT,sum_arb_15m,15m,1795805100,610.1,skip,no_arb,,,0.4988,,0.5200,,0.00,0.00,71.7580,71.7586,Up 52.0c + Down 49.0c + fees = 104.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:49 PT,sum_arb_1h,1h,1795802400,610.1,skip,no_arb,,,0.2282,,0.1200,,0.00,0.00,71.7580,71.9146,Up 12.0c + Down 90.0c + fees = 103.37c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:49:49 PT,sum_arb_5m,5m,1795805100,10.1,skip,no_book,,,0.3637,,,,0.00,0.00,71.7580,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:50:01 PT,max_profit,15m,1795805100,598.1,skip,no_signal,,,0.4988,,,,0.00,0.00,71.7580,71.7586,No source strategy has a clear entry in this 15m window (598s left). Cash $13.05.
+2026-11-27 10:50:09 PT,sum_arb_15m,15m,1795805100,590.1,skip,no_arb,,,0.4882,,0.4900,,0.00,0.00,71.7525,71.7586,Up 49.0c + Down 53.0c + fees = 105.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:09 PT,sum_arb_1h,1h,1795802400,590.1,skip,no_arb,,,0.2163,,0.1200,,0.00,0.00,71.7525,71.9146,Up 12.0c + Down 91.0c + fees = 104.31c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:09 PT,sum_arb_5m,5m,1795805400,290.1,skip,no_arb,,,0.5111,,0.5500,,0.00,0.00,71.7525,71.7486,Up 55.0c + Down 48.0c + fees = 106.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:21 PT,max_profit,15m,1795805100,578.1,skip,no_signal,,,0.6197,,,,0.00,0.00,71.8210,71.7586,No source strategy has a clear entry in this 15m window (578s left). Cash $13.05.
+2026-11-27 10:50:29 PT,sum_arb_15m,15m,1795805100,570.1,skip,no_arb,,,0.6483,,0.7400,,0.00,0.00,71.8360,71.7586,Up 74.0c + Down 28.0c + fees = 104.76c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:29 PT,sum_arb_1h,1h,1795802400,570.1,skip,no_arb,,,0.3493,,0.3300,,0.00,0.00,71.8360,71.9146,Up 33.0c + Down 70.0c + fees = 106.02c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:29 PT,sum_arb_5m,5m,1795805400,270.1,skip,no_arb,,,0.7405,,0.8200,,0.00,0.00,71.8360,71.7486,Up 82.0c + Down 19.0c + fees = 103.11c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:41 PT,max_profit,15m,1795805100,558.1,skip,no_signal,,,0.6789,,,,0.00,0.00,71.8520,71.7586,No source strategy has a clear entry in this 15m window (558s left). Cash $13.05.
+2026-11-27 10:50:49 PT,sum_arb_15m,15m,1795805100,550.1,skip,no_arb,,,0.7007,,0.7700,,0.00,0.00,71.8620,71.7586,Up 77.0c + Down 26.0c + fees = 105.59c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:49 PT,sum_arb_1h,1h,1795802400,550.1,skip,no_arb,,,0.3943,,0.3500,,0.00,0.00,71.8620,71.9146,Up 35.0c + Down 69.0c + fees = 107.09c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:49 PT,sum_arb_5m,5m,1795805400,250.1,skip,no_arb,,,0.8124,,0.8800,,0.00,0.00,71.8620,71.7486,Up 88.0c + Down 13.0c + fees = 102.53c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:50:57 PT,down_ride_15m,15m,1795805100,542.1,skip,timing,,,0.7021,0.7850,,,0.00,0.00,71.8620,71.7586,Only bets with 270-540s left; 542s left now.
+2026-11-27 10:51:01 PT,max_profit,15m,1795805100,538.1,skip,no_signal,,,0.6939,,,,0.00,0.00,71.8570,71.7586,No source strategy has a clear entry in this 15m window (538s left). Cash $13.05.
+2026-11-27 10:51:01 PT,control,5m,1795805400,238.1,skip,hour_filter,,,0.8083,,,,0.00,0.00,71.8570,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:51:01 PT,model_lead,5m,1795805400,238.1,skip,ask_band,Up,0.8491,0.8083,0.8900,0.9000,-0.0572,0.00,0.00,71.8570,71.7486,"Up costs 90c, outside this variant's 0.2-0.8 price range."
+2026-11-27 10:51:01 PT,trend_volume,5m,1795805400,238.1,skip,choppy,,,0.8083,0.8900,,,0.00,0.00,71.8570,71.7486,"Choppy: price went back and forth (straightness 0.13, need 0.15)."
+2026-11-27 10:51:01 PT,trend_down,5m,1795805400,238.1,skip,momentum_conflict,,,0.8083,0.8900,,,0.00,0.00,71.8570,71.7486,The 60m trend says Up but the last 15m (-0.01%) disagree.
+2026-11-27 10:51:01 PT,breakdown,5m,1795805400,238.1,skip,no_breakout,,,0.8083,0.8900,,,0.00,0.00,71.8570,71.7486,Price is inside its 30-min range ($71.63-$71.88); no breakout.
+2026-11-27 10:51:01 PT,auto_pick,5m,1795805400,238.1,skip,hour_filter,,,0.8083,,,,0.00,0.00,71.8570,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:51:01 PT,bankroll_20,5m,1795805400,238.1,skip,hour_filter,,,0.8083,,,,0.00,0.00,71.8570,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:51:09 PT,sum_arb_15m,15m,1795805100,530.1,skip,no_arb,,,0.6953,,0.7900,,0.00,0.00,71.8570,71.7586,Up 79.0c + Down 22.0c + fees = 103.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:09 PT,sum_arb_1h,1h,1795802400,530.1,skip,no_arb,,,0.3823,,0.3900,,0.00,0.00,71.8570,71.9146,Up 39.0c + Down 65.0c + fees = 107.26c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:09 PT,sum_arb_5m,5m,1795805400,230.1,skip,no_arb,,,0.8129,,0.9000,,0.00,0.00,71.8570,71.7486,Up 90.0c + Down 11.0c + fees = 102.32c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:17 PT,down_ride_15m,15m,1795805100,522.1,skip,side_not_allowed,Up,0.7578,0.7156,0.8000,,,0.00,0.00,71.8675,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:51:21 PT,max_profit,15m,1795805100,518.1,skip,no_signal,,,0.7164,,,,0.00,0.00,71.8675,71.7586,No source strategy has a clear entry in this 15m window (518s left). Cash $13.05.
+2026-11-27 10:51:21 PT,control,5m,1795805400,218.1,skip,hour_filter,,,0.8426,,,,0.00,0.00,71.8675,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:51:21 PT,model_lead,5m,1795805400,218.1,skip,ask_band,Up,0.8738,0.8426,0.9050,0.9100,-0.0419,0.00,0.00,71.8675,71.7486,"Up costs 91c, outside this variant's 0.2-0.8 price range."
+2026-11-27 10:51:21 PT,trend_volume,5m,1795805400,218.1,skip,structure_conflict,,,0.8426,0.9050,,,0.00,0.00,71.8675,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:51:21 PT,trend_down,5m,1795805400,218.1,skip,structure_conflict,,,0.8426,0.9050,,,0.00,0.00,71.8675,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:51:21 PT,breakdown,5m,1795805400,218.1,skip,side_not_allowed,Up,0.9038,0.8426,0.9050,,,0.00,0.00,71.8675,71.7486,This variant only bets Down; the signal says Up.
+2026-11-27 10:51:21 PT,auto_pick,5m,1795805400,218.1,skip,hour_filter,,,0.8426,,,,0.00,0.00,71.8675,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:51:21 PT,bankroll_20,5m,1795805400,218.1,skip,hour_filter,,,0.8426,,,,0.00,0.00,71.8675,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:51:29 PT,sum_arb_15m,15m,1795805100,510.1,skip,no_arb,,,0.7251,,0.8400,,0.00,0.00,71.8715,71.7586,Up 84.0c + Down 18.0c + fees = 103.97c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:29 PT,sum_arb_1h,1h,1795802400,510.1,skip,no_arb,,,0.4096,,0.3700,,0.00,0.00,71.8715,71.9146,Up 37.0c + Down 65.0c + fees = 105.22c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:29 PT,sum_arb_5m,5m,1795805400,210.1,skip,no_arb,,,0.8558,,0.9400,,0.00,0.00,71.8715,71.7486,Up 94.0c + Down 7.0c + fees = 101.85c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:37 PT,down_ride_15m,15m,1795805100,502.1,skip,side_not_allowed,Up,0.7884,0.7268,0.8500,,,0.00,0.00,71.8715,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:51:41 PT,max_profit,15m,1795805100,498.1,skip,no_signal,,,0.7160,,,,0.00,0.00,71.8650,71.7586,No source strategy has a clear entry in this 15m window (498s left). Cash $13.05.
+2026-11-27 10:51:41 PT,control,5m,1795805400,198.1,skip,hour_filter,,,0.8510,,,,0.00,0.00,71.8650,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:51:41 PT,model_lead,5m,1795805400,198.1,skip,ask_band,Up,0.8930,0.8510,0.9350,0.9400,-0.0510,0.00,0.00,71.8650,71.7486,"Up costs 94c, outside this variant's 0.2-0.8 price range."
+2026-11-27 10:51:41 PT,trend_volume,5m,1795805400,198.1,skip,structure_conflict,,,0.8510,0.9350,,,0.00,0.00,71.8650,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:51:41 PT,trend_down,5m,1795805400,198.1,skip,structure_conflict,,,0.8510,0.9350,,,0.00,0.00,71.8650,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:51:41 PT,breakdown,5m,1795805400,198.1,skip,side_not_allowed,Up,0.9230,0.8510,0.9350,,,0.00,0.00,71.8650,71.7486,This variant only bets Down; the signal says Up.
+2026-11-27 10:51:41 PT,auto_pick,5m,1795805400,198.1,skip,hour_filter,,,0.8510,,,,0.00,0.00,71.8650,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:51:41 PT,bankroll_20,5m,1795805400,198.1,skip,hour_filter,,,0.8510,,,,0.00,0.00,71.8650,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:51:49 PT,sum_arb_15m,15m,1795805100,490.1,skip,no_arb,,,0.7204,,0.8000,,0.00,0.00,71.8665,71.7586,Up 80.0c + Down 23.0c + fees = 105.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:49 PT,sum_arb_1h,1h,1795802400,490.1,skip,no_arb,,,0.3972,,0.3100,,0.00,0.00,71.8665,71.9146,Up 31.0c + Down 75.0c + fees = 108.81c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:49 PT,sum_arb_5m,5m,1795805400,190.1,skip,no_arb,,,0.8599,,0.9200,,0.00,0.00,71.8665,71.7486,Up 92.0c + Down 9.0c + fees = 102.09c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:51:57 PT,down_ride_15m,15m,1795805100,482.1,skip,side_not_allowed,Up,0.7842,0.7285,0.8400,,,0.00,0.00,71.8700,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:52:01 PT,max_profit,15m,1795805100,478.1,skip,no_signal,,,0.7294,,,,0.00,0.00,71.8700,71.7586,No source strategy has a clear entry in this 15m window (478s left). Cash $13.05.
+2026-11-27 10:52:01 PT,control,5m,1795805400,178.1,skip,hour_filter,,,0.8761,,,,0.00,0.00,71.8700,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:52:01 PT,model_lead,5m,1795805400,178.1,skip,timing,,,0.8761,0.9550,,,0.00,0.00,71.8700,71.7486,Only bets with 180-240s left; 178s left now.
+2026-11-27 10:52:01 PT,trend_volume,5m,1795805400,178.1,skip,structure_conflict,,,0.8761,0.9550,,,0.00,0.00,71.8700,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:52:01 PT,trend_down,5m,1795805400,178.1,skip,structure_conflict,,,0.8761,0.9550,,,0.00,0.00,71.8700,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:52:01 PT,breakdown,5m,1795805400,178.1,skip,side_not_allowed,Up,0.9455,0.8761,0.9550,,,0.00,0.00,71.8700,71.7486,This variant only bets Down; the signal says Up.
+2026-11-27 10:52:01 PT,auto_pick,5m,1795805400,178.1,skip,hour_filter,,,0.8761,,,,0.00,0.00,71.8700,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:52:01 PT,bankroll_20,5m,1795805400,178.1,skip,hour_filter,,,0.8761,,,,0.00,0.00,71.8700,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:52:09 PT,sum_arb_15m,15m,1795805100,470.1,skip,no_arb,,,0.7220,,0.8600,,0.00,0.00,71.8650,71.7586,Up 86.0c + Down 16.0c + fees = 103.78c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:52:09 PT,sum_arb_1h,1h,1795802400,470.1,skip,no_arb,,,0.3917,,0.3600,,0.00,0.00,71.8650,71.9146,Up 36.0c + Down 69.0c + fees = 108.11c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:52:09 PT,sum_arb_5m,5m,1795805400,170.1,skip,no_arb,,,0.8727,,0.9700,,0.00,0.00,71.8650,71.7486,Up 97.0c + Down 4.0c + fees = 101.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:52:17 PT,down_ride_15m,15m,1795805100,462.1,skip,side_not_allowed,Up,0.8160,0.7519,0.8800,,,0.00,0.00,71.8805,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:52:21 PT,max_profit,15m,1795805100,458.1,skip,no_signal,,,0.7529,,,,0.00,0.00,71.8805,71.7586,No source strategy has a clear entry in this 15m window (458s left). Cash $13.05.
+2026-11-27 10:52:21 PT,control,5m,1795805400,158.1,skip,hour_filter,,,0.9113,,,,0.00,0.00,71.8805,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:52:21 PT,trend_volume,5m,1795805400,158.1,skip,structure_conflict,,,0.9113,0.9850,,,0.00,0.00,71.8805,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:52:21 PT,trend_down,5m,1795805400,158.1,skip,structure_conflict,,,0.9113,0.9850,,,0.00,0.00,71.8805,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:52:21 PT,breakdown,5m,1795805400,158.1,skip,side_not_allowed,Up,0.9782,0.9113,0.9850,,,0.00,0.00,71.8805,71.7486,This variant only bets Down; the signal says Up.
+2026-11-27 10:52:21 PT,auto_pick,5m,1795805400,158.1,skip,hour_filter,,,0.9113,,,,0.00,0.00,71.8805,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:52:21 PT,bankroll_20,5m,1795805400,158.1,skip,hour_filter,,,0.9113,,,,0.00,0.00,71.8805,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:52:29 PT,sum_arb_15m,15m,1795805100,450.1,skip,no_arb,,,0.7629,,0.8900,,0.00,0.00,71.8850,71.7586,Up 89.0c + Down 13.0c + fees = 103.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:52:29 PT,sum_arb_1h,1h,1795802400,450.1,skip,no_arb,,,0.4333,,0.3900,,0.00,0.00,71.8850,71.9146,Up 39.0c + Down 63.0c + fees = 105.30c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:52:29 PT,sum_arb_5m,5m,1795805400,150.1,skip,no_arb,,,0.9251,,0.9900,,0.00,0.00,71.8850,71.7486,Up 99.0c + Down 2.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:52:37 PT,down_ride_15m,15m,1795805100,442.1,skip,side_not_allowed,Up,0.8325,0.7650,0.9000,,,0.00,0.00,71.8850,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:52:41 PT,max_profit,15m,1795805100,438.1,skip,no_signal,,,0.7661,,,,0.00,0.00,71.8850,71.7586,No source strategy has a clear entry in this 15m window (438s left). Cash $13.05.
+2026-11-27 10:52:41 PT,control,5m,1795805400,138.1,skip,hour_filter,,,0.9354,,,,0.00,0.00,71.8850,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:52:41 PT,trend_volume,5m,1795805400,138.1,skip,structure_conflict,,,0.9354,0.9850,,,0.00,0.00,71.8850,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:52:41 PT,trend_down,5m,1795805400,138.1,skip,structure_conflict,,,0.9354,0.9850,,,0.00,0.00,71.8850,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:52:41 PT,breakdown,5m,1795805400,138.1,skip,side_not_allowed,Up,0.9900,0.9354,0.9850,,,0.00,0.00,71.8850,71.7486,This variant only bets Down; the signal says Up.
+2026-11-27 10:52:41 PT,auto_pick,5m,1795805400,138.1,skip,hour_filter,,,0.9354,,,,0.00,0.00,71.8850,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:52:41 PT,bankroll_20,5m,1795805400,138.1,skip,hour_filter,,,0.9354,,,,0.00,0.00,71.8850,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:52:49 PT,sum_arb_15m,15m,1795805100,430.1,skip,no_arb,,,0.7609,,0.9100,,0.00,0.00,71.8800,71.7586,Up 91.0c + Down 10.0c + fees = 102.20c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:52:49 PT,sum_arb_1h,1h,1795802400,430.1,skip,no_arb,,,0.4198,,0.4300,,0.00,0.00,71.8800,71.9146,Up 43.0c + Down 63.0c + fees = 109.35c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:52:49 PT,sum_arb_5m,5m,1795805400,130.1,skip,no_book,,,0.9368,,,,0.00,0.00,71.8800,71.7486,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:52:57 PT,down_ride_15m,15m,1795805100,422.1,skip,side_not_allowed,Up,0.8333,0.7766,0.8900,,,0.00,0.00,71.8875,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:53:01 PT,max_profit,15m,1795805100,418.1,skip,no_signal,,,0.7777,,,,0.00,0.00,71.8875,71.7586,No source strategy has a clear entry in this 15m window (418s left). Cash $13.05.
+2026-11-27 10:53:01 PT,control,5m,1795805400,118.1,skip,hour_filter,,,0.9573,,,,0.00,0.00,71.8875,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:53:01 PT,trend_volume,5m,1795805400,118.1,skip,structure_conflict,,,0.9573,0.9900,,,0.00,0.00,71.8875,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:53:01 PT,trend_down,5m,1795805400,118.1,skip,structure_conflict,,,0.9573,0.9900,,,0.00,0.00,71.8875,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:53:01 PT,breakdown,5m,1795805400,118.1,skip,side_not_allowed,Up,0.9900,0.9573,0.9900,,,0.00,0.00,71.8875,71.7486,This variant only bets Down; the signal says Up.
+2026-11-27 10:53:01 PT,auto_pick,5m,1795805400,118.1,skip,hour_filter,,,0.9573,,,,0.00,0.00,71.8875,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:53:01 PT,bankroll_20,5m,1795805400,118.1,skip,hour_filter,,,0.9573,,,,0.00,0.00,71.8875,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:53:09 PT,sum_arb_15m,15m,1795805100,410.1,skip,no_arb,,,0.7801,,0.9200,,0.00,0.00,71.8875,71.7586,Up 92.0c + Down 10.0c + fees = 103.15c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:53:09 PT,sum_arb_1h,1h,1795802400,410.1,skip,no_arb,,,0.4354,,0.4200,,0.00,0.00,71.8875,71.9146,Up 42.0c + Down 61.0c + fees = 106.37c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:53:09 PT,sum_arb_5m,5m,1795805400,110.1,skip,no_book,,,0.9643,,,,0.00,0.00,71.8875,71.7486,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:53:17 PT,down_ride_15m,15m,1795805100,402.1,skip,side_not_allowed,Up,0.8600,0.8049,0.9150,,,0.00,0.00,71.9005,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:53:21 PT,max_profit,15m,1795805100,398.0,skip,no_signal,,,0.7977,,,,0.00,0.00,71.8955,71.7586,No source strategy has a clear entry in this 15m window (398s left). Cash $13.05.
+2026-11-27 10:53:21 PT,control,5m,1795805400,98.0,skip,hour_filter,,,0.9805,,,,0.00,0.00,71.8955,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:53:21 PT,trend_volume,5m,1795805400,98.0,skip,choppy,,,0.9805,0.9900,,,0.00,0.00,71.8955,71.7486,"Choppy: price went back and forth (straightness 0.14, need 0.15)."
+2026-11-27 10:53:21 PT,trend_down,5m,1795805400,98.0,skip,structure_conflict,,,0.9805,0.9900,,,0.00,0.00,71.8955,71.7486,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:53:21 PT,breakdown,5m,1795805400,98.0,skip,no_breakout,,,0.9805,0.9900,,,0.00,0.00,71.8955,71.7486,Price is inside its 30-min range ($71.63-$71.89); no breakout.
+2026-11-27 10:53:21 PT,auto_pick,5m,1795805400,98.0,skip,hour_filter,,,0.9805,,,,0.00,0.00,71.8955,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:53:21 PT,bankroll_20,5m,1795805400,98.0,skip,hour_filter,,,0.9805,,,,0.00,0.00,71.8955,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:53:29 PT,sum_arb_15m,15m,1795805100,390.0,skip,no_arb,,,0.8088,,0.9400,,0.00,0.00,71.9005,71.7586,Up 94.0c + Down 7.0c + fees = 101.85c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:53:29 PT,sum_arb_1h,1h,1795802400,390.0,skip,no_arb,,,0.4653,,0.4600,,0.00,0.00,71.9005,71.9146,Up 46.0c + Down 59.0c + fees = 108.43c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:53:29 PT,sum_arb_5m,5m,1795805400,90.0,skip,no_book,,,0.9884,,,,0.00,0.00,71.9005,71.7486,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:53:37 PT,down_ride_15m,15m,1795805100,382.0,skip,side_not_allowed,Up,0.8619,0.8038,0.9200,,,0.00,0.00,71.8960,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:53:41 PT,max_profit,15m,1795805100,378.0,skip,no_signal,,,0.8077,,,,0.00,0.00,71.8975,71.7586,No source strategy has a clear entry in this 15m window (378s left). Cash $13.05.
+2026-11-27 10:53:41 PT,control,5m,1795805400,78.0,skip,hour_filter,,,0.9934,,,,0.00,0.00,71.8975,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:53:41 PT,auto_pick,5m,1795805400,78.0,skip,hour_filter,,,0.9934,,,,0.00,0.00,71.8975,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:53:41 PT,bankroll_20,5m,1795805400,78.0,skip,hour_filter,,,0.9934,,,,0.00,0.00,71.8975,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:53:49 PT,sum_arb_15m,15m,1795805100,370.0,skip,no_arb,,,0.8105,,0.9400,,0.00,0.00,71.8975,71.7586,Up 94.0c + Down 7.0c + fees = 101.85c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:53:49 PT,sum_arb_1h,1h,1795802400,370.0,skip,no_arb,,,0.4567,,0.4100,,0.00,0.00,71.8975,71.9146,Up 41.0c + Down 64.0c + fees = 108.31c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:53:49 PT,sum_arb_5m,5m,1795805400,70.0,skip,no_book,,,0.9966,,,,0.00,0.00,71.8975,71.7486,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:53:57 PT,down_ride_15m,15m,1795805100,362.0,skip,side_not_allowed,Up,0.8667,0.8133,0.9200,,,0.00,0.00,71.8975,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:54:01 PT,max_profit,15m,1795805100,358.0,skip,no_signal,,,0.8016,,,,0.00,0.00,71.8900,71.7586,No source strategy has a clear entry in this 15m window (358s left). Cash $13.05.
+2026-11-27 10:54:01 PT,control,5m,1795805400,58.0,skip,hour_filter,,,0.9989,,,,0.00,0.00,71.8900,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:54:01 PT,auto_pick,5m,1795805400,58.0,skip,hour_filter,,,0.9989,,,,0.00,0.00,71.8900,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:54:01 PT,bankroll_20,5m,1795805400,58.0,skip,hour_filter,,,0.9989,,,,0.00,0.00,71.8900,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:54:09 PT,sum_arb_15m,15m,1795805100,350.0,skip,no_arb,,,0.8090,,0.9500,,0.00,0.00,71.8925,71.7586,Up 95.0c + Down 7.0c + fees = 102.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:54:09 PT,sum_arb_1h,1h,1795802400,350.0,skip,no_arb,,,0.4425,,0.4300,,0.00,0.00,71.8925,71.9146,Up 43.0c + Down 59.0c + fees = 105.41c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:54:09 PT,sum_arb_5m,5m,1795805400,50.0,skip,no_book,,,0.9998,,,,0.00,0.00,71.8925,71.7486,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:54:17 PT,down_ride_15m,15m,1795805100,342.0,skip,side_not_allowed,Up,0.8933,0.8216,0.9650,,,0.00,0.00,71.8980,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:54:21 PT,max_profit,15m,1795805100,338.0,skip,no_signal,,,0.8350,,,,0.00,0.00,71.9050,71.7586,No source strategy has a clear entry in this 15m window (338s left). Cash $13.05.
+2026-11-27 10:54:21 PT,control,5m,1795805400,38.0,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9050,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:54:21 PT,auto_pick,5m,1795805400,38.0,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9050,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:54:21 PT,bankroll_20,5m,1795805400,38.0,skip,hour_filter,,,1.0000,,,,0.00,0.00,71.9050,71.7486,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:54:29 PT,sum_arb_15m,15m,1795805100,330.0,skip,no_arb,,,0.8297,,0.9500,,0.00,0.00,71.9000,71.7586,Up 95.0c + Down 7.0c + fees = 102.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:54:29 PT,sum_arb_1h,1h,1795802400,330.0,skip,no_arb,,,0.4607,,0.4900,,0.00,0.00,71.9000,71.9146,Up 49.0c + Down 56.0c + fees = 108.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:54:29 PT,sum_arb_5m,5m,1795805400,30.0,skip,no_book,,,1.0000,,,,0.00,0.00,71.9000,71.7486,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:54:37 PT,down_ride_15m,15m,1795805100,322.0,skip,side_not_allowed,Up,0.8957,0.8414,0.9500,,,0.00,0.00,71.9050,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:54:41 PT,max_profit,15m,1795805100,318.0,skip,no_signal,,,0.8512,,,,0.00,0.00,71.9100,71.7586,No source strategy has a clear entry in this 15m window (318s left). Cash $13.05.
+2026-11-27 10:54:49 PT,sum_arb_15m,15m,1795805100,310.0,skip,no_arb,,,0.8699,,0.9700,,0.00,0.00,71.9200,71.7586,Up 97.0c + Down 4.0c + fees = 101.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:54:49 PT,sum_arb_1h,1h,1795802400,310.0,skip,no_arb,,,0.5149,,0.5300,,0.00,0.00,71.9200,71.9146,Up 53.0c + Down 51.0c + fees = 107.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:54:49 PT,sum_arb_5m,5m,1795805400,10.0,skip,no_book,,,1.0000,,,,0.00,0.00,71.9200,71.7486,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:54:57 PT,down_ride_15m,15m,1795805100,302.0,skip,side_not_allowed,Up,0.9090,0.8581,0.9600,,,0.00,0.00,71.9100,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:55:01 PT,max_profit,15m,1795805100,298.0,skip,no_signal,,,0.8599,,,,0.00,0.00,71.9100,71.7586,No source strategy has a clear entry in this 15m window (298s left). Cash $13.05.
+2026-11-27 10:55:09 PT,sum_arb_15m,15m,1795805100,290.0,skip,no_arb,,,0.8858,,0.9900,,0.00,0.00,71.9250,71.7586,Up 99.0c + Down 3.0c + fees = 102.27c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:55:09 PT,sum_arb_1h,1h,1795802400,290.0,skip,no_arb,,,0.5299,,0.6600,,0.00,0.00,71.9250,71.9146,Up 66.0c + Down 35.0c + fees = 104.16c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:55:09 PT,sum_arb_5m,5m,1795805700,290.0,skip,no_arb,,,0.5587,,0.6700,,0.00,0.00,71.9250,71.9046,Up 67.0c + Down 35.0c + fees = 105.14c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:55:17 PT,down_ride_15m,15m,1795805100,282.0,skip,side_not_allowed,Up,0.9372,0.8894,0.9850,,,0.00,0.00,71.9250,71.7586,This variant only bets Down; the signal says Up.
+2026-11-27 10:55:21 PT,max_profit,15m,1795805100,278.0,skip,no_signal,,,0.9044,,,,0.00,0.00,71.9350,71.7586,No source strategy has a clear entry in this 15m window (278s left). Cash $13.05.
+2026-11-27 10:55:29 PT,sum_arb_15m,15m,1795805100,270.0,skip,no_arb,,,0.9198,,0.9900,,0.00,0.00,71.9450,71.7586,Up 99.0c + Down 2.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:55:29 PT,sum_arb_1h,1h,1795802400,270.0,skip,no_arb,,,0.5904,,0.7000,,0.00,0.00,71.9450,71.9146,Up 70.0c + Down 34.0c + fees = 107.04c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:55:29 PT,sum_arb_5m,5m,1795805700,270.0,skip,no_arb,,,0.6195,,0.7100,,0.00,0.00,71.9450,71.9046,Up 71.0c + Down 30.0c + fees = 103.91c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:55:41 PT,max_profit,15m,1795805100,258.0,skip,no_signal,,,0.9223,,,,0.00,0.00,71.9425,71.7586,No source strategy has a clear entry in this 15m window (258s left). Cash $13.05.
+2026-11-27 10:55:49 PT,sum_arb_15m,15m,1795805100,250.0,skip,no_arb,,,0.9382,,0.9900,,0.00,0.00,71.9545,71.7586,Up 99.0c + Down 2.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:55:49 PT,sum_arb_1h,1h,1795802400,250.0,skip,no_arb,,,0.6230,,0.7300,,0.00,0.00,71.9545,71.9146,Up 73.0c + Down 37.0c + fees = 113.01c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:55:49 PT,sum_arb_5m,5m,1795805700,250.0,skip,no_arb,,,0.6526,,0.6900,,0.00,0.00,71.9545,71.9046,Up 69.0c + Down 32.0c + fees = 104.02c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:01 PT,max_profit,15m,1795805100,238.0,skip,no_signal,,,0.9356,,,,0.00,0.00,71.9465,71.7586,No source strategy has a clear entry in this 15m window (238s left). Cash $13.05.
+2026-11-27 10:56:01 PT,control,5m,1795805700,238.0,skip,hour_filter,,,0.6326,,,,0.00,0.00,71.9465,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:56:01 PT,model_lead,5m,1795805700,238.0,skip,edge_small,Up,0.6663,0.6326,0.7000,0.7100,-0.0581,0.00,0.00,71.9465,71.9046,Up at 71c: my estimate 67% beats price+fee by only -5.8c (need 4c).
+2026-11-27 10:56:01 PT,trend_volume,5m,1795805700,238.0,skip,choppy,,,0.6326,0.7000,,,0.00,0.00,71.9465,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.15)."
+2026-11-27 10:56:01 PT,trend_down,5m,1795805700,238.0,skip,choppy,,,0.6326,0.7000,,,0.00,0.00,71.9465,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.12)."
+2026-11-27 10:56:01 PT,breakdown,5m,1795805700,238.0,skip,weak_breakout,,,0.6326,0.7000,,,0.00,0.00,71.9465,71.9046,Broke above the 30-min high $71.90 but volume only 1.0x normal (need 2.0x).
+2026-11-27 10:56:01 PT,auto_pick,5m,1795805700,238.0,skip,hour_filter,,,0.6326,,,,0.00,0.00,71.9465,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:56:01 PT,bankroll_20,5m,1795805700,238.0,skip,hour_filter,,,0.6326,,,,0.00,0.00,71.9465,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:56:09 PT,sum_arb_15m,15m,1795805100,230.0,skip,no_arb,,,0.9342,,0.9900,,0.00,0.00,71.9415,71.7586,Up 99.0c + Down 2.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:09 PT,sum_arb_1h,1h,1795802400,230.0,skip,no_arb,,,0.5876,,0.7200,,0.00,0.00,71.9415,71.9146,Up 72.0c + Down 42.0c + fees = 117.12c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:09 PT,sum_arb_5m,5m,1795805700,230.0,skip,no_arb,,,0.6195,,0.6700,,0.00,0.00,71.9415,71.9046,Up 67.0c + Down 35.0c + fees = 105.14c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:21 PT,max_profit,15m,1795805100,218.0,skip,no_signal,,,0.9481,,,,0.00,0.00,71.9500,71.7586,No source strategy has a clear entry in this 15m window (218s left). Cash $13.05.
+2026-11-27 10:56:21 PT,control,5m,1795805700,218.0,skip,hour_filter,,,0.6503,,,,0.00,0.00,71.9500,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:56:21 PT,model_lead,5m,1795805700,218.0,skip,edge_small,Up,0.6676,0.6503,0.6850,0.7000,-0.0471,0.00,0.00,71.9500,71.9046,Up at 70c: my estimate 67% beats price+fee by only -4.7c (need 4c).
+2026-11-27 10:56:21 PT,trend_volume,5m,1795805700,218.0,skip,choppy,,,0.6503,0.6850,,,0.00,0.00,71.9500,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.15)."
+2026-11-27 10:56:21 PT,trend_down,5m,1795805700,218.0,skip,choppy,,,0.6503,0.6850,,,0.00,0.00,71.9500,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.12)."
+2026-11-27 10:56:21 PT,breakdown,5m,1795805700,218.0,skip,weak_breakout,,,0.6503,0.6850,,,0.00,0.00,71.9500,71.9046,Broke above the 30-min high $71.90 but volume only 1.0x normal (need 2.0x).
+2026-11-27 10:56:21 PT,auto_pick,5m,1795805700,218.0,skip,hour_filter,,,0.6503,,,,0.00,0.00,71.9500,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:56:21 PT,bankroll_20,5m,1795805700,218.0,skip,hour_filter,,,0.6503,,,,0.00,0.00,71.9500,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:56:30 PT,sum_arb_15m,15m,1795805100,210.0,skip,no_arb,,,0.9518,,0.9980,,0.00,0.00,71.9500,71.7586,Up 99.8c + Down 1.9c + fees = 101.84c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:30 PT,sum_arb_1h,1h,1795802400,210.0,skip,no_arb,,,0.6206,,0.7600,,0.00,0.00,71.9500,71.9146,Up 76.0c + Down 29.0c + fees = 107.72c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:30 PT,sum_arb_5m,5m,1795805700,210.0,skip,no_arb,,,0.6534,,0.7300,,0.00,0.00,71.9500,71.9046,Up 73.0c + Down 29.0c + fees = 104.82c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:42 PT,max_profit,15m,1795805100,198.0,skip,no_signal,,,0.9466,,,,0.00,0.00,71.9380,71.7586,No source strategy has a clear entry in this 15m window (198s left). Cash $13.05.
+2026-11-27 10:56:42 PT,control,5m,1795805700,198.0,skip,hour_filter,,,0.6180,,,,0.00,0.00,71.9380,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:56:42 PT,model_lead,5m,1795805700,198.0,skip,lead_small,Up,0.6390,0.6180,0.6600,,,0.00,0.00,71.9380,71.9046,Lead gate: SOL is $+0.033 past the price to beat our way (Up); need at least $0.036 (0.05% of price).
+2026-11-27 10:56:42 PT,trend_volume,5m,1795805700,198.0,skip,choppy,,,0.6180,0.6600,,,0.00,0.00,71.9380,71.9046,"Choppy: price went back and forth (straightness 0.15, need 0.15)."
+2026-11-27 10:56:42 PT,trend_down,5m,1795805700,198.0,skip,structure_conflict,,,0.6180,0.6600,,,0.00,0.00,71.9380,71.9046,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:56:42 PT,breakdown,5m,1795805700,198.0,skip,weak_breakout,,,0.6180,0.6600,,,0.00,0.00,71.9380,71.9046,Broke above the 30-min high $71.91 but volume only 1.2x normal (need 2.0x).
+2026-11-27 10:56:42 PT,auto_pick,5m,1795805700,198.0,skip,hour_filter,,,0.6180,,,,0.00,0.00,71.9380,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:56:42 PT,bankroll_20,5m,1795805700,198.0,skip,hour_filter,,,0.6180,,,,0.00,0.00,71.9380,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:56:50 PT,sum_arb_15m,15m,1795805100,190.0,skip,no_arb,,,0.9587,,0.9990,,0.00,0.00,71.9425,71.7586,Up 99.9c + Down 1.0c + fees = 100.98c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:50 PT,sum_arb_1h,1h,1795802400,190.0,skip,no_arb,,,0.6037,,0.8100,,0.00,0.00,71.9425,71.9146,Up 81.0c + Down 27.0c + fees = 110.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:56:50 PT,sum_arb_5m,5m,1795805700,190.0,skip,no_arb,,,0.6397,,0.8000,,0.00,0.00,71.9425,71.9046,Up 80.0c + Down 22.0c + fees = 104.32c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:57:02 PT,max_profit,15m,1795805100,178.0,skip,no_signal,,,0.9659,,,,0.00,0.00,71.9445,71.7586,No source strategy has a clear entry in this 15m window (178s left). Cash $13.05.
+2026-11-27 10:57:02 PT,control,5m,1795805700,178.0,skip,hour_filter,,,0.6522,,,,0.00,0.00,71.9445,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:57:02 PT,model_lead,5m,1795805700,178.0,skip,timing,,,0.6522,0.7150,,,0.00,0.00,71.9445,71.9046,Only bets with 180-240s left; 178s left now.
+2026-11-27 10:57:02 PT,trend_volume,5m,1795805700,178.0,skip,weak_momentum,,,0.6522,0.7150,,,0.00,0.00,71.9445,71.9046,"The 60m move (+0.49%) too small to call a trend (z +0.9, need 1.0)."
+2026-11-27 10:57:02 PT,trend_down,5m,1795805700,178.0,skip,structure_conflict,,,0.6522,0.7150,,,0.00,0.00,71.9445,71.9046,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:57:02 PT,breakdown,5m,1795805700,178.0,skip,weak_breakout,,,0.6522,0.7150,,,0.00,0.00,71.9445,71.9046,Broke above the 30-min high $71.91 but volume only 1.2x normal (need 2.0x).
+2026-11-27 10:57:02 PT,auto_pick,5m,1795805700,178.0,skip,hour_filter,,,0.6522,,,,0.00,0.00,71.9445,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:57:02 PT,bankroll_20,5m,1795805700,178.0,skip,hour_filter,,,0.6522,,,,0.00,0.00,71.9445,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:57:10 PT,sum_arb_15m,15m,1795805100,170.0,skip,no_book,,,0.9666,,,,0.00,0.00,71.9405,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:57:10 PT,sum_arb_1h,1h,1795802400,170.0,skip,no_arb,,,0.6028,,0.8400,,0.00,0.00,71.9405,71.9146,Up 84.0c + Down 35.0c + fees = 121.53c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:57:10 PT,sum_arb_5m,5m,1795805700,170.0,skip,no_arb,,,0.6413,,0.7600,,0.00,0.00,71.9405,71.9046,Up 76.0c + Down 28.0c + fees = 106.69c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:57:22 PT,max_profit,15m,1795805100,158.0,skip,no_signal,,,0.9685,,,,0.00,0.00,71.9350,71.7586,No source strategy has a clear entry in this 15m window (158s left). Cash $13.05.
+2026-11-27 10:57:22 PT,control,5m,1795805700,158.0,skip,hour_filter,,,0.6256,,,,0.00,0.00,71.9350,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:57:22 PT,trend_volume,5m,1795805700,158.0,skip,weak_momentum,,,0.6256,0.5600,,,0.00,0.00,71.9350,71.9046,"The 60m move (+0.49%) too small to call a trend (z +0.9, need 1.0)."
+2026-11-27 10:57:22 PT,trend_down,5m,1795805700,158.0,skip,structure_conflict,,,0.6256,0.5600,,,0.00,0.00,71.9350,71.9046,Momentum says Up but price isn't making higher highs and higher lows (structure mixed).
+2026-11-27 10:57:22 PT,breakdown,5m,1795805700,158.0,skip,weak_breakout,,,0.6256,0.5600,,,0.00,0.00,71.9350,71.9046,Broke above the 30-min high $71.91 but volume only 1.2x normal (need 2.0x).
+2026-11-27 10:57:22 PT,auto_pick,5m,1795805700,158.0,skip,hour_filter,,,0.6256,,,,0.00,0.00,71.9350,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:57:22 PT,bankroll_20,5m,1795805700,158.0,skip,hour_filter,,,0.6256,,,,0.00,0.00,71.9350,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:57:30 PT,sum_arb_15m,15m,1795805100,150.0,skip,no_book,,,0.9649,,,,0.00,0.00,71.9250,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:57:30 PT,sum_arb_1h,1h,1795802400,150.0,skip,no_arb,,,0.5448,,0.5300,,0.00,0.00,71.9250,71.9146,Up 53.0c + Down 62.0c + fees = 118.39c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:57:30 PT,sum_arb_5m,5m,1795805700,150.0,skip,no_arb,,,0.5878,,0.5000,,0.00,0.00,71.9250,71.9046,Up 50.0c + Down 51.0c + fees = 104.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:57:42 PT,max_profit,15m,1795805100,138.0,skip,no_signal,,,0.9498,,,,0.00,0.00,71.9020,71.7586,No source strategy has a clear entry in this 15m window (138s left). Cash $13.05.
+2026-11-27 10:57:42 PT,control,5m,1795805700,138.0,skip,hour_filter,,,0.4881,,,,0.00,0.00,71.9020,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:57:42 PT,trend_volume,5m,1795805700,138.0,skip,choppy,,,0.4881,0.4450,,,0.00,0.00,71.9020,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.15)."
+2026-11-27 10:57:42 PT,trend_down,5m,1795805700,138.0,skip,choppy,,,0.4881,0.4450,,,0.00,0.00,71.9020,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.12)."
+2026-11-27 10:57:42 PT,breakdown,5m,1795805700,138.0,skip,weak_breakout,,,0.4881,0.4450,,,0.00,0.00,71.9020,71.9046,Broke above the 30-min high $71.93 but volume only 1.2x normal (need 2.0x).
+2026-11-27 10:57:42 PT,auto_pick,5m,1795805700,138.0,skip,hour_filter,,,0.4881,,,,0.00,0.00,71.9020,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:57:42 PT,bankroll_20,5m,1795805700,138.0,skip,hour_filter,,,0.4881,,,,0.00,0.00,71.9020,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:57:50 PT,sum_arb_15m,15m,1795805100,130.0,skip,no_book,,,0.9593,,,,0.00,0.00,71.9050,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:57:50 PT,sum_arb_1h,1h,1795802400,130.0,skip,no_arb,,,0.4543,,0.4000,,0.00,0.00,71.9050,71.9146,Up 40.0c + Down 75.0c + fees = 117.99c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:57:50 PT,sum_arb_5m,5m,1795805700,130.0,skip,no_arb,,,0.5019,,0.4000,,0.00,0.00,71.9050,71.9046,Up 40.0c + Down 61.0c + fees = 104.35c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:58:02 PT,max_profit,15m,1795805100,118.0,skip,no_signal,,,0.9629,,,,0.00,0.00,71.8995,71.7586,No source strategy has a clear entry in this 15m window (118s left). Cash $13.05.
+2026-11-27 10:58:02 PT,control,5m,1795805700,118.0,skip,hour_filter,,,0.4742,,,,0.00,0.00,71.8995,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:58:02 PT,trend_volume,5m,1795805700,118.0,skip,choppy,,,0.4742,0.5050,,,0.00,0.00,71.8995,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.15)."
+2026-11-27 10:58:02 PT,trend_down,5m,1795805700,118.0,skip,choppy,,,0.4742,0.5050,,,0.00,0.00,71.8995,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.12)."
+2026-11-27 10:58:02 PT,breakdown,5m,1795805700,118.0,skip,weak_breakout,,,0.4742,0.5050,,,0.00,0.00,71.8995,71.9046,Broke above the 30-min high $71.93 but volume only 1.2x normal (need 2.0x).
+2026-11-27 10:58:02 PT,auto_pick,5m,1795805700,118.0,skip,hour_filter,,,0.4742,,,,0.00,0.00,71.8995,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:58:02 PT,bankroll_20,5m,1795805700,118.0,skip,hour_filter,,,0.4742,,,,0.00,0.00,71.8995,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:58:10 PT,sum_arb_15m,15m,1795805100,110.0,skip,no_book,,,0.9693,,,,0.00,0.00,71.8995,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:58:10 PT,sum_arb_1h,1h,1795802400,110.0,skip,no_arb,,,0.4203,,0.3700,,0.00,0.00,71.8995,71.9146,Up 37.0c + Down 71.0c + fees = 111.07c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:58:10 PT,sum_arb_5m,5m,1795805700,110.0,skip,no_arb,,,0.4730,,0.4600,,0.00,0.00,71.8995,71.9046,Up 46.0c + Down 56.0c + fees = 105.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:58:22 PT,max_profit,15m,1795805100,98.0,skip,no_signal,,,0.9829,,,,0.00,0.00,71.9060,71.7586,No source strategy has a clear entry in this 15m window (98s left). Cash $13.05.
+2026-11-27 10:58:22 PT,control,5m,1795805700,98.0,skip,hour_filter,,,0.5080,,,,0.00,0.00,71.9060,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:58:22 PT,trend_volume,5m,1795805700,98.0,skip,choppy,,,0.5080,0.3050,,,0.00,0.00,71.9060,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.15)."
+2026-11-27 10:58:22 PT,trend_down,5m,1795805700,98.0,skip,choppy,,,0.5080,0.3050,,,0.00,0.00,71.9060,71.9046,"Choppy: price went back and forth (straightness 0.12, need 0.12)."
+2026-11-27 10:58:22 PT,breakdown,5m,1795805700,98.0,skip,weak_breakout,,,0.5080,0.3050,,,0.00,0.00,71.9060,71.9046,Broke above the 30-min high $71.93 but volume only 1.2x normal (need 2.0x).
+2026-11-27 10:58:22 PT,auto_pick,5m,1795805700,98.0,skip,hour_filter,,,0.5080,,,,0.00,0.00,71.9060,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:58:22 PT,bankroll_20,5m,1795805700,98.0,skip,hour_filter,,,0.5080,,,,0.00,0.00,71.9060,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:58:30 PT,sum_arb_15m,15m,1795805100,90.0,skip,no_book,,,0.9878,,,,0.00,0.00,71.9060,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:58:30 PT,sum_arb_1h,1h,1795802400,90.0,skip,no_arb,,,0.4475,,0.2000,,0.00,0.00,71.9060,71.9146,Up 20.0c + Down 88.0c + fees = 109.86c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:58:30 PT,sum_arb_5m,5m,1795805700,90.0,skip,no_arb,,,0.5085,,0.1600,,0.00,0.00,71.9060,71.9046,Up 16.0c + Down 86.0c + fees = 103.78c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:58:42 PT,max_profit,15m,1795805100,78.0,skip,no_signal,,,0.9849,,,,0.00,0.00,71.8860,71.7586,No source strategy has a clear entry in this 15m window (78s left). Cash $13.05.
+2026-11-27 10:58:42 PT,control,5m,1795805700,78.0,skip,hour_filter,,,0.3758,,,,0.00,0.00,71.8860,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:58:42 PT,auto_pick,5m,1795805700,78.0,skip,hour_filter,,,0.3758,,,,0.00,0.00,71.8860,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:58:42 PT,bankroll_20,5m,1795805700,78.0,skip,hour_filter,,,0.3758,,,,0.00,0.00,71.8860,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:58:50 PT,sum_arb_15m,15m,1795805100,70.0,skip,no_book,,,0.9846,,,,0.00,0.00,71.8750,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:58:50 PT,sum_arb_1h,1h,1795802400,70.0,skip,no_arb,,,0.2308,,0.1000,,0.00,0.00,71.8750,71.9146,Up 10.0c + Down 94.0c + fees = 105.02c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:58:50 PT,sum_arb_5m,5m,1795805700,70.0,skip,no_arb,,,0.2913,,0.1300,,0.00,0.00,71.8750,71.9046,Up 13.0c + Down 89.0c + fees = 103.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:59:02 PT,max_profit,15m,1795805100,58.0,skip,no_signal,,,0.9953,,,,0.00,0.00,71.8770,71.7586,No source strategy has a clear entry in this 15m window (58s left). Cash $13.05.
+2026-11-27 10:59:02 PT,control,5m,1795805700,58.0,skip,hour_filter,,,0.2723,,,,0.00,0.00,71.8770,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:59:02 PT,auto_pick,5m,1795805700,58.0,skip,hour_filter,,,0.2723,,,,0.00,0.00,71.8770,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:59:02 PT,bankroll_20,5m,1795805700,58.0,skip,hour_filter,,,0.2723,,,,0.00,0.00,71.8770,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:59:10 PT,sum_arb_15m,15m,1795805100,50.0,skip,no_book,,,0.9988,,,,0.00,0.00,71.8820,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:59:10 PT,sum_arb_1h,1h,1795802400,50.0,skip,no_arb,,,0.2051,,0.0600,,0.00,0.00,71.8820,71.9146,Up 6.0c + Down 95.0c + fees = 101.73c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:59:10 PT,sum_arb_5m,5m,1795805700,50.0,skip,no_arb,,,0.2829,,0.1100,,0.00,0.00,71.8820,71.9046,Up 11.0c + Down 90.0c + fees = 102.32c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:59:22 PT,max_profit,15m,1795805100,38.0,skip,no_signal,,,0.9999,,,,0.00,0.00,71.8875,71.7586,No source strategy has a clear entry in this 15m window (38s left). Cash $13.05.
+2026-11-27 10:59:22 PT,control,5m,1795805700,38.0,skip,hour_filter,,,0.2844,,,,0.00,0.00,71.8875,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-3.59.
+2026-11-27 10:59:22 PT,auto_pick,5m,1795805700,38.0,skip,hour_filter,,,0.2844,,,,0.00,0.00,71.8875,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-2.60.
+2026-11-27 10:59:22 PT,bankroll_20,5m,1795805700,38.0,skip,hour_filter,,,0.2844,,,,0.00,0.00,71.8875,71.9046,Tweak 2 HOUR_FILTER: hour_filter: 9 past trades in the 10:00 PT hour net $-5.62.
+2026-11-27 10:59:30 PT,sum_arb_15m,15m,1795805100,30.0,skip,no_book,,,1.0000,,,,0.00,0.00,71.8875,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:59:30 PT,sum_arb_1h,1h,1795802400,30.0,skip,no_book,,,0.1728,,,,0.00,0.00,71.8875,71.9146,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:59:30 PT,sum_arb_5m,5m,1795805700,30.0,skip,no_arb,,,0.2659,,0.0200,,0.00,0.00,71.8875,71.9046,Up 2.0c + Down 99.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 10:59:42 PT,max_profit,15m,1795805100,17.9,skip,no_signal,,,1.0000,,,,0.00,0.00,71.8795,71.7586,No source strategy has a clear entry in this 15m window (18s left). Cash $13.05.
+2026-11-27 10:59:50 PT,sum_arb_15m,15m,1795805100,9.9,skip,no_book,,,1.0000,,,,0.00,0.00,71.8900,71.7586,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:59:50 PT,sum_arb_1h,1h,1795802400,9.9,skip,no_book,,,0.1536,,,,0.00,0.00,71.8900,71.9146,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 10:59:50 PT,sum_arb_5m,5m,1795805700,9.9,skip,no_book,,,0.2504,,,,0.00,0.00,71.8900,71.9046,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 11:00:10 PT,sum_arb_15m,15m,1795806000,889.9,skip,no_arb,,,0.5324,,0.5600,,0.00,0.00,71.9055,71.8856,Up 56.0c + Down 46.0c + fees = 105.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:00:10 PT,sum_arb_1h,1h,1795806000,3589.9,skip,no_arb,,,0.5159,,0.5500,,0.00,0.00,71.9055,71.8856,Up 55.0c + Down 47.0c + fees = 105.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:00:10 PT,sum_arb_5m,5m,1795806000,289.9,skip,no_arb,,,0.5586,,0.6100,,0.00,0.00,71.9055,71.8856,Up 61.0c + Down 41.0c + fees = 105.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:00:30 PT,sum_arb_15m,15m,1795806000,869.9,skip,no_arb,,,0.5154,,0.5000,,0.00,0.00,71.8950,71.8856,Up 50.0c + Down 53.0c + fees = 106.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:00:30 PT,sum_arb_1h,1h,1795806000,3569.9,skip,no_arb,,,0.5075,,0.5300,,0.00,0.00,71.8950,71.8856,Up 53.0c + Down 48.0c + fees = 104.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:00:30 PT,sum_arb_5m,5m,1795806000,269.9,skip,no_arb,,,0.5288,,0.5100,,0.00,0.00,71.8950,71.8856,Up 51.0c + Down 50.0c + fees = 104.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:00:50 PT,sum_arb_15m,15m,1795806000,849.9,skip,no_arb,,,0.4921,,0.4500,,0.00,0.00,71.8810,71.8856,Up 45.0c + Down 57.0c + fees = 105.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:00:50 PT,sum_arb_1h,1h,1795806000,3549.9,skip,no_arb,,,0.4962,,0.5000,,0.00,0.00,71.8810,71.8856,Up 50.0c + Down 51.0c + fees = 104.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:00:50 PT,sum_arb_5m,5m,1795806000,249.9,skip,no_arb,,,0.4849,,0.4900,,0.00,0.00,71.8810,71.8856,Up 49.0c + Down 56.0c + fees = 108.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:00 PT,control,5m,1795806000,239.9,skip,edge_small,Down,0.5487,0.4513,0.3600,0.6500,-0.1172,0.00,0.00,71.8710,71.8856,Down at 65c: my estimate 55% beats price+fee by only -11.7c (need 3c).
+2026-11-27 11:01:00 PT,model_lead,5m,1795806000,239.9,skip,lead_small,Down,0.5944,0.4513,0.3600,,,0.00,0.00,71.8710,71.8856,Lead gate: SOL is $+0.015 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
+2026-11-27 11:01:00 PT,trend_volume,5m,1795806000,239.9,skip,choppy,,,0.4513,0.3600,,,0.00,0.00,71.8710,71.8856,"Choppy: price went back and forth (straightness 0.04, need 0.15)."
+2026-11-27 11:01:00 PT,trend_down,5m,1795806000,239.9,skip,choppy,,,0.4513,0.3600,,,0.00,0.00,71.8710,71.8856,"Choppy: price went back and forth (straightness 0.04, need 0.12)."
+2026-11-27 11:01:00 PT,breakdown,5m,1795806000,239.9,skip,no_breakout,,,0.4513,0.3600,,,0.00,0.00,71.8710,71.8856,Price is inside its 30-min range ($71.63-$71.97); no breakout.
+2026-11-27 11:01:00 PT,max_profit,5m,1795806000,239.9,skip,no_signal,,,0.4513,,,,0.00,0.00,71.8710,71.8856,No source strategy has a clear entry in this 5m window (240s left). Cash $13.05.
+2026-11-27 11:01:00 PT,auto_pick,5m,1795806000,239.9,skip,hour_filter,,,0.4513,,,,0.00,0.00,71.8710,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:01:00 PT,bankroll_20,5m,1795806000,239.9,skip,hour_filter,,,0.4513,,,,0.00,0.00,71.8710,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:01:10 PT,sum_arb_15m,15m,1795806000,829.9,skip,no_arb,,,0.4775,,0.4700,,0.00,0.00,71.8725,71.8856,Up 47.0c + Down 58.0c + fees = 108.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:10 PT,sum_arb_1h,1h,1795806000,3529.9,skip,no_arb,,,0.4892,,0.5000,,0.00,0.00,71.8725,71.8856,Up 50.0c + Down 51.0c + fees = 104.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:10 PT,sum_arb_5m,5m,1795806000,229.9,skip,no_arb,,,0.4552,,0.4100,,0.00,0.00,71.8725,71.8856,Up 41.0c + Down 60.0c + fees = 104.37c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:20 PT,control,5m,1795806000,219.9,skip,edge_small,Down,0.5460,0.4540,0.3550,0.6500,-0.1199,0.00,0.00,71.8725,71.8856,Down at 65c: my estimate 55% beats price+fee by only -12.0c (need 3c).
+2026-11-27 11:01:20 PT,model_lead,5m,1795806000,219.9,skip,lead_small,Down,0.5955,0.4540,0.3550,,,0.00,0.00,71.8725,71.8856,Lead gate: SOL is $+0.013 past the price to beat our way (Down); need at least $0.036 (0.05% of price).
+2026-11-27 11:01:20 PT,trend_volume,5m,1795806000,219.9,skip,choppy,,,0.4540,0.3550,,,0.00,0.00,71.8725,71.8856,"Choppy: price went back and forth (straightness 0.03, need 0.15)."
+2026-11-27 11:01:20 PT,trend_down,5m,1795806000,219.9,skip,choppy,,,0.4540,0.3550,,,0.00,0.00,71.8725,71.8856,"Choppy: price went back and forth (straightness 0.03, need 0.12)."
+2026-11-27 11:01:20 PT,breakdown,5m,1795806000,219.9,skip,no_breakout,,,0.4540,0.3550,,,0.00,0.00,71.8725,71.8856,Price is inside its 30-min range ($71.63-$71.97); no breakout.
+2026-11-27 11:01:20 PT,max_profit,5m,1795806000,219.9,skip,no_signal,,,0.4540,,,,0.00,0.00,71.8725,71.8856,No source strategy has a clear entry in this 5m window (220s left). Cash $13.05.
+2026-11-27 11:01:20 PT,auto_pick,5m,1795806000,219.9,skip,hour_filter,,,0.4540,,,,0.00,0.00,71.8725,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:01:20 PT,bankroll_20,5m,1795806000,219.9,skip,hour_filter,,,0.4540,,,,0.00,0.00,71.8725,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:01:30 PT,sum_arb_15m,15m,1795806000,809.9,skip,no_arb,,,0.4772,,0.4500,,0.00,0.00,71.8725,71.8856,Up 45.0c + Down 57.0c + fees = 105.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:30 PT,sum_arb_1h,1h,1795806000,3509.9,skip,no_arb,,,0.4892,,0.5000,,0.00,0.00,71.8725,71.8856,Up 50.0c + Down 51.0c + fees = 104.50c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:30 PT,sum_arb_5m,5m,1795806000,209.9,skip,no_arb,,,0.4528,,0.4100,,0.00,0.00,71.8725,71.8856,Up 41.0c + Down 61.0c + fees = 105.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:40 PT,control,5m,1795806000,199.9,skip,edge_small,Up,0.5566,0.5566,0.6650,0.6700,-0.1289,0.00,0.00,71.9010,71.8856,Up at 67c: my estimate 56% beats price+fee by only -12.9c (need 3c).
+2026-11-27 11:01:40 PT,model_lead,5m,1795806000,199.9,skip,lead_small,Up,0.6108,0.5566,0.6650,,,0.00,0.00,71.9010,71.8856,Lead gate: SOL is $+0.015 past the price to beat our way (Up); need at least $0.036 (0.05% of price).
+2026-11-27 11:01:40 PT,trend_volume,5m,1795806000,199.9,skip,choppy,,,0.5566,0.6650,,,0.00,0.00,71.9010,71.8856,"Choppy: price went back and forth (straightness 0.03, need 0.15)."
+2026-11-27 11:01:40 PT,trend_down,5m,1795806000,199.9,skip,choppy,,,0.5566,0.6650,,,0.00,0.00,71.9010,71.8856,"Choppy: price went back and forth (straightness 0.03, need 0.12)."
+2026-11-27 11:01:40 PT,breakdown,5m,1795806000,199.9,skip,no_breakout,,,0.5566,0.6650,,,0.00,0.00,71.9010,71.8856,Price is inside its 30-min range ($71.63-$71.97); no breakout.
+2026-11-27 11:01:40 PT,max_profit,5m,1795806000,199.9,skip,no_signal,,,0.5566,,,,0.00,0.00,71.9010,71.8856,No source strategy has a clear entry in this 5m window (200s left). Cash $13.05.
+2026-11-27 11:01:40 PT,auto_pick,5m,1795806000,199.9,skip,hour_filter,,,0.5566,,,,0.00,0.00,71.9010,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:01:40 PT,bankroll_20,5m,1795806000,199.9,skip,hour_filter,,,0.5566,,,,0.00,0.00,71.9010,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:01:50 PT,sum_arb_15m,15m,1795806000,789.9,skip,no_arb,,,0.5445,,0.6100,,0.00,0.00,71.9110,71.8856,Up 61.0c + Down 41.0c + fees = 105.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:50 PT,sum_arb_1h,1h,1795806000,3489.9,skip,no_arb,,,0.5209,,0.5600,,0.00,0.00,71.9110,71.8856,Up 56.0c + Down 47.0c + fees = 106.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:01:50 PT,sum_arb_5m,5m,1795806000,189.9,skip,no_arb,,,0.5957,,0.7700,,0.00,0.00,71.9110,71.8856,Up 77.0c + Down 24.0c + fees = 103.52c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:00 PT,control,5m,1795806000,179.9,skip,edge_small,Up,0.6601,0.6601,0.8050,0.8100,-0.1607,0.00,0.00,71.9275,71.8856,Up at 81c: my estimate 66% beats price+fee by only -16.1c (need 3c).
+2026-11-27 11:02:00 PT,model_lead,5m,1795806000,179.9,skip,timing,,,0.6601,0.8050,,,0.00,0.00,71.9275,71.8856,Only bets with 180-240s left; 180s left now.
+2026-11-27 11:02:00 PT,trend_volume,5m,1795806000,179.9,skip,choppy,,,0.6601,0.8050,,,0.00,0.00,71.9275,71.8856,"Choppy: price went back and forth (straightness 0.03, need 0.15)."
+2026-11-27 11:02:00 PT,trend_down,5m,1795806000,179.9,skip,choppy,,,0.6601,0.8050,,,0.00,0.00,71.9275,71.8856,"Choppy: price went back and forth (straightness 0.03, need 0.12)."
+2026-11-27 11:02:00 PT,breakdown,5m,1795806000,179.9,skip,no_breakout,,,0.6601,0.8050,,,0.00,0.00,71.9275,71.8856,Price is inside its 30-min range ($71.63-$71.97); no breakout.
+2026-11-27 11:02:00 PT,max_profit,5m,1795806000,179.9,skip,no_signal,,,0.6601,,,,0.00,0.00,71.9275,71.8856,No source strategy has a clear entry in this 5m window (180s left). Cash $13.05.
+2026-11-27 11:02:00 PT,auto_pick,5m,1795806000,179.9,skip,hour_filter,,,0.6601,,,,0.00,0.00,71.9275,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:02:00 PT,bankroll_20,5m,1795806000,179.9,skip,hour_filter,,,0.6601,,,,0.00,0.00,71.9275,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:02:10 PT,sum_arb_15m,15m,1795806000,769.9,skip,no_arb,,,0.6241,,0.7500,,0.00,0.00,71.9565,71.8856,Up 75.0c + Down 26.0c + fees = 103.66c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:10 PT,sum_arb_1h,1h,1795806000,3469.9,skip,no_arb,,,0.5584,,0.6200,,0.00,0.00,71.9565,71.8856,Up 62.0c + Down 41.0c + fees = 106.34c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:10 PT,sum_arb_5m,5m,1795806000,169.9,skip,no_arb,,,0.7651,,0.9500,,0.00,0.00,71.9565,71.8856,Up 95.0c + Down 6.0c + fees = 101.73c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:20 PT,control,5m,1795806000,159.9,skip,ask_band,Up,0.8965,0.8965,0.9550,0.9600,-0.0662,0.00,0.00,72.0050,71.8856,"Up costs 96c, outside this variant's 0.05-0.95 price range."
+2026-11-27 11:02:20 PT,trend_volume,5m,1795806000,159.9,skip,choppy,,,0.8965,0.9550,,,0.00,0.00,72.0050,71.8856,"Choppy: price went back and forth (straightness 0.04, need 0.15)."
+2026-11-27 11:02:20 PT,trend_down,5m,1795806000,159.9,skip,choppy,,,0.8965,0.9550,,,0.00,0.00,72.0050,71.8856,"Choppy: price went back and forth (straightness 0.04, need 0.12)."
+2026-11-27 11:02:20 PT,breakdown,5m,1795806000,159.9,skip,no_breakout,,,0.8965,0.9550,,,0.00,0.00,72.0050,71.8856,Price is inside its 30-min range ($71.63-$71.97); no breakout.
+2026-11-27 11:02:20 PT,max_profit,5m,1795806000,159.9,skip,no_signal,,,0.8965,,,,0.00,0.00,72.0050,71.8856,No source strategy has a clear entry in this 5m window (160s left). Cash $13.05.
+2026-11-27 11:02:20 PT,auto_pick,5m,1795806000,159.9,skip,hour_filter,,,0.8965,,,,0.00,0.00,72.0050,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:02:20 PT,bankroll_20,5m,1795806000,159.9,skip,hour_filter,,,0.8965,,,,0.00,0.00,72.0050,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:02:30 PT,sum_arb_15m,15m,1795806000,749.9,skip,no_arb,,,0.7199,,0.7800,,0.00,0.00,72.0145,71.8856,Up 78.0c + Down 23.0c + fees = 103.44c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:30 PT,sum_arb_1h,1h,1795806000,3449.9,skip,no_arb,,,0.6055,,0.6500,,0.00,0.00,72.0145,71.8856,Up 65.0c + Down 37.0c + fees = 105.22c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:30 PT,sum_arb_5m,5m,1795806000,149.9,skip,no_arb,,,0.9217,,0.9900,,0.00,0.00,72.0145,71.8856,Up 99.0c + Down 2.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:40 PT,control,5m,1795806000,139.9,skip,ask_band,Up,0.9431,0.9431,0.9850,0.9900,-0.0476,0.00,0.00,72.0235,71.8856,"Up costs 99c, outside this variant's 0.05-0.95 price range."
+2026-11-27 11:02:40 PT,trend_volume,5m,1795806000,139.9,skip,choppy,,,0.9431,0.9850,,,0.00,0.00,72.0235,71.8856,"Choppy: price went back and forth (straightness 0.04, need 0.15)."
+2026-11-27 11:02:40 PT,trend_down,5m,1795806000,139.9,skip,choppy,,,0.9431,0.9850,,,0.00,0.00,72.0235,71.8856,"Choppy: price went back and forth (straightness 0.04, need 0.12)."
+2026-11-27 11:02:40 PT,breakdown,5m,1795806000,139.9,skip,no_breakout,,,0.9431,0.9850,,,0.00,0.00,72.0235,71.8856,Price is inside its 30-min range ($71.63-$71.97); no breakout.
+2026-11-27 11:02:40 PT,max_profit,5m,1795806000,139.9,skip,no_signal,,,0.9431,,,,0.00,0.00,72.0235,71.8856,No source strategy has a clear entry in this 5m window (140s left). Cash $13.05.
+2026-11-27 11:02:40 PT,auto_pick,5m,1795806000,139.9,skip,hour_filter,,,0.9431,,,,0.00,0.00,72.0235,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:02:40 PT,bankroll_20,5m,1795806000,139.9,skip,hour_filter,,,0.9431,,,,0.00,0.00,72.0235,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:02:50 PT,sum_arb_15m,15m,1795806000,729.9,skip,no_arb,,,0.7270,,0.7500,,0.00,0.00,72.0135,71.8856,Up 75.0c + Down 26.0c + fees = 103.66c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:50 PT,sum_arb_1h,1h,1795806000,3429.9,skip,no_arb,,,0.6081,,0.6300,,0.00,0.00,72.0135,71.8856,Up 63.0c + Down 38.0c + fees = 104.28c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:02:50 PT,sum_arb_5m,5m,1795806000,129.9,skip,no_arb,,,0.9427,,0.9800,,0.00,0.00,72.0135,71.8856,Up 98.0c + Down 3.0c + fees = 101.34c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:03:00 PT,max_profit,15m,1795806000,719.9,skip,no_signal,,,0.7165,,,,0.00,0.00,72.0060,71.8856,No source strategy has a clear entry in this 15m window (720s left). Cash $13.05.
+2026-11-27 11:03:00 PT,control,5m,1795806000,119.9,skip,ask_band,Up,0.9410,0.9410,0.9850,0.9900,-0.0496,0.00,0.00,72.0060,71.8856,"Up costs 99c, outside this variant's 0.05-0.95 price range."
+2026-11-27 11:03:00 PT,trend_volume,5m,1795806000,119.9,skip,choppy,,,0.9410,0.9850,,,0.00,0.00,72.0060,71.8856,"Choppy: price went back and forth (straightness 0.04, need 0.15)."
+2026-11-27 11:03:00 PT,trend_down,5m,1795806000,119.9,skip,choppy,,,0.9410,0.9850,,,0.00,0.00,72.0060,71.8856,"Choppy: price went back and forth (straightness 0.04, need 0.12)."
+2026-11-27 11:03:00 PT,breakdown,5m,1795806000,119.9,skip,no_breakout,,,0.9410,0.9850,,,0.00,0.00,72.0060,71.8856,Price is inside its 30-min range ($71.63-$71.97); no breakout.
+2026-11-27 11:03:00 PT,auto_pick,5m,1795806000,119.9,skip,hour_filter,,,0.9410,,,,0.00,0.00,72.0060,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:03:00 PT,bankroll_20,5m,1795806000,119.9,skip,hour_filter,,,0.9410,,,,0.00,0.00,72.0060,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:03:10 PT,sum_arb_15m,15m,1795806000,709.9,skip,no_arb,,,0.7386,,0.7700,,0.00,0.00,72.0190,71.8856,Up 77.0c + Down 24.0c + fees = 103.52c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:03:10 PT,sum_arb_1h,1h,1795806000,3409.9,skip,no_arb,,,0.6130,,0.6400,,0.00,0.00,72.0190,71.8856,Up 64.0c + Down 37.0c + fees = 104.24c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:03:10 PT,sum_arb_5m,5m,1795806000,109.9,skip,no_book,,,0.9667,,,,0.00,0.00,72.0190,71.8856,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 11:03:20 PT,max_profit,15m,1795806000,699.9,skip,no_signal,,,0.7258,,,,0.00,0.00,72.0100,71.8856,No source strategy has a clear entry in this 15m window (700s left). Cash $13.05.
+2026-11-27 11:03:20 PT,control,5m,1795806000,99.9,skip,no_ask,Up,0.9659,0.9659,0.9900,,,0.00,0.00,72.0100,71.8856,Nobody is selling Up right now.
+2026-11-27 11:03:20 PT,trend_volume,5m,1795806000,99.9,skip,choppy,,,0.9659,0.9900,,,0.00,0.00,72.0100,71.8856,"Choppy: price went back and forth (straightness 0.08, need 0.15)."
+2026-11-27 11:03:20 PT,trend_down,5m,1795806000,99.9,skip,choppy,,,0.9659,0.9900,,,0.00,0.00,72.0100,71.8856,"Choppy: price went back and forth (straightness 0.08, need 0.12)."
+2026-11-27 11:03:20 PT,breakdown,5m,1795806000,99.9,skip,weak_breakout,,,0.9659,0.9900,,,0.00,0.00,72.0100,71.8856,Broke above the 30-min high $71.97 but volume only 0.8x normal (need 2.0x).
+2026-11-27 11:03:20 PT,auto_pick,5m,1795806000,99.9,skip,hour_filter,,,0.9659,,,,0.00,0.00,72.0100,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:03:20 PT,bankroll_20,5m,1795806000,99.9,skip,hour_filter,,,0.9659,,,,0.00,0.00,72.0100,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:03:30 PT,sum_arb_15m,15m,1795806000,689.9,skip,no_arb,,,0.7494,,0.8000,,0.00,0.00,72.0240,71.8856,Up 80.0c + Down 21.0c + fees = 103.28c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:03:30 PT,sum_arb_1h,1h,1795806000,3389.9,skip,no_arb,,,0.6174,,0.6500,,0.00,0.00,72.0240,71.8856,Up 65.0c + Down 36.0c + fees = 104.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:03:30 PT,sum_arb_5m,5m,1795806000,89.9,skip,no_book,,,0.9855,,,,0.00,0.00,72.0240,71.8856,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 11:03:40 PT,max_profit,15m,1795806000,679.9,skip,no_signal,,,0.7526,,,,0.00,0.00,72.0250,71.8856,No source strategy has a clear entry in this 15m window (680s left). Cash $13.05.
+2026-11-27 11:03:40 PT,control,5m,1795806000,79.9,skip,no_ask,Up,0.9918,0.9918,0.9900,,,0.00,0.00,72.0250,71.8856,Nobody is selling Up right now.
+2026-11-27 11:03:40 PT,auto_pick,5m,1795806000,79.9,skip,hour_filter,,,0.9918,,,,0.00,0.00,72.0250,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:03:40 PT,bankroll_20,5m,1795806000,79.9,skip,hour_filter,,,0.9918,,,,0.00,0.00,72.0250,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:03:50 PT,sum_arb_15m,15m,1795806000,669.9,skip,no_arb,,,0.7635,,0.8400,,0.00,0.00,72.0310,71.8856,Up 84.0c + Down 18.0c + fees = 103.97c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:03:50 PT,sum_arb_1h,1h,1795806000,3369.9,skip,no_arb,,,0.6235,,0.7400,,0.00,0.00,72.0310,71.8856,Up 74.0c + Down 35.0c + fees = 111.94c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:03:50 PT,sum_arb_5m,5m,1795806000,69.9,skip,no_book,,,0.9973,,,,0.00,0.00,72.0310,71.8856,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 11:04:00 PT,max_profit,15m,1795806000,659.9,skip,no_signal,,,0.7860,,,,0.00,0.00,72.0450,71.8856,No source strategy has a clear entry in this 15m window (660s left). Cash $13.05.
+2026-11-27 11:04:00 PT,control,5m,1795806000,59.9,skip,no_ask,Up,0.9997,0.9997,0.9900,,,0.00,0.00,72.0450,71.8856,Nobody is selling Up right now.
+2026-11-27 11:04:00 PT,auto_pick,5m,1795806000,59.9,skip,hour_filter,,,0.9997,,,,0.00,0.00,72.0450,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:04:00 PT,bankroll_20,5m,1795806000,59.9,skip,hour_filter,,,0.9997,,,,0.00,0.00,72.0450,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:04:10 PT,sum_arb_15m,15m,1795806000,649.9,skip,no_arb,,,0.8076,,0.8700,,0.00,0.00,72.0590,71.8856,Up 87.0c + Down 14.0c + fees = 102.63c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:04:10 PT,sum_arb_1h,1h,1795806000,3349.9,skip,no_arb,,,0.6467,,0.6800,,0.00,0.00,72.0590,71.8856,Up 68.0c + Down 34.0c + fees = 105.09c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:04:10 PT,sum_arb_5m,5m,1795806000,49.9,skip,no_book,,,1.0000,,,,0.00,0.00,72.0590,71.8856,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 11:04:20 PT,max_profit,15m,1795806000,639.9,skip,no_signal,,,0.8095,,,,0.00,0.00,72.0590,71.8856,No source strategy has a clear entry in this 15m window (640s left). Cash $13.05.
+2026-11-27 11:04:20 PT,control,5m,1795806000,39.9,skip,no_ask,Up,1.0000,1.0000,0.9900,,,0.00,0.00,72.0590,71.8856,Nobody is selling Up right now.
+2026-11-27 11:04:20 PT,auto_pick,5m,1795806000,39.9,skip,hour_filter,,,1.0000,,,,0.00,0.00,72.0590,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:04:20 PT,bankroll_20,5m,1795806000,39.9,skip,hour_filter,,,1.0000,,,,0.00,0.00,72.0590,71.8856,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:04:30 PT,sum_arb_15m,15m,1795806000,629.9,skip,no_arb,,,0.8081,,0.8500,,0.00,0.00,72.0565,71.8856,Up 85.0c + Down 17.0c + fees = 103.88c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:04:30 PT,sum_arb_1h,1h,1795806000,3329.9,skip,no_arb,,,0.6451,,0.6800,,0.00,0.00,72.0565,71.8856,Up 68.0c + Down 33.0c + fees = 104.07c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:04:30 PT,sum_arb_5m,5m,1795806000,29.9,skip,no_book,,,1.0000,,,,0.00,0.00,72.0565,71.8856,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 11:04:40 PT,max_profit,15m,1795806000,619.9,skip,no_signal,,,0.7647,,,,0.00,0.00,72.0260,71.8856,No source strategy has a clear entry in this 15m window (620s left). Cash $13.05.
+2026-11-27 11:04:50 PT,sum_arb_15m,15m,1795806000,609.9,skip,no_arb,,,0.7469,,0.8300,,0.00,0.00,72.0125,71.8856,Up 83.0c + Down 20.0c + fees = 105.11c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:04:50 PT,sum_arb_1h,1h,1795806000,3309.9,skip,no_arb,,,0.6103,,0.6400,,0.00,0.00,72.0125,71.8856,Up 64.0c + Down 37.0c + fees = 104.24c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:04:50 PT,sum_arb_5m,5m,1795806000,9.9,skip,no_book,,,1.0000,,,,0.00,0.00,72.0125,71.8856,Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-27 11:05:00 PT,max_profit,15m,1795806000,599.9,skip,no_signal,,,0.7403,,,,0.00,0.00,72.0075,71.8856,No source strategy has a clear entry in this 15m window (600s left). Cash $13.05.
+2026-11-27 11:05:10 PT,sum_arb_15m,15m,1795806000,589.9,skip,no_arb,,,0.7506,,0.8400,,0.00,0.00,72.0125,71.8856,Up 84.0c + Down 17.0c + fees = 102.93c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:10 PT,sum_arb_1h,1h,1795806000,3289.9,skip,no_arb,,,0.6107,,0.6500,,0.00,0.00,72.0125,71.8856,Up 65.0c + Down 37.0c + fees = 105.22c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:10 PT,sum_arb_5m,5m,1795806300,289.9,skip,no_arb,,,0.4063,,0.4000,,0.00,0.00,72.0125,72.0429,Up 40.0c + Down 62.0c + fees = 105.33c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:20 PT,max_profit,15m,1795806000,579.8,skip,no_signal,,,0.7483,,,,0.00,0.00,72.0100,71.8856,No source strategy has a clear entry in this 15m window (580s left). Cash $13.05.
+2026-11-27 11:05:30 PT,sum_arb_15m,15m,1795806000,569.8,skip,no_arb,,,0.7327,,0.8000,,0.00,0.00,72.0000,71.8856,Up 80.0c + Down 23.0c + fees = 105.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:30 PT,sum_arb_1h,1h,1795806000,3269.8,skip,no_arb,,,0.6003,,0.6300,,0.00,0.00,72.0000,71.8856,Up 63.0c + Down 39.0c + fees = 105.30c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:30 PT,sum_arb_5m,5m,1795806300,269.8,skip,no_arb,,,0.3639,,0.2800,,0.00,0.00,72.0000,72.0429,Up 28.0c + Down 73.0c + fees = 103.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:40 PT,max_profit,15m,1795806000,559.8,skip,no_signal,,,0.7346,,,,0.00,0.00,72.0000,71.8856,No source strategy has a clear entry in this 15m window (560s left). Cash $13.05.
+2026-11-27 11:05:50 PT,sum_arb_15m,15m,1795806000,549.8,skip,no_arb,,,0.7366,,0.8000,,0.00,0.00,72.0000,71.8856,Up 80.0c + Down 22.0c + fees = 104.32c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:50 PT,sum_arb_1h,1h,1795806000,3249.8,skip,no_arb,,,0.6006,,0.6300,,0.00,0.00,72.0000,71.8856,Up 63.0c + Down 39.0c + fees = 105.30c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:50 PT,sum_arb_5m,5m,1795806300,249.8,skip,no_arb,,,0.3582,,0.2800,,0.00,0.00,72.0000,72.0429,Up 28.0c + Down 73.0c + fees = 103.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:05:58 PT,down_ride_15m,15m,1795806000,541.8,skip,timing,,,0.7290,0.7650,,,0.00,0.00,71.9950,71.8856,Only bets with 270-540s left; 542s left now.
+2026-11-27 11:06:00 PT,max_profit,15m,1795806000,539.8,skip,no_signal,,,0.7201,,,,0.00,0.00,71.9900,71.8856,No source strategy has a clear entry in this 15m window (540s left). Cash $13.05.
+2026-11-27 11:06:00 PT,control,5m,1795806300,239.8,skip,edge_small,Down,0.6767,0.3233,0.2400,0.7700,-0.1057,0.00,0.00,71.9900,72.0429,Down at 77c: my estimate 68% beats price+fee by only -10.6c (need 3c).
+2026-11-27 11:06:00 PT,model_lead,5m,1795806300,239.8,skip,edge_small,Down,0.7184,0.3233,0.2400,0.7700,-0.0640,0.00,0.00,71.9900,72.0429,Down at 77c: my estimate 72% beats price+fee by only -6.4c (need 4c).
+2026-11-27 11:06:00 PT,trend_volume,5m,1795806300,239.8,skip,choppy,,,0.3233,0.2400,,,0.00,0.00,71.9900,72.0429,"Choppy: price went back and forth (straightness 0.10, need 0.15)."
+2026-11-27 11:06:00 PT,trend_down,5m,1795806300,239.8,skip,choppy,,,0.3233,0.2400,,,0.00,0.00,71.9900,72.0429,"Choppy: price went back and forth (straightness 0.10, need 0.12)."
+2026-11-27 11:06:00 PT,breakdown,5m,1795806300,239.8,skip,weak_breakout,,,0.3233,0.2400,,,0.00,0.00,71.9900,72.0429,Broke above the 30-min high $72.03 but volume only 0.7x normal (need 2.0x).
+2026-11-27 11:06:00 PT,auto_pick,5m,1795806300,239.8,skip,hour_filter,,,0.3233,,,,0.00,0.00,71.9900,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:06:00 PT,bankroll_20,5m,1795806300,239.8,skip,hour_filter,,,0.3233,,,,0.00,0.00,71.9900,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:06:10 PT,sum_arb_15m,15m,1795806000,529.8,skip,no_arb,,,0.7028,,0.7300,,0.00,0.00,71.9800,71.8856,Up 73.0c + Down 29.0c + fees = 104.82c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:10 PT,sum_arb_1h,1h,1795806000,3229.8,skip,no_arb,,,0.5836,,0.5900,,0.00,0.00,71.9800,71.8856,Up 59.0c + Down 43.0c + fees = 105.41c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:10 PT,sum_arb_5m,5m,1795806300,229.8,skip,no_arb,,,0.2882,,0.1500,,0.00,0.00,71.9800,72.0429,Up 15.0c + Down 86.0c + fees = 102.74c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:18 PT,down_ride_15m,15m,1795806000,521.8,skip,side_not_allowed,Up,0.7197,0.6944,0.7450,,,0.00,0.00,71.9750,71.8856,This variant only bets Down; the signal says Up.
+2026-11-27 11:06:20 PT,max_profit,15m,1795806000,519.8,skip,no_signal,,,0.6948,,,,0.00,0.00,71.9750,71.8856,No source strategy has a clear entry in this 15m window (520s left). Cash $13.05.
+2026-11-27 11:06:20 PT,control,5m,1795806300,219.8,skip,edge_small,Down,0.7319,0.2681,0.1350,0.8700,-0.1460,0.00,0.00,71.9750,72.0429,Down at 87c: my estimate 73% beats price+fee by only -14.6c (need 3c).
+2026-11-27 11:06:20 PT,model_lead,5m,1795806300,219.8,skip,ask_band,Down,0.7984,0.2681,0.1350,0.8700,-0.0795,0.00,0.00,71.9750,72.0429,"Down costs 87c, outside this variant's 0.2-0.8 price range."
+2026-11-27 11:06:20 PT,trend_volume,5m,1795806300,219.8,skip,choppy,,,0.2681,0.1350,,,0.00,0.00,71.9750,72.0429,"Choppy: price went back and forth (straightness 0.05, need 0.15)."
+2026-11-27 11:06:20 PT,trend_down,5m,1795806300,219.8,skip,choppy,,,0.2681,0.1350,,,0.00,0.00,71.9750,72.0429,"Choppy: price went back and forth (straightness 0.05, need 0.12)."
+2026-11-27 11:06:20 PT,breakdown,5m,1795806300,219.8,skip,no_breakout,,,0.2681,0.1350,,,0.00,0.00,71.9750,72.0429,Price is inside its 30-min range ($71.67-$72.05); no breakout.
+2026-11-27 11:06:20 PT,auto_pick,5m,1795806300,219.8,skip,hour_filter,,,0.2681,,,,0.00,0.00,71.9750,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:06:20 PT,bankroll_20,5m,1795806300,219.8,skip,hour_filter,,,0.2681,,,,0.00,0.00,71.9750,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:06:30 PT,sum_arb_15m,15m,1795806000,509.8,skip,no_arb,,,0.6606,,0.6900,,0.00,0.00,71.9575,71.8856,Up 69.0c + Down 37.0c + fees = 109.13c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:30 PT,sum_arb_1h,1h,1795806000,3209.8,skip,no_arb,,,0.5641,,0.5700,,0.00,0.00,71.9575,71.8856,Up 57.0c + Down 46.0c + fees = 106.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:30 PT,sum_arb_5m,5m,1795806300,209.8,skip,no_arb,,,0.2121,,0.1000,,0.00,0.00,71.9575,72.0429,Up 10.0c + Down 92.0c + fees = 103.15c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:38 PT,down_ride_15m,15m,1795806000,501.8,skip,side_not_allowed,Up,0.6295,0.6239,0.6350,,,0.00,0.00,71.9400,71.8856,This variant only bets Down; the signal says Up.
+2026-11-27 11:06:40 PT,max_profit,15m,1795806000,499.8,skip,no_signal,,,0.6220,,,,0.00,0.00,71.9390,71.8856,No source strategy has a clear entry in this 15m window (500s left). Cash $13.05.
+2026-11-27 11:06:40 PT,control,5m,1795806300,199.8,skip,edge_small,Down,0.8414,0.1586,0.0550,0.9500,-0.1119,0.00,0.00,71.9390,72.0429,Down at 95c: my estimate 84% beats price+fee by only -11.2c (need 3c).
+2026-11-27 11:06:40 PT,model_lead,5m,1795806300,199.8,skip,ask_band,Down,0.8932,0.1586,0.0550,0.9500,-0.0601,0.00,0.00,71.9390,72.0429,"Down costs 95c, outside this variant's 0.2-0.8 price range."
+2026-11-27 11:06:40 PT,trend_volume,5m,1795806300,199.8,skip,choppy,,,0.1586,0.0550,,,0.00,0.00,71.9390,72.0429,"Choppy: price went back and forth (straightness 0.05, need 0.15)."
+2026-11-27 11:06:40 PT,trend_down,5m,1795806300,199.8,skip,choppy,,,0.1586,0.0550,,,0.00,0.00,71.9390,72.0429,"Choppy: price went back and forth (straightness 0.05, need 0.12)."
+2026-11-27 11:06:40 PT,breakdown,5m,1795806300,199.8,skip,no_breakout,,,0.1586,0.0550,,,0.00,0.00,71.9390,72.0429,Price is inside its 30-min range ($71.67-$72.05); no breakout.
+2026-11-27 11:06:40 PT,auto_pick,5m,1795806300,199.8,skip,hour_filter,,,0.1586,,,,0.00,0.00,71.9390,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:06:40 PT,bankroll_20,5m,1795806300,199.8,skip,hour_filter,,,0.1586,,,,0.00,0.00,71.9390,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:06:50 PT,sum_arb_15m,15m,1795806000,489.8,skip,no_arb,,,0.6186,,0.6600,,0.00,0.00,71.9365,71.8856,Up 66.0c + Down 37.0c + fees = 106.20c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:50 PT,sum_arb_1h,1h,1795806000,3189.8,skip,no_arb,,,0.5460,,0.5600,,0.00,0.00,71.9365,71.8856,Up 56.0c + Down 48.0c + fees = 107.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:50 PT,sum_arb_5m,5m,1795806300,189.8,skip,no_arb,,,0.1439,,0.0700,,0.00,0.00,71.9365,72.0429,Up 7.0c + Down 95.0c + fees = 102.79c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:06:58 PT,down_ride_15m,15m,1795806000,481.8,skip,side_not_allowed,Up,0.6275,0.6150,0.6400,,,0.00,0.00,71.9345,71.8856,This variant only bets Down; the signal says Up.
+2026-11-27 11:07:00 PT,max_profit,15m,1795806000,479.8,skip,no_signal,,,0.6153,,,,0.00,0.00,71.9345,71.8856,No source strategy has a clear entry in this 15m window (480s left). Cash $13.05.
+2026-11-27 11:07:00 PT,control,5m,1795806300,179.8,skip,edge_small,Down,0.8682,0.1318,0.0650,0.9400,-0.0757,0.00,0.00,71.9345,72.0429,Down at 94c: my estimate 87% beats price+fee by only -7.6c (need 3c).
+2026-11-27 11:07:00 PT,model_lead,5m,1795806300,179.8,skip,timing,,,0.1318,0.0650,,,0.00,0.00,71.9345,72.0429,Only bets with 180-240s left; 180s left now.
+2026-11-27 11:07:00 PT,trend_volume,5m,1795806300,179.8,skip,choppy,,,0.1318,0.0650,,,0.00,0.00,71.9345,72.0429,"Choppy: price went back and forth (straightness 0.05, need 0.15)."
+2026-11-27 11:07:00 PT,trend_down,5m,1795806300,179.8,skip,choppy,,,0.1318,0.0650,,,0.00,0.00,71.9345,72.0429,"Choppy: price went back and forth (straightness 0.05, need 0.12)."
+2026-11-27 11:07:00 PT,breakdown,5m,1795806300,179.8,skip,no_breakout,,,0.1318,0.0650,,,0.00,0.00,71.9345,72.0429,Price is inside its 30-min range ($71.67-$72.05); no breakout.
+2026-11-27 11:07:00 PT,auto_pick,5m,1795806300,179.8,skip,hour_filter,,,0.1318,,,,0.00,0.00,71.9345,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:07:00 PT,bankroll_20,5m,1795806300,179.8,skip,hour_filter,,,0.1318,,,,0.00,0.00,71.9345,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:07:10 PT,sum_arb_15m,15m,1795806000,469.8,skip,no_arb,,,0.6349,,0.7300,,0.00,0.00,71.9425,71.8856,Up 73.0c + Down 30.0c + fees = 105.85c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:10 PT,sum_arb_1h,1h,1795806000,3169.8,skip,no_arb,,,0.5515,,0.5900,,0.00,0.00,71.9425,71.8856,Up 59.0c + Down 45.0c + fees = 107.43c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:10 PT,sum_arb_5m,5m,1795806300,169.8,skip,no_arb,,,0.1421,,0.0900,,0.00,0.00,71.9425,72.0429,Up 9.0c + Down 93.0c + fees = 103.03c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:18 PT,down_ride_15m,15m,1795806000,461.8,skip,side_not_allowed,Up,0.6837,0.6475,0.7200,,,0.00,0.00,71.9475,71.8856,This variant only bets Down; the signal says Up.
+2026-11-27 11:07:20 PT,max_profit,15m,1795806000,459.8,skip,no_signal,,,0.6478,,,,0.00,0.00,71.9475,71.8856,No source strategy has a clear entry in this 15m window (460s left). Cash $13.05.
+2026-11-27 11:07:20 PT,control,5m,1795806300,159.8,skip,edge_small,Down,0.8543,0.1457,0.0650,0.9400,-0.0897,0.00,0.00,71.9475,72.0429,Down at 94c: my estimate 85% beats price+fee by only -9.0c (need 3c).
+2026-11-27 11:07:20 PT,trend_volume,5m,1795806300,159.8,skip,choppy,,,0.1457,0.0650,,,0.00,0.00,71.9475,72.0429,"Choppy: price went back and forth (straightness 0.02, need 0.15)."
+2026-11-27 11:07:20 PT,trend_down,5m,1795806300,159.8,skip,choppy,,,0.1457,0.0650,,,0.00,0.00,71.9475,72.0429,"Choppy: price went back and forth (straightness 0.02, need 0.12)."
+2026-11-27 11:07:20 PT,breakdown,5m,1795806300,159.8,skip,no_breakout,,,0.1457,0.0650,,,0.00,0.00,71.9475,72.0429,Price is inside its 30-min range ($71.67-$72.07); no breakout.
+2026-11-27 11:07:20 PT,auto_pick,5m,1795806300,159.8,skip,hour_filter,,,0.1457,,,,0.00,0.00,71.9475,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:07:20 PT,bankroll_20,5m,1795806300,159.8,skip,hour_filter,,,0.1457,,,,0.00,0.00,71.9475,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:07:30 PT,sum_arb_15m,15m,1795806000,449.8,skip,no_arb,,,0.6552,,0.7300,,0.00,0.00,71.9500,71.8856,Up 73.0c + Down 31.0c + fees = 106.88c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:30 PT,sum_arb_1h,1h,1795806000,3149.8,skip,no_arb,,,0.5584,,0.5800,,0.00,0.00,71.9500,71.8856,Up 58.0c + Down 45.0c + fees = 106.44c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:30 PT,sum_arb_5m,5m,1795806300,149.8,skip,no_arb,,,0.1427,,0.0600,,0.00,0.00,71.9500,72.0429,Up 6.0c + Down 96.0c + fees = 102.66c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:38 PT,down_ride_15m,15m,1795806000,441.8,skip,side_not_allowed,Up,0.6829,0.6508,0.7150,,,0.00,0.00,71.9475,71.8856,This variant only bets Down; the signal says Up.
+2026-11-27 11:07:40 PT,max_profit,15m,1795806000,439.8,skip,no_signal,,,0.6570,,,,0.00,0.00,71.9500,71.8856,No source strategy has a clear entry in this 15m window (440s left). Cash $13.05.
+2026-11-27 11:07:40 PT,control,5m,1795806300,139.8,skip,ask_band,Down,0.8674,0.1326,0.0500,0.9600,-0.0953,0.00,0.00,71.9500,72.0429,"Down costs 96c, outside this variant's 0.05-0.95 price range."
+2026-11-27 11:07:40 PT,trend_volume,5m,1795806300,139.8,skip,choppy,,,0.1326,0.0500,,,0.00,0.00,71.9500,72.0429,"Choppy: price went back and forth (straightness 0.02, need 0.15)."
+2026-11-27 11:07:40 PT,trend_down,5m,1795806300,139.8,skip,choppy,,,0.1326,0.0500,,,0.00,0.00,71.9500,72.0429,"Choppy: price went back and forth (straightness 0.02, need 0.12)."
+2026-11-27 11:07:40 PT,breakdown,5m,1795806300,139.8,skip,no_breakout,,,0.1326,0.0500,,,0.00,0.00,71.9500,72.0429,Price is inside its 30-min range ($71.67-$72.07); no breakout.
+2026-11-27 11:07:40 PT,auto_pick,5m,1795806300,139.8,skip,hour_filter,,,0.1326,,,,0.00,0.00,71.9500,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:07:40 PT,bankroll_20,5m,1795806300,139.8,skip,hour_filter,,,0.1326,,,,0.00,0.00,71.9500,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:07:50 PT,sum_arb_15m,15m,1795806000,429.8,skip,no_arb,,,0.6529,,0.7500,,0.00,0.00,71.9475,71.8856,Up 75.0c + Down 30.0c + fees = 107.78c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:50 PT,sum_arb_1h,1h,1795806000,3129.8,skip,no_arb,,,0.5564,,0.5800,,0.00,0.00,71.9475,71.8856,Up 58.0c + Down 44.0c + fees = 105.43c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:50 PT,sum_arb_5m,5m,1795806300,129.8,skip,no_arb,,,0.1154,,0.0500,,0.00,0.00,71.9475,72.0429,Up 5.0c + Down 97.0c + fees = 102.54c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:07:58 PT,down_ride_15m,15m,1795806000,421.8,skip,side_not_allowed,Up,0.6872,0.6544,0.7200,,,0.00,0.00,71.9475,71.8856,This variant only bets Down; the signal says Up.
+2026-11-27 11:08:00 PT,max_profit,15m,1795806000,419.8,skip,no_signal,,,0.6548,,,,0.00,0.00,71.9475,71.8856,No source strategy has a clear entry in this 15m window (420s left). Cash $13.05.
+2026-11-27 11:08:00 PT,control,5m,1795806300,119.8,skip,ask_band,Down,0.8963,0.1037,0.0450,0.9600,-0.0663,0.00,0.00,71.9475,72.0429,"Down costs 96c, outside this variant's 0.05-0.95 price range."
+2026-11-27 11:08:00 PT,trend_volume,5m,1795806300,119.8,skip,choppy,,,0.1037,0.0450,,,0.00,0.00,71.9475,72.0429,"Choppy: price went back and forth (straightness 0.02, need 0.15)."
+2026-11-27 11:08:00 PT,trend_down,5m,1795806300,119.8,skip,choppy,,,0.1037,0.0450,,,0.00,0.00,71.9475,72.0429,"Choppy: price went back and forth (straightness 0.02, need 0.12)."
+2026-11-27 11:08:00 PT,breakdown,5m,1795806300,119.8,skip,no_breakout,,,0.1037,0.0450,,,0.00,0.00,71.9475,72.0429,Price is inside its 30-min range ($71.67-$72.07); no breakout.
+2026-11-27 11:08:00 PT,auto_pick,5m,1795806300,119.8,skip,hour_filter,,,0.1037,,,,0.00,0.00,71.9475,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:08:00 PT,bankroll_20,5m,1795806300,119.8,skip,hour_filter,,,0.1037,,,,0.00,0.00,71.9475,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:08:10 PT,sum_arb_15m,15m,1795806000,409.8,skip,no_arb,,,0.6410,,0.6600,,0.00,0.00,71.9410,71.8856,Up 66.0c + Down 35.0c + fees = 104.16c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:08:10 PT,sum_arb_1h,1h,1795806000,3109.8,skip,no_arb,,,0.5507,,0.5700,,0.00,0.00,71.9410,71.8856,Up 57.0c + Down 46.0c + fees = 106.45c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:08:10 PT,sum_arb_5m,5m,1795806300,109.8,skip,no_arb,,,0.0770,,0.0200,,0.00,0.00,71.9410,72.0429,Up 2.0c + Down 99.0c + fees = 101.21c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:08:18 PT,down_ride_15m,15m,1795806000,401.8,skip,side_not_allowed,Up,0.6556,0.6213,0.6900,,,0.00,0.00,71.9325,71.8856,This variant only bets Down; the signal says Up.
+2026-11-27 11:08:20 PT,max_profit,15m,1795806000,399.8,skip,no_signal,,,0.6440,,,,0.00,0.00,71.9415,71.8856,No source strategy has a clear entry in this 15m window (400s left). Cash $13.05.
+2026-11-27 11:08:20 PT,control,5m,1795806300,99.8,skip,ask_band,Down,0.9348,0.0652,0.0200,0.9900,-0.0559,0.00,0.00,71.9415,72.0429,"Down costs 99c, outside this variant's 0.05-0.95 price range."
+2026-11-27 11:08:20 PT,trend_volume,5m,1795806300,99.8,skip,choppy,,,0.0652,0.0200,,,0.00,0.00,71.9415,72.0429,"Choppy: price went back and forth (straightness 0.00, need 0.15)."
+2026-11-27 11:08:20 PT,trend_down,5m,1795806300,99.8,skip,choppy,,,0.0652,0.0200,,,0.00,0.00,71.9415,72.0429,"Choppy: price went back and forth (straightness 0.00, need 0.12)."
+2026-11-27 11:08:20 PT,breakdown,5m,1795806300,99.8,skip,no_breakout,,,0.0652,0.0200,,,0.00,0.00,71.9415,72.0429,Price is inside its 30-min range ($71.67-$72.07); no breakout.
+2026-11-27 11:08:20 PT,auto_pick,5m,1795806300,99.8,skip,hour_filter,,,0.0652,,,,0.00,0.00,71.9415,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:08:20 PT,bankroll_20,5m,1795806300,99.8,skip,hour_filter,,,0.0652,,,,0.00,0.00,71.9415,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
+2026-11-27 11:08:30 PT,sum_arb_15m,15m,1795806000,389.8,skip,no_arb,,,0.6765,,0.7600,,0.00,0.00,71.9540,71.8856,Up 76.0c + Down 26.0c + fees = 104.62c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:08:30 PT,sum_arb_1h,1h,1795806000,3089.8,skip,no_arb,,,0.5626,,0.5900,,0.00,0.00,71.9540,71.8856,Up 59.0c + Down 43.0c + fees = 105.41c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:08:30 PT,sum_arb_5m,5m,1795806300,89.8,skip,no_arb,,,0.0769,,0.0300,,0.00,0.00,71.9540,72.0429,Up 3.0c + Down 99.0c + fees = 102.27c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-27 11:08:38 PT,down_ride_15m,15m,1795806000,381.8,skip,side_not_allowed,Up,0.7068,0.6686,0.7450,,,0.00,0.00,71.9500,71.8856,This variant only bets Down; the signal says Up.
+2026-11-27 11:08:40 PT,max_profit,15m,1795806000,379.8,skip,no_signal,,,0.6788,,,,0.00,0.00,71.9540,71.8856,No source strategy has a clear entry in this 15m window (380s left). Cash $13.05.
+2026-11-27 11:08:40 PT,control,5m,1795806300,79.8,skip,no_ask,Down,0.9400,0.0600,0.0100,,,0.00,0.00,71.9540,72.0429,Nobody is selling Down right now.
+2026-11-27 11:08:40 PT,auto_pick,5m,1795806300,79.8,skip,hour_filter,,,0.0600,,,,0.00,0.00,71.9540,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-5.65.
+2026-11-27 11:08:40 PT,bankroll_20,5m,1795806300,79.8,skip,hour_filter,,,0.0600,,,,0.00,0.00,71.9540,72.0429,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 11:00 PT hour net $-7.92.
